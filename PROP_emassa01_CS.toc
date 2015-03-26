@@ -1,36 +1,53 @@
 \contentsline {section}{\numberline {1}Introduction}{2}
 \contentsline {subsection}{\numberline {1.1}Problem Statement}{2}
-\contentsline {subsection}{\numberline {1.2}The Role of Context In Search}{2}
+\contentsline {subsection}{\numberline {1.2}The Role of Context In Search}{3}
 \contentsline {subsection}{\numberline {1.3}What is ASD?}{3}
 \contentsline {subsection}{\numberline {1.4}The Problem: Current Search Tools for people with ASD}{3}
 \contentsline {subsection}{\numberline {1.5}Proposal Organisation}{4}
 \contentsline {section}{\numberline {2}What should Search offer people with ASD?}{5}
 \contentsline {subsection}{\numberline {2.1}Search and Learning}{5}
 \contentsline {subsection}{\numberline {2.2}Clues from virtual reality and gaming}{5}
-\contentsline {subsection}{\numberline {2.3}Motion Controllers}{6}
-\contentsline {subsection}{\numberline {2.4}Visual not text-based}{6}
-\contentsline {section}{\numberline {3}Creating a User Model of ASD}{6}
-\contentsline {subsection}{\numberline {3.1}What is a user model?}{6}
+\contentsline {subsection}{\numberline {2.3}Motion Controllers}{5}
+\contentsline {subsection}{\numberline {2.4}Visual not text-based}{5}
+\contentsline {section}{\numberline {3}Creating a User Model of ASD}{5}
+\contentsline {subsection}{\numberline {3.1}What is a user model?}{5}
 \contentsline {subsection}{\numberline {3.2}Types of user models}{6}
-\contentsline {subsection}{\numberline {3.3}Benefits and difficulties of user modeling in Search}{7}
-\contentsline {subsection}{\numberline {3.4}Adaptive / Personalised Search}{7}
+\contentsline {subsection}{\numberline {3.3}Benefits and difficulties of user modeling in Search}{6}
+\contentsline {subsection}{\numberline {3.4}Adaptive / Personalised Search}{6}
 \contentsline {subsection}{\numberline {3.5}Disadvantages of adaptive search for individuals with ASD}{7}
-\contentsline {subsection}{\numberline {3.6}Where will the User Information be Stored?}{8}
-\contentsline {section}{\numberline {4}Existing Combination/Advanced Search Engines}{8}
+\contentsline {subsection}{\numberline {3.6}Where will the User Information be Stored?}{7}
+\contentsline {section}{\numberline {4}Existing Combination/Advanced Search Engines}{7}
 \contentsline {subsection}{\numberline {4.1}Bing vs Google}{8}
-\contentsline {subsection}{\numberline {4.2}Qrobe.it}{9}
-\contentsline {subsection}{\numberline {4.3}AskBoth}{9}
-\contentsline {subsection}{\numberline {4.4}Spectra}{9}
+\contentsline {subsection}{\numberline {4.2}Qrobe.it}{8}
+\contentsline {subsection}{\numberline {4.3}AskBoth}{8}
+\contentsline {subsection}{\numberline {4.4}Spectra}{8}
 \contentsline {subsection}{\numberline {4.5}Conclusions and ways forward}{9}
 \contentsline {section}{\numberline {5}Proposed Search Page and Controller Web Application}{9}
 \contentsline {section}{\numberline {6}Core Features}{9}
-\contentsline {section}{\numberline {7}Non-core Features}{10}
+\contentsline {section}{\numberline {7}Non-core Features}{9}
 \contentsline {section}{\numberline {8}Implementation of the System}{10}
 \contentsline {subsection}{\numberline {8.1}Selection of Search Engines}{10}
-\contentsline {subsection}{\numberline {8.2}APIs, Text-Search Libraries }{11}
-\contentsline {subsubsection}{\numberline {8.2.1}Google Custom Search}{11}
-\contentsline {subsubsection}{\numberline {8.2.2}Yahoo BOSS}{11}
-\contentsline {subsubsection}{\numberline {8.2.3}Bing Search API (Data)}{11}
+\contentsline {subsection}{\numberline {8.2}APIs, Text-Search Libraries }{10}
+\contentsline {subsubsection}{\numberline {8.2.1}Google Custom Search}{10}
+\contentsline {subsubsection}{\numberline {8.2.2}Yahoo BOSS}{10}
+\contentsline {subsubsection}{\numberline {8.2.3}Bing Search API (Data)}{10}
 \contentsline {subsubsection}{\numberline {8.2.4}Faroo API}{11}
-\contentsline {subsubsection}{\numberline {8.2.5}Apache Lucene Library}{12}
-\contentsline {subsubsection}{\numberline {8.2.6}Google+ API}{12}
+\contentsline {subsubsection}{\numberline {8.2.5}Apache Lucene Library}{11}
+\contentsline {subsubsection}{\numberline {8.2.6}Google+ API}{11}
+\contentsline {subsubsection}{\numberline {8.2.7}Libraries for Hardware (Motion Controllers)}{11}
+\contentsline {subsubsection}{\numberline {8.2.8}Visual aesthetics: threeJs library (Non-Core Features)}{11}
+\contentsline {subsubsection}{\numberline {8.2.9}Development Languages}{11}
+\contentsline {section}{\numberline {9}Integrating the System with Motion Controller Hardware }{11}
+\contentsline {subsection}{\numberline {9.1}Current Project’s Hardware Selection Process}{11}
+\contentsline {subsection}{\numberline {9.2}LEAP Controller}{12}
+\contentsline {subsection}{\numberline {9.3}Oculus VR Rift}{12}
+\contentsline {subsection}{\numberline {9.4}Feasibility Testing}{12}
+\contentsline {subsection}{\numberline {9.5}Development}{12}
+\contentsline {section}{\numberline {10}Project Plan}{12}
+\contentsline {subsection}{\numberline {10.1}Project Timeline}{12}
+\contentsline {subsection}{\numberline {10.2}Methodologies}{12}
+\contentsline {subsection}{\numberline {10.3}Risks/Issues, probabilities and mitigation of impact}{12}
+\contentsline {section}{\numberline {11}Directions and Implications}{12}
+\contentsline {subsection}{\numberline {11.1}Challenges for individuals with Autism}{12}
+\contentsline {subsection}{\numberline {11.2}What I will build}{12}
+\contentsline {subsection}{\numberline {11.3}Future Directions and Implications}{12}
