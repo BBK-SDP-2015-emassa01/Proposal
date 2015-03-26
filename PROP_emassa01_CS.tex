@@ -1,13 +1,11 @@
-
-
 \documentclass[10pt]{article}
 \setlength{\topmargin}{-.5in}
 \setlength{\textheight}{9in}
 \setlength{\oddsidemargin}{.125in}
 \setlength{\textwidth}{6.25in}
 
- \usepackage{graphicx}
- \graphicspath{{images/}}
+\usepackage{graphicx}
+\graphicspath{{images/}}
 \begin{document}
 
 \title{A User Model in Search for People with Autism}
@@ -24,28 +22,28 @@ The current proposal presents my objective to research and build a user model wi
 \tableofcontents
 
 \section{Introduction}
-\subsection{Problem Statement} \label{problem}
-Most search engines apply a general user model to refine search queries. The user models apply algorithms and weightings to each parameter, e.g., auto-complete, query understanding, site and page quality signals, user content and synonym snippets. No research to date has examined the experience of user search for individuals with Autism Spectrum Disorder (ASD), and whether these user models need to be adjusted for this subgroup. Although people with ASD are relatively proficient with technologies, we argue that the user models that underlie the way in which search queries are handled are different, and the needs of the user differ to the mainstream models. This project aims to build a suitable user model of ASD to address this gap.
-As it has been shown that individuals with ASD are more engaged (show sustained attention) when using technology that is receptive (games, responsive consoles, motion controlled devices) and interactive compared to technology that is not, this project will combine interactive, Motion Recognition hardware with Search to improve the User Interface and architecture of Search for individuals with ASD.
+\subsection{Problem Statement} \label{prob}
+Most search engines apply a general user model to refine search queries. These models are designed to work with the general population, e.g., the auto-complete, query understanding, site and page quality signals, user content and synonym snippets are all geared towards working with the typical user. Very little research to date has attempted to define a user model within search for individuals with Autism Spectrum Disorder (ASD). It is currently unknown whether current user models need to be adjusted for this subgroup. Although people with ASD are relatively proficient with technologies, we argue that the user models that underlie the way in which search queries are handled and the needs of the user differ to the mainstream models. This project aims to build a suitable user model of ASD to address this issue.
+As it has been shown that individuals with ASD are more engaged (sand how sustained attention) when using technology that is receptive (games, responsive consoles, motion controlled devices) and interactive compared to technology that is not, this project will combine interactive, Motion Recognition hardware with Search to improve the User Interface and architecture of Search for individuals with ASD.
 
 \subsection{The Role of Context In Search}
-It is unlikely that any given page on the web will contain a word or phrase that means exactly (or nearly) the same as another word or phrase in that language (e.g., shut and close). How is it then that your search engine of choice picks these phrases to mean the same thing, and returns them synonymously in the results of your query? Well, quite simply put, it is by virtue of the fact that each of their neighbouring words and associations are similar. These are indirect, higher-order associations, and provide the context in which the search engine can index keywords. This context plays a crucial role in search; first, in the interpretation of the query put forward by the user, and second, the context is reflected in the results returned to the user.
+It is unlikely that any given page on the web will contain a word or phrase that means exactly (or nearly) the same as another word or phrase in that language (e.g., shut and close). How is it then that your search engine of choice picks these phrases to mean the same thing, and returns them synonymously in the results of your query? Well, quite simply put, it is by virtue of the fact that each of their neighbouring words and associations are similar. These are indirect, higher-order associations, and provide the context in which the search engine can index keywords. This context plays a crucial role in search; first, in the interpretation of the user query, and second, the context is reflected in the results returned to the user.
 
 \subsection{What is ASD?}
-The prevalence of Autism Spectrum Disorder (ASD) is amongst the most common neurodevelopmental condition and it is currently estimated that 1/68 children meet criteria for ASD (CDC, 2014). ASD is five times more common amongst boys than girls (1/42 boys, and 1/189 girls). According to the DSM-V (2013) diagnostic manual, ASD is characterized by persistent and early deficits in reciprocal social interaction and repetitive behaviours. Individuals vary from high functioning to low functioning (along a spectrum), with behaviours emerge around 2 or 3 years of age. 
+The prevalence of Autism Spectrum Disorder (ASD) is amongst the most common neurodevelopmental condition and it is currently estimated that 1/68 children meet criteria for ASD (CDC, 2014). ASD is five times more common amongst boys than girls (1/42 boys, and 1/189 girls). According to the DSM-V (2013) diagnostic manual, ASD is characterized by persistent and early deficits in reciprocal social interaction and repetitive behaviours. Individuals vary from high functioning to low functioning (along a spectrum), with behaviours emerging around 2 to 3 years of age. 
 
 \begin{center}
 \includegraphics[scale=0.5]{asd}\\
 The ASD Triad (source: http://media.kingdown.wilts.sch.uk/mod/page/view.php?id=7374)
 \end{center}
 
-\subsection{The Problem: Current Search Tools for people with ASD} \label{problem}
-Search engines assume that the user is context-driven, and they attempt to model the user's intent using higher-order contextual information gathered from available web pages. This process also models the human brain's ability to extract context and semantic associations from information. However, what if the user was context-insensitive\footnote{Or, less context-sensitive}  and preferred a detail-focused processing style? They would intuitively form search queries very differently. For example, individuals with ASD are less likely to engage in a relational (hierarchically organized) style of processing (Bowler et al., 2009) suggesting that relating information in a hierarchically organised framework is less likely. Hierarchical organisation implies a great deal of flexibility and mental-shifting, as a simple example, in a search for 'apple', it would imply awareness that the word is related to 'pear' but also to 'fruit'. Awareness of this latter relation also suggests awareness that 'apple' is related to 'pomegranate'. Of course, in genuine search queries these associations can get very complex very quickly. Generally speaking, individuals with ASD prefer, and are more likely to engage in an item-specific processing style, and, whilst intelligent cognition is definitely possible, search queries are more likely formed of first-order associations\footnote{Of course there is a great deal of individual variability in Autism Spectrum Disorder.}. \\
+\subsection{The Problem: Current Search Tools for people with ASD}
+Search engines assume that the user is context-driven, and attempt to model the user's intent using higher-order contextual information gathered from available web pages. This process also models the human brain's ability to extract context and semantic associations from information. However, people with ASD are less context-sensitive, preferring a more detail-focused processing style \cite{mottron}. They would intuitively form search queries very differently. Individuals with ASD are also less likely to engage in a relational (hierarchically organized) style of processing \cite{bowler} suggesting that relating information in a hierarchically organised framework is less likely. Hierarchical organisation implies a great deal of flexibility and mental-shifting, as a simple example, in a search for 'apple', it would imply awareness that the word is related to 'pear' but also to 'fruit'. Awareness of this latter relation also suggests awareness that 'apple' is related to 'pomegranate'. Of course, in genuine search queries these associations can get very complex very quickly. Generally speaking, individuals with ASD prefer, and are more likely to engage in an item-specific processing style, and, whilst intelligent cognition is definitely possible, search queries are more likely formed of first-order associations\footnote{Of course there is a great deal of individual variability in Autism Spectrum Disorder.}. \\
 \\Several Psychology learning and intervention studies for individuals with high functioning ASD have suggested that assimilation and accommodation of new information is most appropriate when:\\
 \begin{enumerate}
-\item Information is concrete (not abstract).\\
+\item Information is concrete (i.e, not abstract).\\
 \item Information is presented in small manageable chunks.\\
-\item Information is not verbally ?overloaded? (not too many words).\\
+\item Information is not verbally "overloaded" (not too many words).\\
 \item Information is presented in the expected way and does not deviate from this.\\
 \end{enumerate}
 Several interventions have been built around this body of literature (www.autismspeaks.org).\\
@@ -120,8 +118,7 @@ No question about it, Google is still the world’s most popular search engine, 
 Bing vs. Google presents the users’ search query results from both search engines to allow the user to make a comparison (the Google and Bing results can be presented vertically or horizontally beside each other), and provides the experience of navigating both search pages simultaneously.  The number of other personal preferences options is very limited (the orientation of the results is just about all the user has the option to choose).
 
 \subsection{Qrobe.it}
-Qrobe combines three search engines’ results (Google, Bing and Ask) and presents them conveniently on one page. Unlike Bing vs
-Google the user can search ‘web’, ‘images’ or ‘popular’ to reveal stories from Reddit. Qrobe.it also has a ‘cheatsheet’ that allows user to search using shortcuts, which may prove useful to a seasoned Qrobe user. Qrobe unfortunately has no API for developers to use to extend its functionality further.
+Qrobe combines three search engines’ results (Google, Bing and Ask) and presents them conveniently on one page. Unlike Bing vs Google the user can search ‘web’, ‘images’ or ‘popular’ to reveal stories from Reddit. Qrobe.it also has a ‘cheatsheet’ that allows user to search using shortcuts, which may prove useful to a seasoned Qrobe user. Qrobe unfortunately has no API for developers to use to extend its functionality further.
 
 \subsection{AskBoth}
 AskBoth – is a work in progress, and combines both Google and Bing, with a section in the middle dedicated to twitter , just like Bing vs. Google but AskBoth argues that the selling points for the site are it’s ‘uncomplicatedness’, aesthetics and user experience – which promises to be particularly good (that is, has promised, since 2009!).
@@ -130,7 +127,7 @@ AskBoth – is a work in progress, and combines both Google and Bing, with a sec
 Spectra takes searching from Google, Bing and Yahoo engines one-small-step-further. This site allows users to assign weights and determine the way results are displayed. Spectra gathers the search results, ranks them and displays them according to their algorithm. 
 
 \subsection{Conclusions and ways forward}
-All these search engines allow users to see more results than what one search engine alone would present, they often do this with a cost -- redundancy. The benefits are that there is more information presented to the users at once but often at a cost of ‘cognitive overload’ and/ or near –duplicates. This is not ideal for users with ASD, as this is precisely the opposite of what the systems aims and objectives were see Section ~\ref{problem}.
+All these search engines allow users to see more results than what one search engine alone would present, they often do this with a cost -- redundancy. The benefits are that there is more information presented to the users at once but often at a cost of ‘cognitive overload’ and/ or near –duplicates. This is not ideal for users with ASD, as this is precisely the opposite of what the systems aims and objectives were see Section~\ref{prob}.
 To date, a user model for ASD within Search has not been built. The following section presents the proposed system that will try and address this issue.
 
 
@@ -299,12 +296,15 @@ http://www.makeuseof.com/tag/4-search-engines-that-combine-google-bing/
 
 \bibitem {Lella}Lella, Adam (2014-04-15). comScore Releases March 2014 U.S. Search Engine Rankings. ComScore.com. Retrieved 2015-02-21
 
+\bibitem{bowler}Dermot M. Bowler, Sebastian B. Gaigg, John M. Gardiner (2014) Binding of Multiple Features in Memory by High-Functioning Adults with Autism Spectrum Disorder, Journal of Autism and Developmental Disorders September 2014, Volume 44, Issue 9, pp 2355-2362
 
 
 \bibitem {googlebing} http://www.makeuseof.com/tag/4-search-engines-that-combine-google-bing/
 
 
 \bibitem{faroo}http://www.faroo.com/hp/api/api.html\#description
+
+\bibitem{mottron} Laurent Mottron, Jacob A. Burack, Johannes E. A. Stauder, Philippe Robaey (1999) Perceptual Processing among High-functioning Persons with Autism Journal of Child Psychology and Psychiatry 40 (2), 203–211. doi:10.1111/1469-7610.00433
 
 \end{thebibliography}
 \end{document}
