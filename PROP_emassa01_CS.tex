@@ -1,8 +1,8 @@
 \documentclass[10pt]{article}
-\setlength{\topmargin}{-.5in}
-\setlength{\textheight}{9in}
-\setlength{\oddsidemargin}{.125in}
-\setlength{\textwidth}{6.25in}
+\setlength{\topmargin}{-0.8in}
+\setlength{\textheight}{9.5in}
+\setlength{\oddsidemargin}{-.13in}
+\setlength{\textwidth}{6.5in}
 
 \usepackage{graphicx}
 \graphicspath{{images/}}
@@ -16,7 +16,7 @@ MSc Computer Science Project Proposal\footnote{This proposal is substantially th
 
 
 \begin{abstract}
-The current proposal presents my objective to research and build a user model within Search, to address the downfalls of current Search tools for individuals with Autism Spectrum Disorder (ASD). The user model will be built around the core features of ASD. The model will be applied to results returned from a synthesis of three leading existing search engines. The final product will be integrated with motion controllers, with the aim to enhance the user experience and the interface of Search for people with ASD.
+The current proposal presents my objective to research and build a user model within Search, to address the downfalls of current Search tools for individuals with Autism Spectrum Disorder (ASD). The user model will be built around the core features of ASD. The model will be applied to results returned from a synthesis of three leading existing search engines. The final product will be integrated with motion controllers, with the aim to enhance the user experience and the interface of Search for people with ASD. These findings will provide novel insights into the needs and wants of individuals with ASD within search, and enable future development and interventions within these information streams and communication channels.
 \end{abstract}
 
 \tableofcontents
@@ -108,14 +108,11 @@ Although adaptive search seems to have significant user benefit in terms of rele
 Recent research has suggested personalization also increases ‘background noise’ relative to the search results \cite{briggs}. Briggs (2014) suggests that there is a carry-over effect in personalized search for the users, whereby prior search results influence the results of subsequent searches \footnote{It should be noted that personalization of search results generally takes a lower priority for the ranking algorithms than the URLs ranked top in terms of their relevance for the search query.}.  Nevertheless this carry-over may be disadvantageous for people with ASD as it muddies their search space.
 In order to produce a search tool specifically tailored to reduce the filter bubble effect in ASD, widen the information gateway and reduce the possibility for restricted and repetitive searches, the weighting on previous search results needs to be reduced. This would be particularly important for individuals with restricted interests. For these users, it would limit the possibility that they get trapped in a spiraling loop of ever-narrowing user-relevant information and over personalization of self-reinforced information ecosystems.
 
-\subsection{Where will the User Information be Stored?}\\
+\subsection{Where will the User Information be Stored?}
 TODO\\
 
 \section{Existing Combination/Advanced Search Engines}\label{Existing Combination/Advanced Search Engines}
 \subsection{Bing vs Google}
-\begin{center}
-\includegraphics[scale =0.5]{bingG2}\\
-\end{center}
 Bing vs. Google presents the users’ search query results from both search engines to allow the user to make a comparison (the Google and Bing results can be presented vertically or horizontally beside each other), and provides the experience of navigating both search pages simultaneously.  
 The number of other personal preferences options is very limited (the orientation of the results is just about all the user has the option to choose). There is also double the information on the page, so not suitable for the current project.
 
@@ -160,11 +157,10 @@ Insert Image Here!!!!\\This project will produce a search engine designed to enh
 \item An investigation of other motion controller devices, possibly the Oculus VR Rift, Xbox Kinnect.
 
 \end{enumerate}
-I hope these findings will provide novel insights into the needs and wants of individuals with ASD within search, and enable future development and interventions within these information streams and communication channels. Ultimately, I want to build a user-oriented search system, so that individuals with ASD do not have to 'fit in', but rather benefit from them.
 
 \section{Implementation of the System}\label{api}
 \subsection{Selection of Search Engines}
-The three most popular search engines (as calculated using an average of the unique monthly visitors) are Google (1,100,000,000 estimated monthly visitors), Bing (350.000.000 estimated monthly visitors) and Yahoo! (300,000,000 estimated monthly visitors) (www.eBizMBA.com; 2015). Google is the most recent and goliath question-answering system (query volume = 64.5\% Lella, 2015), and the word has become synonymous with the word ‘search’ on the web. This search engine is often considered the most innovative and dynamic, and is the most popular amongst users worldwide (using global traffic rank figures, in March 2015). Yahoo (2003) was the first ever web directory service; it has stronger advertising and e-commerce partnerships and has a query volume of 19.8\%. Bing (Microsoft’s answer to search, previously known as msn search), was officially launched in 2005, and has a query volume of 12.8\%, which is substantially less than Google, but nevertheless, is within the top 3 search engines. Other search engines include Ask, AOL, WOW, which will not be included in the search system proposed here in order to limit the redundancy of the search results (of which there will already be a fair amount). 
+The three most popular search engines (as calculated using an average of the unique monthly visitors) are Google (1,100,000,000 estimated monthly visitors), Bing (350.000.000 estimated monthly visitors) and Yahoo! (300,000,000 estimated monthly visitors)\cite{ebiz}. Google is the most recent and goliath question-answering system (query volume = 64.5\%)\cite{adam}, and the word has become synonymous with the word ‘search’ on the web.This search engine is often considered the most innovative and dynamic, and is the most popular amongst users worldwide (using global traffic rank figures, in March 2015). Yahoo (2003) was the first ever web directory service; it has stronger advertising and e-commerce partnerships and has a query volume of 19.8\%. Bing (Microsoft’s answer to search, previously known as msn search), was officially launched in 2005, and has a query volume of 12.8\%, which is substantially less than Google, but nevertheless, is within the top 3 search engines.Other search engines include Ask, AOL, WOW, which will not be included in the search system proposed here in order to limit the redundancy of the search results (of which there will already be a fair amount, see Section~\ref{Existing Combination/Advanced Search Engines}). 
 
 \subsection{APIs, Text-Search Libraries}
 I will be using API’s to work with the three search engines outlined in the above section. Although the same information could be gathered by inspecting the source code for the pages that return the search query results, the API’s were considered to be far more efficient in doing so. 
@@ -256,7 +252,7 @@ As we move towards personalized information retrieval, we hope to move towards s
 
 \bibitem{moore}Moore, D. J., McGrath, P., \& Thorpe, J. (2000). Computer aided learning for people with autism—a framework for research and development. Innovations in Education and Training International, 37, 218–228.
 
-\bibitem {briggs}Briggs, Justin. A Better Understanding of Personalized Search. Retrieved21 April 2014.
+\bibitem{briggs}Briggs, Justin. A Better Understanding of Personalized Search. Retrieved21 April 2014.
 
 
 \bibitem {Brusilovsky}Brusilovsky, P. and Tasso, C. (2004) User modeling for Web information retrieval. User Modeling and User Adapted Interaction 14 (2-3), 147-157.
@@ -287,6 +283,7 @@ Shane HC1, Albert PD.
 
 \bibitem {Thiemann}Thiemann, K. S., \& Goldstein, H. (2001). Social stories, written text cues, and video feedback: Effects on social communication of children with autism. Journal of Applied Behavior Analysis, 34, 425-446.
 
+\bibitem{ebiz}www.eBizMBA.com; 2015
 
 \bibitem {Combining}Combining Search Engines: Existing Solutions Review
 http://www.makeuseof.com/tag/4-search-engines-that-combine-google-bing/
