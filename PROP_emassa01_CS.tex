@@ -110,6 +110,7 @@ In order to produce a search tool specifically tailored to reduce the filter bub
 
 \subsection{Where will the User Information be Stored?}
 TODO\\
+Integrating the user settings into existing systems, e.g., save the settings inside Google Accounts, Google Plus or a Google Hangout.
 
 \section{Existing Combination/Advanced Search Engines}\label{Existing Combination/Advanced Search Engines}
 \subsection{Bing vs Google}
@@ -163,11 +164,11 @@ Insert Image Here!!!!\\This project will produce a search engine designed to enh
 The three most popular search engines (as calculated using an average of the unique monthly visitors) are Google (1,100,000,000 estimated monthly visitors), Bing (350.000.000 estimated monthly visitors) and Yahoo! (300,000,000 estimated monthly visitors)\cite{ebiz}. Google is the most recent and goliath question-answering system (query volume = 64.5\%)\cite{adam}, and the word has become synonymous with the word ‘search’ on the web.This search engine is often considered the most innovative and dynamic, and is the most popular amongst users worldwide (using global traffic rank figures, in March 2015). Yahoo (2003) was the first ever web directory service; it has stronger advertising and e-commerce partnerships and has a query volume of 19.8\%. Bing (Microsoft’s answer to search, previously known as msn search), was officially launched in 2005, and has a query volume of 12.8\%, which is substantially less than Google, but nevertheless, is within the top 3 search engines.Other search engines include Ask, AOL, WOW, which will not be included in the search system proposed here in order to limit the redundancy of the search results (of which there will already be a fair amount, see Section~\ref{Existing Combination/Advanced Search Engines}). 
 
 \subsection{APIs, Text-Search Libraries}
-I will be using API’s to work with the three search engines outlined in the above section. Although the same information could be gathered by inspecting the source code for the pages that return the search query results, the API’s were considered to be far more efficient in doing so. 
+I will be using API’s to work with the three search engines outlined in the above section. Although the same information could be gathered by inspecting the source code for the pages that return the search query results, the API’s were considered to be far more efficient in doing so (e.g., Apache Lucene Key Word In Context is optimised for maximum search efficiency see Section~\ref{apache}). 
 
 \subsubsection{Google Custom Search}
-Google Custom Search (GCS) allows the creation of a search engine that can be configured to search web pages and images. It is highly personalisable and comes with an API that supports the development of a custom search engine project on a pay per search basis. Once signed up, the GCS requires a consumer key and secret, which are hardcoded in the development of the search.
-The API has methods which allow the user to …\\
+Google Custom Search (GCS) rpovides an API to create a personalised search engine that can be configured to search web pages and images. It works on a pay per search principle. Once signed up, the GCS requires a consumer key and secret, which are hardcoded in the development of the search.\\
+The API has methods which allow the user to …TODO\\
 However, this API needs to be used in conjunction with a textual-search library in order to reach the Goals of this project (the API does not offer Key Word In Context Search in order to trace the contextual information being returned to the user). Costs \$0.01/search.
 
 \subsubsection{Yahoo BOSS}
@@ -177,30 +178,26 @@ Just like Google Custom Search, the Yahoo BOSS API required the creation of a se
 The Bing Search API, similar to Yahoo BOSS and GCS will produce results for Web, Images, News, Videos, Related Search. Bing Search API also includes spelling suggestions based on the query entered. Costs \$0.00/search (max 5000 searches/month)
 
 \subsubsection{Faroo API}
-Is a free alternative API to Google Custom Search API (business), Yahoo BOSS API  (commercial) and Bing Web Search Enterprise (commercial). It offers the possibility to do aWeb Search, with more that 2 billion pages indexed by Faroo. In addition to English, German and Chinese results can be returned, sorted by relevancy.  Faroo can return news search (articles from newspapers, magazines and blogs) and sort results by publishing date, with author and article image. Trending news pages are also indexed and can be grouped by topic. Topics sorted by buzz (number of sources reporting on same topic). Faroo also offers suggestions with auto-completes for misspelled items in the search query \cite{faroo}.
+Is a free alternative API to Google Custom Search API (business), Yahoo BOSS API  (commercial) and Bing Web Search Enterprise (commercial). It offers the possibility to do a Web Search with more that 2 billion pages indexed. Faroo can return news search (articles from newspapers, magazines and blogs) and sort results by publishing date, with author and article image. Trending news pages are also indexed and can be grouped by topic. The API includes suggestions with auto-completes for misspelled items in the search query \cite{faroo}.
 
-\subsubsection{Apache Lucene Library}
+\subsubsection{Apache Lucene Library}\label{apache}
 
 \subsubsection{Google+ API}
+I mention before that ... Persona development will support the user modeling process by identifying particular characteristics of individuals with ASD in Search. An individual’s personal information pertaining to the persona, will be stored in a user profile which will contain information such as age, gender, lifestyle, frequent tasks, tools used, resources commonly used and crucially for this project, the profile will include information about diagnosis (Autism, Asperger, and high/low functioning).
+
 \subsubsection{Libraries for Hardware (Motion Controllers)}
 \subsubsection{Visual aesthetics: threeJs library (Non-Core Features)}
 \subsubsection{Development Languages}
 
 \section{Integrating the System with Motion Controller Hardware }\label{hardware}
 \subsection{Current Project’s Hardware Selection Process}
-Important Design Issues:
+Humans have many senses that go beyond the computer's screen. The usability of the hardware will this be determined as follows: 
 \begin{enumerate}
-\item Good timing → correlates to a good meaning and User Experience.
-\item The leap has options to ‘poll’ frames at a constant rate (to keep timing of movement accurate) which is important.
-\item Cognitive ‘lag’ time. Each of our senses operates with a different lag time. Hearing has the fastest sense-to-cognition/understanding time, and surprisingly sight -- the slowest. If the devices interferes with the processing of the sense, it will confuse the combinatorial configuration of the senses, leading to misunderstandings in the meaning and a worse user experience.
-\item Volume → Because this is a tool to be used with individuals with ASD, the device must have a low ‘volume’, i.e., the sensory experience cannot be overwhelming.
-\item Load → cognitive load is most desirable when not high. We do not want the device to be overwhelming in terms of it’s cognitive load.
-\item Within the selection process, I did not just consider the physical design of the device, but also the way in which the devices manifests actions into behaviours. That is, how does the user engage behaviourally within the environment using the device? What about the physical sensation and its path towards a behavioural or emotional response? For example, can we program there to be an activity followed by a reward to reinforce the activity.
-
-Summary:
-\item Be aware that an individual has many senses.
-\item These senses go beyond the screen.
-\item How usable is the hardware?
+\item Good timing of the device correlates to a good meaning and a good User Experience. The LEAP has options to ‘poll’ frames at a constant rate (to keep timing of movement accurate).
+\item Cognitive ‘lag’ time. Each of our senses operates with a different lag time. Hearing has the fastest sense-to-cognition/understanding time, and surprisingly sight is the slowest. The device should therefore work with the combinatorial configuration of the senses.
+\item As this is a tool to be used with individuals with ASD, the sensory experience of the device cannot be overwhelming.
+\item Cognitive load should not be high (the device is being used to assist with search, so operating the device should not require a great deal of cognitive effort).
+\item The device should integrate with concrete behaviours, e.g., drop or grab. 
 
 \end{enumerate}
 
@@ -219,29 +216,6 @@ Summary:
 
 
 \section{Directions and Implications}\label{future}
-\subsection{Challenges for individuals with Autism}
-
-\begin{enumerate}
-\item language
-\item socially engaging stimuli
-\item motor/ behaviour
-\item abstract category formation
-\item predictability may help some individuals
-
-\end{enumerate}
-\subsection{What I will build}
-\begin{enumerate}
-\item A search system to run as a Desktop application on a computer 
-\item Allows the user to search for queries without having to sift results in a conventional way
-\item Results of the search returned and sifted by user in an interactive way with using motion controller, Oculus, other headsets and devices.
-\item Integrating the user settings into existing systems, e.g., save the settings inside Google Accounts, Google Plus or a Google Hangout.
-
-I mention before that ... Persona development will support the user modeling process by identifying particular characteristics of individuals with ASD in Search. An individual’s personal information pertaining to the persona, will be stored in a user profile which will contain information such as age, gender, lifestyle, frequent tasks, tools used, resources commonly used and crucially for this project, the profile will include information about diagnosis (Autism, Asperger, and high/low functioning).
-
-\item Hardware– I will incorporate certain technologies such as the LEAP device to make the experience of search more ASD-friendly.
-
-\end{enumerate}
-\subsection{Future Directions and Implications}
 As we move towards personalized information retrieval, we hope to move towards state of the art information access and retrieval. The future of Search will promise the return of personalized results, which are adapted to the users specific needs. This project deals with only one subset of the population, but the same can be achieved of any group of users. Search engines can deal with the information overload problem (i.e., multi-media, text information), by exploiting these user models to turn the masses of information available into a specific set of “information goods” for any one user, providing good quality personalized information for users.
 
 

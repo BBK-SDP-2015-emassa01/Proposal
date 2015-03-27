@@ -48,6 +48,3 @@
 \contentsline {subsection}{\numberline {8.2}Methodologies}{10}
 \contentsline {subsection}{\numberline {8.3}Risks/Issues, probabilities and mitigation of impact}{10}
 \contentsline {section}{\numberline {9}Directions and Implications}{10}
-\contentsline {subsection}{\numberline {9.1}Challenges for individuals with Autism}{10}
-\contentsline {subsection}{\numberline {9.2}What I will build}{10}
-\contentsline {subsection}{\numberline {9.3}Future Directions and Implications}{10}
