@@ -56,6 +56,8 @@ Given these findings from the literature we can make several adjustments to curr
 \item Had a high degree of verbal consistency/similarity with the search query.
 \end{enumerate}
 
+This project will \textbf{integrate} these insights from the Psychology literature with the proposed system.
+
 \subsection{Proposal Organisation}
 
 This proposal outlines my research to date on the field of Search, ASD, and Motion Controller interfaces. I also include my preliminary planning of the methods I will use to implement the enhanced Search tool for ASD. The remaining chapters discuss:
@@ -103,14 +105,13 @@ Creating a user model is not an easy task. The designer of the system has to set
 \subsection{Adaptive / Personalised Search}
 Adaptive or Personalised search, is one way in which search engines including Google, Yahoo and Bing have attempted to tailor the search results for their users. The feature was first introduced as part of a GoogleLabs project in 2004 and implemented in 2005. It associates each user search with a HTTP cookie – this is a piece of data (a text file) sent from the website and saved in the users’ browser when the user navigates that website. These cookies contain information such as login information (gender, age), preferences (languages, interests) and other information about previous searches based on site traffic. The cookies allow the website to ‘remember’ stateful information about what buttons the user clicked on, or what sites they visited. This cookie record allows the search engine to return results that are highly relevant to the search query, but also highly relevant to the pages that the user visited through previous searches. When personalised or adaptive search is combined with GPS data from a smartphone or device, it can provide useful information about the places that user has previously visited to higher rank local items in the users returned results. This creates a personalized or adaptive web search, as the feature allows the web search to be tailored to the user’s preferences over the course of time, and as more searches are recorded.
 
-\subsection{Disadvantages of adaptive search for individuals with ASD}
+\subsection{Disadvantages of Cuurent Adaptive Search for Individuals with ASD}
 Although adaptive search seems to have significant user benefit in terms of relevance to the user for that search query, it decreases the likelihood that the user encounters new information and biases the results towards the users location and their previous site traffic.  This has the unwanted effect of creating a filter bubble (Pariser, 2011), which is argued to close us off from important and relevant information and create a personal ecosystem of information for one particular user, creating the impression that “our narrow self interest is all that exists”. The filter bubble also has potential privacy problems, as the user may be unaware that the search has been specifically tailored towards their interests and they wonder why things that they have previously searched for have become more and more relevant. The filter bubble may positively reinforce restricted interests in ASD as the user constantly receives feedback about their previous (idiosyncratic and personalized) searches without being able to break out of that repetitive loop. 
 Recent research has suggested personalization also increases ‘background noise’ relative to the search results \cite{briggs}. Briggs (2014) suggests that there is a carry-over effect in personalized search for the users, whereby prior search results influence the results of subsequent searches \footnote{It should be noted that personalization of search results generally takes a lower priority for the ranking algorithms than the URLs ranked top in terms of their relevance for the search query.}.  Nevertheless this carry-over may be disadvantageous for people with ASD as it muddies their search space.
 In order to produce a search tool specifically tailored to reduce the filter bubble effect in ASD, widen the information gateway and reduce the possibility for restricted and repetitive searches, the weighting on previous search results needs to be reduced. This would be particularly important for individuals with restricted interests. For these users, it would limit the possibility that they get trapped in a spiraling loop of ever-narrowing user-relevant information and over personalization of self-reinforced information ecosystems.
 
-\subsection{Where will the User Information be Stored?}
-TODO\\
-Integrating the user settings into existing systems, e.g., save the settings inside Google Accounts, Google Plus or a Google Hangout.
+\subsection{Where and How will the User Information be Stored?}
+The user will be asked to sign in with a Google+ account (providing their demographic imformation), and the Google+ API will be used to store/retrieve this information about the current user. The API contains methods to access 4 resource  types; People, their Activities, Comments and Moments. A person is represented with many fields in Google +, including name, gender, title, occupation, all of which can be used to model individual users in the current project. Information about web searching history for any individual user can be obtained from the browser history (if needed). 
 
 \section{Existing Combination/Advanced Search Engines}\label{Existing Combination/Advanced Search Engines}
 \subsection{Bing vs Google}
@@ -132,8 +133,14 @@ To date, a user model for ASD within Search has not been built. The following se
 
 
 \section{Proposed Search Page and Controller Web Application}\label{proposed}
+This project will produce a search engine designed to enhance the user experience within search for people with ASD. Below I list the core and non-core features to include:
 
-Insert Image Here!!!!\\This project will produce a search engine designed to enhance the user experience within search for people with ASD. Below I list the core and non-core features to include:
+\begin{center}
+\includegraphics[scale=0.7]{searchEngArchi}\\
+(ref for Search Engine Architecture Image: https://insightsdelight.wordpress.com/2012/01/24/inverted-index-the-basic-ingredient-behind-the-recipe-called-search-engine/)
+\end{center}
+
+
 
 
 \subsection{Core Features and Development Milestones}
@@ -185,9 +192,12 @@ Is a free alternative API to Google Custom Search API (business), Yahoo BOSS API
 \subsubsection{Google+ API}
 I mention before that ... Persona development will support the user modeling process by identifying particular characteristics of individuals with ASD in Search. An individual’s personal information pertaining to the persona, will be stored in a user profile which will contain information such as age, gender, lifestyle, frequent tasks, tools used, resources commonly used and crucially for this project, the profile will include information about diagnosis (Autism, Asperger, and high/low functioning).
 
+\subsubsection {Chrome History API}
+
+
 \subsubsection{Libraries for Hardware (Motion Controllers)}
 \subsubsection{Visual aesthetics: threeJs library (Non-Core Features)}
-\subsubsection{Development Languages}
+
 
 \section{Integrating the System with Motion Controller Hardware }\label{hardware}
 \subsection{Current Project’s Hardware Selection Process}
@@ -208,11 +218,80 @@ Humans have many senses that go beyond the computer's screen. The usability of t
 
 \subsection{Development}
 
+
+
 \section{Project Plan}\label{plan}
 \subsection{Project Timeline}
-\subsection{Methodologies}
 
+\begin{table}[ht]
+\caption{Project Stage1 } 
+\centering 
+\begin{tabular}{c c}
+\hline\hline 
+Task \# & Stage 1 \\ [0.5ex]
+\hline 
+1 & Work on synthesis of search results\\ 
+2 & Configure back end of the system\\
+3 & Find relevant API’s and tools\\[1ex]
+
+\hline 
+\end{tabular}
+\label{stages1} 
+\end{table}
+
+\begin{table}[ht]
+\caption{Project Stage 2} 
+\centering 
+\begin{tabular}{c c}
+\hline\hline 
+Task \# & Stage 2 \\ [0.5ex]
+\hline 
+1 & Build \& Research user model of ASD  \\ 
+2 & User interface feasibility testing\\
+3 & Finalise motion controller tools  \\[1ex]
+
+\hline 
+\end{tabular}
+\label{stages2} 
+\end{table}
+
+\begin{table}[ht]
+\caption{Project Stage 3} 
+\centering 
+\begin{tabular}{c c}
+\hline\hline 
+Task \# & Stage 3 \\ [0.5ex]
+\hline 
+1 & Refine system using feedback \\ 
+2 & Write up project \\
+3 & Present final product and research \\[1ex]
+
+\hline 
+\end{tabular}
+\label{stages3} 
+\end{table}
+
+\subsection{Methodologies}
+\textbf{Agile Methodologies}\\
+What is agile methodology?\\
+Need to include user acceptance testing \\
+\textbf{Test Driven Development}\\
+Unit testing – TDD style\\
+Regression testing (testing the project as a whole unit to make sure nothing breaks)\\
+\textbf{Project Backlog}
+Describe my Product Features\\
+Describe ‘user stories’ e.g., a user wants to be able to search for pages containing the most videos.\\
+Assign these a priority: Must Could Should Want (MCSW model)\\
+Set SPRINT deadlines to enable the functionality
+
+\subsubsection{Development Languages}
 \subsection{Risks/Issues, probabilities and mitigation of impact}
+not being able to use the API freely\\
+the API not allowing the use of hieracrchical structure testing\\
+find work around for this?
+\begin{enumerate}
+\item There is a likelihood the Google, Yahoo and Bing APIs will 
+\end{enumerate}
 
 
 \section{Directions and Implications}\label{future}
