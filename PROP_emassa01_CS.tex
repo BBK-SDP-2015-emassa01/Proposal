@@ -8,7 +8,7 @@
 \graphicspath{{images/}}
 \begin{document}
 
-\title{A User Model in Search for People with Autism}
+\title{A User Model for People with Autism in Search }
 \author{Esha Massand\\
 MSc Computer Science Project Proposal\footnote{This proposal is substantially the result of my own work, expressed in my own words, except where explicitly indicated in the text. I give my permission for it to be submitted to the JISC Plagiarism Detection Service. }}
 \date{\today}
@@ -16,7 +16,7 @@ MSc Computer Science Project Proposal\footnote{This proposal is substantially th
 
 
 \begin{abstract}
-The current proposal presents my objective to research and build a user model within Search, to address the downfalls of current Search tools for individuals with Autism Spectrum Disorder (ASD). The user model will be built around the core features of ASD. The model will be applied to results returned from a synthesis of three leading existing search engines. The final product will be integrated with motion controllers, with the aim to enhance the user experience and the interface of Search for people with ASD. These findings will provide novel insights into the needs and wants of individuals with ASD within search, and enable future development and interventions within these information streams and communication channels.
+The current proposal presents my objective to research and build a user model within Search, to address the downfalls of current Search tools for individuals with Autism Spectrum Disorder (ASD). The user model will be built around the core features of ASD. The model will be applied to results returned from a synthesis of three leading existing search engines. The final product will be a web application, integrated with motion-controller user interface, with the aim to enhance the user experience of Search for people with ASD. These findings will provide novel insights into the needs and wants of individuals with ASD within search, and enable future development and interventions within these information streams and communication channels.
 \end{abstract}
 
 \tableofcontents
@@ -37,7 +37,7 @@ The prevalence of Autism Spectrum Disorder (ASD) is amongst the most common neur
 The ASD Triad (source: http://media.kingdown.wilts.sch.uk/mod/page/view.php?id=7374)
 \end{center}
 
-\subsection{The Problem: Current Search Tools for people with ASD}\label{the problem}
+\subsection{Aims and Objectives}\label{the problem}
 Search engines assume that the user is context-driven, and attempt to model the user's intent using higher-order contextual information gathered from available web pages. This process also models the human brain's ability to extract context and semantic associations from information. However, people with ASD are less context-sensitive, preferring a more detail-focused processing style \cite{mottron}. They would intuitively form search queries very differently. Individuals with ASD are also less likely to engage in a relational (hierarchically organized) style of processing \cite{bowler} suggesting that relating information in a hierarchically organised framework is less likely. Hierarchical organisation implies a great deal of flexibility and mental-shifting, as a simple example, in a search for 'apple', it would imply awareness that the word is related to 'pear' but also to 'fruit'. Awareness of this latter relation also suggests awareness that 'apple' is related to 'pomegranate'. Of course, in genuine search queries these associations can get very complex very quickly. Generally speaking, individuals with ASD prefer, and are more likely to engage in an item-specific processing style, and, whilst intelligent cognition is definitely possible, search queries are more likely formed of first-order associations\footnote{Of course there is a great deal of individual variability in Autism Spectrum Disorder.}. \\
 \\Several Psychology learning and intervention studies for individuals with high functioning ASD have suggested that assimilation and accommodation of new information is most appropriate when:\\
 \begin{enumerate}
@@ -105,7 +105,7 @@ Creating a user model is not an easy task. The designer of the system has to set
 \subsection{Adaptive / Personalised Search}
 Adaptive or Personalised search, is one way in which search engines including Google, Yahoo and Bing have attempted to tailor the search results for their users. The feature was first introduced as part of a GoogleLabs project in 2004 and implemented in 2005. It associates each user search with a HTTP cookie – this is a piece of data (a text file) sent from the website and saved in the users’ browser when the user navigates that website. These cookies contain information such as login information (gender, age), preferences (languages, interests) and other information about previous searches based on site traffic. The cookies allow the website to ‘remember’ stateful information about what buttons the user clicked on, or what sites they visited. This cookie record allows the search engine to return results that are highly relevant to the search query, but also highly relevant to the pages that the user visited through previous searches. When personalised or adaptive search is combined with GPS data from a smartphone or device, it can provide useful information about the places that user has previously visited to higher rank local items in the users returned results. This creates a personalized or adaptive web search, as the feature allows the web search to be tailored to the user’s preferences over the course of time, and as more searches are recorded.
 
-\subsection{Disadvantages of Cuurent Adaptive Search for Individuals with ASD}
+\subsection{Disadvantages of Curent Adaptive Search for Individuals with ASD}
 Although adaptive search seems to have significant user benefit in terms of relevance to the user for that search query, it decreases the likelihood that the user encounters new information and biases the results towards the users location and their previous site traffic.  This has the unwanted effect of creating a filter bubble (Pariser, 2011), which is argued to close us off from important and relevant information and create a personal ecosystem of information for one particular user, creating the impression that “our narrow self interest is all that exists”. The filter bubble also has potential privacy problems, as the user may be unaware that the search has been specifically tailored towards their interests and they wonder why things that they have previously searched for have become more and more relevant. The filter bubble may positively reinforce restricted interests in ASD as the user constantly receives feedback about their previous (idiosyncratic and personalized) searches without being able to break out of that repetitive loop. 
 Recent research has suggested personalization also increases ‘background noise’ relative to the search results \cite{briggs}. Briggs (2014) suggests that there is a carry-over effect in personalized search for the users, whereby prior search results influence the results of subsequent searches \footnote{It should be noted that personalization of search results generally takes a lower priority for the ranking algorithms than the URLs ranked top in terms of their relevance for the search query.}.  Nevertheless this carry-over may be disadvantageous for people with ASD as it muddies their search space.
 In order to produce a search tool specifically tailored to reduce the filter bubble effect in ASD, widen the information gateway and reduce the possibility for restricted and repetitive searches, the weighting on previous search results needs to be reduced. This would be particularly important for individuals with restricted interests. For these users, it would limit the possibility that they get trapped in a spiraling loop of ever-narrowing user-relevant information and over personalization of self-reinforced information ecosystems.
@@ -141,19 +141,21 @@ This project will produce a search engine designed to enhance the user experienc
 \end{center}
 
 
-
-
-\subsection{Core Features and Development Milestones}
+\subsection{Core Features}
 \begin{enumerate}
-\item A synthesis of the results from three of the largest and most popular search engines (Google, 67.5\%, Microsoft Bing 18.4\% and Yahoo 10.3\%) \cite{adam}
+\item  A web application that synthesises the results from three of the largest and most popular search engines (Google, 67.5\%, Microsoft Bing 18.4\% and Yahoo 10.3\%) \cite{adam}
 
-\item The design and implementation of a user model to apply to these results to filter them according to specific user needs. The model will return concrete, managable (not text-overloaded) results, in a consistent mannar. The search engine will perform a Key Word In Context search and prioritise results where the key words are used direcly, or results have first-order semantic relations to the query words (see Section~\ref{the problem}).
+\item The design and implementation of a user model to apply to these results to filter them according to specific user needs. The model will return concrete, managable (not text-overloaded) results, in a consistent mannar. The search engine will perform a Key Word In Context search and prioritise results where the key words are used direcly, or results have first-order semantic relations to the query words (see Section~\ref{the problem}), i.e., they appear in matched context to the search query.
 
-\item Using motion controllers to enhance embodiment within search, and enhance the search query process. One idea is to have users be able to physically 'grab' results, to save them to inspect later. This will mean they do not have to 'track' or remember their navigation around search, but rather, filter their own results at an earlier time point. I will investigate the use of the LEAP motion controller as the main device in the first instance.
+\item The system will utilise motion controllers to enhance embodiment within search, and enhance the search query process. I will investigate the use of the LEAP motion controller as the main device in the first instance.
+\end{enumerate}
 
-\item Get user feedback by testing the web search with the LEAP motion controller, with a group of individuals diagnosed with ASD.
+\subsubsection{Development Milestones}
+To achieve my goals I will need to test the system's feasibility. This will include;
+\begin{enumerate}
+\item Obtaining user feedback on the intital product by testing the web search with the LEAP motion controller, with a group of individuals diagnosed with ASD.
 
-\item Revise the model and the ideas to choose the best possible approach/tools to tackle search (experience) optimization for people with ASD.
+\item Revising the model and the ideas to choose the best possible approach/tools to achieve optimization for people with ASD.
 
 \end{enumerate}
 
@@ -174,29 +176,33 @@ The three most popular search engines (as calculated using an average of the uni
 I will be using API’s to work with the three search engines outlined in the above section. Although the same information could be gathered by inspecting the source code for the pages that return the search query results, the API’s were considered to be far more efficient in doing so (e.g., Apache Lucene Key Word In Context is optimised for maximum search efficiency see Section~\ref{apache}). 
 
 \subsubsection{Google Custom Search}
-Google Custom Search (GCS) rpovides an API to create a personalised search engine that can be configured to search web pages and images. It works on a pay per search principle. Once signed up, the GCS requires a consumer key and secret, which are hardcoded in the development of the search.\\
+Google Custom Search (GCS) provides a Java API to create a personalised search engine that can be configured to search web pages and images. It works on a pay per search principle. Once signed up, the GCS requires a consumer key and secret, which are hardcoded in the development of the search.\\
 The API has methods which allow the user to …TODO\\
 However, this API needs to be used in conjunction with a textual-search library in order to reach the Goals of this project (the API does not offer Key Word In Context Search in order to trace the contextual information being returned to the user). Costs \$0.01/search.
 
 \subsubsection{Yahoo BOSS}
-Just like Google Custom Search, the Yahoo BOSS API required the creation of a search engine project (pay per search) with a consumer key and secret. The API is also easy to use and offers the same functionality as the CSC but again is not sufficient alone to reach the goals of the project. Costs \$0.01/search.
+Just like Google Custom Search, the Yahoo BOSS Java API required the creation of a search engine project (pay per search) with a consumer key and secret. The API is also easy to use and offers the same functionality as the CSC but again is not sufficient alone to reach the goals of the project. Costs \$0.01/search.
 
 \subsubsection{Bing Search API (Data)}
-The Bing Search API, similar to Yahoo BOSS and GCS will produce results for Web, Images, News, Videos, Related Search. Bing Search API also includes spelling suggestions based on the query entered. Costs \$0.00/search (max 5000 searches/month)
+The Bing Search API, similar to Yahoo BOSS and GCS will produce results for Web, Images, News, Videos, Related Search. Bing Search Java API also includes spelling suggestions based on the query entered. Costs \$0.00/search (max 5000 searches/month)
 
 \subsubsection{Faroo API}
-Is a free alternative API to Google Custom Search API (business), Yahoo BOSS API  (commercial) and Bing Web Search Enterprise (commercial). It offers the possibility to do a Web Search with more that 2 billion pages indexed. Faroo can return news search (articles from newspapers, magazines and blogs) and sort results by publishing date, with author and article image. Trending news pages are also indexed and can be grouped by topic. The API includes suggestions with auto-completes for misspelled items in the search query \cite{faroo}.
+Is a free alternative Java API to Google Custom Search API (business), Yahoo BOSS API  (commercial) and Bing Web Search Enterprise (commercial). It offers the possibility to do a Web Search with more that 2 billion pages indexed. Faroo can return news search (articles from newspapers, magazines and blogs) and sort results by publishing date, with author and article image. Trending news pages are also indexed and can be grouped by topic. The API includes suggestions with auto-completes for misspelled items in the search query \cite{faroo}.
 
 \subsubsection{Apache Lucene Library}\label{apache}
+Apache Lucene Library is a text-based context search. It is particularly relevant for the current project because it provides powerful, accurate and efficient algorithms to search textual data, the algorithms are scalable and high performance, and so will enable users to receive results from their search query with good temporal speed. The API offers the possibility to carry out phrase, wildcard, proximity and range queries which will mean the goals of the project can be fulfilled (Package org.apache.lucene.search.highlight, for the aims of the project refer to ~Section\ref{the problem}). The library also affords ranked searches, with type tolerant suggesters and field searching.
+
+\subsubsection{Key Word In Context} \label{KWIC} 
+The Apache Lucene open-source search engine library written in Java allows contextual-text search, also known as Key Word In Context (KWIC)\cite{kwic}. KWIC works by forming an index to allow each word to be searchable. The library takes care of the efficiency of this process, and can return Weighted Terms of a given query (as an example).
+
 
 \subsubsection{Google+ API}
-I mention before that ... Persona development will support the user modeling process by identifying particular characteristics of individuals with ASD in Search. An individual’s personal information pertaining to the persona, will be stored in a user profile which will contain information such as age, gender, lifestyle, frequent tasks, tools used, resources commonly used and crucially for this project, the profile will include information about diagnosis (Autism, Asperger, and high/low functioning).
-
-\subsubsection {Chrome History API}
-
+Persona (a type of user) development will support the user modeling process by identifying particular characteristics of individuals with ASD in Search. An individual’s personal information pertaining to the persona, will be stored in a Google+ user profile and can be used with the Google+ API (written in Java), containing information such as age, gender, lifestyle, frequent tasks, tools used, resources commonly used. It is also be possible to store information in the 'about me' section on the profile about individual diagnosis (Autism, Asperger, and high/low functioning). This information can be parsed when the query is submitted to the search engine.
 
 \subsubsection{Libraries for Hardware (Motion Controllers)}
+
 \subsubsection{Visual aesthetics: threeJs library (Non-Core Features)}
+This javascript library enables WebGL-3D in a web browser. WebGL brings hardware-accelerated 3D graphics to the browser without installing additional software. It may prove useful for integration with the motion controller to improve the experience of embodiment with the application.
 
 
 \section{Integrating the System with Motion Controller Hardware }\label{hardware}
@@ -325,6 +331,7 @@ Shane HC1, Albert PD.
 
 \bibitem{fabienne}Fabienne Samson, Laurent Mottron, Isabelle Soulières, Thomas A. Zeffiro. Enhanced visual functioning in autism: An ALE meta-analysis. Human Brain Mapping, 2011; DOI: 10.1002/hbm.21307
 
+\bibitem{kwic}Manning, C. D., Schütze, H.: Foundations of Statistical Natural Language Processing, p.35. The MIT Press, 1999
 
 \bibitem {Economist} Invisible sieve: Hidden, specially for you. The Economist. 30 June 2011. Retrieved June 27, 2011. Mr Pariser’s book provides a survey of the internet’s evolution towards personalisation, examines how presenting information alters the way in which it is perceived and concludes with prescriptions for bursting the filter bubble that surrounds each user.
 

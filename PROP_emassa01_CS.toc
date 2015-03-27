@@ -2,7 +2,7 @@
 \contentsline {subsection}{\numberline {1.1}Problem Statement}{2}
 \contentsline {subsection}{\numberline {1.2}The Role of Context In Search}{2}
 \contentsline {subsection}{\numberline {1.3}What is ASD?}{3}
-\contentsline {subsection}{\numberline {1.4}The Problem: Current Search Tools for people with ASD}{3}
+\contentsline {subsection}{\numberline {1.4}Aims and Objectives}{3}
 \contentsline {subsection}{\numberline {1.5}Proposal Organisation}{4}
 \contentsline {section}{\numberline {2}What should Search offer people with ASD?}{4}
 \contentsline {subsection}{\numberline {2.1}Search and Learning}{4}
@@ -14,7 +14,7 @@
 \contentsline {subsection}{\numberline {3.2}Types of user models}{5}
 \contentsline {subsection}{\numberline {3.3}Benefits and difficulties of user modeling in Search}{5}
 \contentsline {subsection}{\numberline {3.4}Adaptive / Personalised Search}{6}
-\contentsline {subsection}{\numberline {3.5}Disadvantages of Cuurent Adaptive Search for Individuals with ASD}{6}
+\contentsline {subsection}{\numberline {3.5}Disadvantages of Curent Adaptive Search for Individuals with ASD}{6}
 \contentsline {subsection}{\numberline {3.6}Where and How will the User Information be Stored?}{6}
 \contentsline {section}{\numberline {4}Existing Combination/Advanced Search Engines}{7}
 \contentsline {subsection}{\numberline {4.1}Bing vs Google}{7}
@@ -23,7 +23,8 @@
 \contentsline {subsection}{\numberline {4.4}Spectra}{7}
 \contentsline {subsection}{\numberline {4.5}Conclusions and ways forward}{7}
 \contentsline {section}{\numberline {5}Proposed Search Page and Controller Web Application}{7}
-\contentsline {subsection}{\numberline {5.1}Core Features and Development Milestones}{8}
+\contentsline {subsection}{\numberline {5.1}Core Features}{8}
+\contentsline {subsubsection}{\numberline {5.1.1}Development Milestones}{8}
 \contentsline {subsection}{\numberline {5.2}Non-core Features}{9}
 \contentsline {section}{\numberline {6}Implementation of the System}{9}
 \contentsline {subsection}{\numberline {6.1}Selection of Search Engines}{9}
@@ -33,19 +34,19 @@
 \contentsline {subsubsection}{\numberline {6.2.3}Bing Search API (Data)}{9}
 \contentsline {subsubsection}{\numberline {6.2.4}Faroo API}{9}
 \contentsline {subsubsection}{\numberline {6.2.5}Apache Lucene Library}{10}
-\contentsline {subsubsection}{\numberline {6.2.6}Google+ API}{10}
-\contentsline {subsubsection}{\numberline {6.2.7}Chrome History API}{10}
+\contentsline {subsubsection}{\numberline {6.2.6}Key Word In Context}{10}
+\contentsline {subsubsection}{\numberline {6.2.7}Google+ API}{10}
 \contentsline {subsubsection}{\numberline {6.2.8}Libraries for Hardware (Motion Controllers)}{10}
 \contentsline {subsubsection}{\numberline {6.2.9}Visual aesthetics: threeJs library (Non-Core Features)}{10}
 \contentsline {section}{\numberline {7}Integrating the System with Motion Controller Hardware }{10}
 \contentsline {subsection}{\numberline {7.1}Current Project’s Hardware Selection Process}{10}
-\contentsline {subsection}{\numberline {7.2}LEAP Controller}{10}
-\contentsline {subsection}{\numberline {7.3}Oculus VR Rift}{10}
-\contentsline {subsection}{\numberline {7.4}Feasibility Testing}{10}
-\contentsline {subsection}{\numberline {7.5}Development}{10}
-\contentsline {section}{\numberline {8}Project Plan}{10}
-\contentsline {subsection}{\numberline {8.1}Project Timeline}{10}
+\contentsline {subsection}{\numberline {7.2}LEAP Controller}{11}
+\contentsline {subsection}{\numberline {7.3}Oculus VR Rift}{11}
+\contentsline {subsection}{\numberline {7.4}Feasibility Testing}{11}
+\contentsline {subsection}{\numberline {7.5}Development}{11}
+\contentsline {section}{\numberline {8}Project Plan}{11}
+\contentsline {subsection}{\numberline {8.1}Project Timeline}{11}
 \contentsline {subsection}{\numberline {8.2}Methodologies}{11}
 \contentsline {subsubsection}{\numberline {8.2.1}Development Languages}{11}
 \contentsline {subsection}{\numberline {8.3}Risks/Issues, probabilities and mitigation of impact}{11}
-\contentsline {section}{\numberline {9}Directions and Implications}{11}
+\contentsline {section}{\numberline {9}Directions and Implications}{12}
