@@ -12,7 +12,7 @@
 \contentsline {section}{\numberline {3}Creating a User Model of ASD}{5}
 \contentsline {subsection}{\numberline {3.1}What is a user model?}{5}
 \contentsline {subsection}{\numberline {3.2}Types of user models}{5}
-\contentsline {subsection}{\numberline {3.3}Benefits and difficulties of user modeling in Search}{5}
+\contentsline {subsection}{\numberline {3.3}Benefits and difficulties of user modeling in earch}{5}
 \contentsline {subsection}{\numberline {3.4}Adaptive / Personalised Search}{6}
 \contentsline {subsection}{\numberline {3.5}Disadvantages of Curent Adaptive Search for Individuals with ASD}{6}
 \contentsline {subsection}{\numberline {3.6}Where and How will the User Information be Stored?}{6}
@@ -24,29 +24,33 @@
 \contentsline {subsection}{\numberline {4.5}Conclusions and ways forward}{7}
 \contentsline {section}{\numberline {5}Proposed Search Page and Controller Web Application}{7}
 \contentsline {subsection}{\numberline {5.1}Core Features}{8}
-\contentsline {subsubsection}{\numberline {5.1.1}Development Milestones}{8}
-\contentsline {subsection}{\numberline {5.2}Non-core Features}{9}
-\contentsline {section}{\numberline {6}Implementation of the System}{9}
-\contentsline {subsection}{\numberline {6.1}Selection of Search Engines}{9}
+\contentsline {subsection}{\numberline {5.2}Non-core Features}{8}
+\contentsline {section}{\numberline {6}Implementing the Application}{9}
+\contentsline {subsection}{\numberline {6.1}Selecting Existing Search Engines}{9}
 \contentsline {subsection}{\numberline {6.2}APIs, Text-Search Libraries}{9}
 \contentsline {subsubsection}{\numberline {6.2.1}Google Custom Search}{9}
 \contentsline {subsubsection}{\numberline {6.2.2}Yahoo BOSS}{9}
 \contentsline {subsubsection}{\numberline {6.2.3}Bing Search API (Data)}{9}
 \contentsline {subsubsection}{\numberline {6.2.4}Faroo API}{9}
-\contentsline {subsubsection}{\numberline {6.2.5}Apache Lucene Library}{10}
+\contentsline {subsubsection}{\numberline {6.2.5}Apache Lucene Library}{9}
 \contentsline {subsubsection}{\numberline {6.2.6}Key Word In Context}{10}
 \contentsline {subsubsection}{\numberline {6.2.7}Google+ API}{10}
-\contentsline {subsubsection}{\numberline {6.2.8}Libraries for Hardware (Motion Controllers)}{10}
-\contentsline {subsubsection}{\numberline {6.2.9}Visual aesthetics: threeJs library (Non-Core Features)}{10}
-\contentsline {section}{\numberline {7}Integrating the System with Motion Controller Hardware }{10}
-\contentsline {subsection}{\numberline {7.1}Current Project’s Hardware Selection Process}{10}
+\contentsline {subsubsection}{\numberline {6.2.8}API for LEAP Motion Controller}{10}
+\contentsline {subsubsection}{\numberline {6.2.9}threeJs library (Non-Core Feature)}{10}
+\contentsline {section}{\numberline {7}Integrating the Application with Motion Controller Hardware }{10}
+\contentsline {subsection}{\numberline {7.1}Hardware Selection Process}{10}
 \contentsline {subsection}{\numberline {7.2}LEAP Controller}{11}
-\contentsline {subsection}{\numberline {7.3}Oculus VR Rift}{11}
-\contentsline {subsection}{\numberline {7.4}Feasibility Testing}{11}
-\contentsline {subsection}{\numberline {7.5}Development}{11}
-\contentsline {section}{\numberline {8}Project Plan}{11}
-\contentsline {subsection}{\numberline {8.1}Project Timeline}{11}
-\contentsline {subsection}{\numberline {8.2}Methodologies}{11}
-\contentsline {subsubsection}{\numberline {8.2.1}Development Languages}{11}
-\contentsline {subsection}{\numberline {8.3}Risks/Issues, probabilities and mitigation of impact}{11}
-\contentsline {section}{\numberline {9}Directions and Implications}{12}
+\contentsline {subsubsection}{\numberline {7.2.1}Hands}{11}
+\contentsline {subsubsection}{\numberline {7.2.2}Arms}{11}
+\contentsline {subsubsection}{\numberline {7.2.3}Fingers}{11}
+\contentsline {subsubsection}{\numberline {7.2.4}Tools \& Pointables}{12}
+\contentsline {subsubsection}{\numberline {7.2.5}Gestures}{12}
+\contentsline {section}{\numberline {8}Project Plan}{12}
+\contentsline {subsection}{\numberline {8.1}Project Timeline}{12}
+\contentsline {subsection}{\numberline {8.2}Methodology}{13}
+\contentsline {subsection}{\numberline {8.3}Development Languages}{13}
+\contentsline {subsection}{\numberline {8.4}Testing}{13}
+\contentsline {subsubsection}{\numberline {8.4.1}Feasibility Testing}{13}
+\contentsline {subsubsection}{\numberline {8.4.2}Unit Testing}{13}
+\contentsline {subsection}{\numberline {8.5}Risks/Issues, probabilities and mitigation of impact}{13}
+\contentsline {section}{\numberline {9}Directions and Implications}{13}

@@ -6,14 +6,14 @@
 
 \usepackage{graphicx}
 \graphicspath{{images/}}
+
 \begin{document}
 
-\title{A User Model for People with Autism in Search }
+\title{A User Model for People with Autism within Search }
 \author{Esha Massand\\
 MSc Computer Science Project Proposal\footnote{This proposal is substantially the result of my own work, expressed in my own words, except where explicitly indicated in the text. I give my permission for it to be submitted to the JISC Plagiarism Detection Service. }}
 \date{\today}
 \maketitle
-
 
 \begin{abstract}
 The current proposal presents my objective to research and build a user model within Search, to address the downfalls of current Search tools for individuals with Autism Spectrum Disorder (ASD). The user model will be built around the core features of ASD. The model will be applied to results returned from a synthesis of three leading existing search engines. The final product will be a web application, integrated with motion-controller user interface, with the aim to enhance the user experience of Search for people with ASD. These findings will provide novel insights into the needs and wants of individuals with ASD within search, and enable future development and interventions within these information streams and communication channels.
@@ -44,7 +44,7 @@ Search engines assume that the user is context-driven, and attempt to model the 
 \item Information is concrete (i.e, not abstract).
 \item Information is presented in small manageable chunks.
 \item Information is not verbally "overloaded" (not too many words).
-\item Information is presented in the expected way and does not deviate from this.
+\item Information is presented in a set visual format to aid navigation.
 \end{enumerate}
 Several interventions have been built around this body of literature (www.autismspeaks.org).
 Given these findings from the literature we can make several adjustments to current Search tools to enhance their benefit for people with ASD. For example, a user with ASD would have improved user-experience if their search results:
@@ -56,7 +56,7 @@ Given these findings from the literature we can make several adjustments to curr
 \item Had a high degree of verbal consistency/similarity with the search query.
 \end{enumerate}
 
-This project will \textbf{integrate} these insights from the Psychology literature with the proposed system.
+This project will \textbf{integrate} these insights from the Psychology literature with the proposed application.
 
 \subsection{Proposal Organisation}
 
@@ -65,9 +65,9 @@ This proposal outlines my research to date on the field of Search, ASD, and Moti
 \item in Section~\ref{What should Search offer people with ASD}, I give a brief introduction to Search engines, and the downfalls of current Search engines for individuals with ASD. I discuss the motivation behind the proposed work
 \item in Section~\ref{usermodel}, I discuss the potential for user modeling within Search
 \item in Section~\ref{Existing Combination/Advanced Search Engines} I review current existing combination search engines 
-\item in Section~\ref{proposed} I outline my proposed search system for ASD
+\item in Section~\ref{proposed} I outline my proposed search application for ASD
 \item in Section~\ref{api}, I briefly discuss API's and Libraries that I will use during the project, including Custom Search Engine APIs such as the Google Custom Search API, and Yahoo BOSS, Lucene Key Word In Context
-\item in Section~\ref{hardware} I review motion controller hardware that I aim to integrate with the search system
+\item in Section~\ref{hardware} I review motion controller hardware that I aim to integrate with the search application
 \item in Section~\ref{plan} I outline my project plan, and
 \item in Section~\ref{future} I discuss the future directions and implications of this research.
 \end{enumerate}
@@ -79,7 +79,7 @@ This proposal outlines my research to date on the field of Search, ASD, and Moti
 The Internet is one of the largest resources of information, and can be searched by users from different areas of the world relatively quickly. Search engines allow users to collate hundreds of links on a single topic, using only a few words or phrases. The information returned is vast, and the depth of users’ searches can be determined by more advanced refinement options \footnote{For example, using the keyword NOT, or, by applying precedence to a selection of search query terms likely to be returned. This implies the user can flexiblly shift perspective to guess the keywords likely to be picked up and returned by the search engine. Assuming the user has this knowledge they may choose to do a targeted search for just some specific key term.}. Search is an therefore an important learning tool; its significance is duly noted because of the learning benefits it brings for children and adolescents as they begin to navigate the Internet and gain an understanding of several subjects. 
 
 \subsection{Clues from virtual reality and gaming}
-Almost all teenagers (97\% of those aged 12-17) use a computer, web, portable or console devices, 73\% of which is desktop or laptop based. Teenagers with ASD also use technology and spend a substantial amount of their time using devices \cite{Shane and Albert}. They are proficient, and use these devices with relative ease, showing high levels of engagement with consoles like the Xbox (Kinect) or Wii, Portable Gaming Devices (Nintendo DS), or cell phone or handheld device. For individuals with ASD, computer-based technologies can provide a stable, consistent learning environment that can be customized \cite{moore}. With this in mind, the proposed system will utilize motion controllers to facilitate user attention and engagement with Search. 
+Almost all teenagers (97\% of those aged 12-17) use a computer, web, portable or console devices, 73\% of which is desktop or laptop based. Teenagers with ASD also use technology and spend a substantial amount of their time using devices \cite{Shane and Albert}. They are proficient, and use these devices with relative ease, showing high levels of engagement with consoles like the Xbox (Kinect) or Wii, Portable Gaming Devices (Nintendo DS), or cell phone or handheld device. For individuals with ASD, computer-based technologies can provide a stable, consistent learning environment that can be customized \cite{moore}. With this in mind, the proposed application will utilize motion controllers to facilitate user attention and engagement with Search. 
 
 \subsection{Motion Controllers}
 Motion recognition devices can be programmed to make consistent responses to environmental triggers. This is unlike real-world situations where environmental responses are not always consistent and may require further interpretation or ‘guess-work’. These controlled and interactive environments have shown promise for improving social communication skills and reducing repetitive behaviours \cite{gameshealth}.
@@ -96,9 +96,8 @@ Persona development will support the user modeling process by identifying partic
 \subsection{Types of user models}
 User models can be static, and unchanging (i.e., no algorithms are used in order to teach the model about the changing preferences of the user, and no new information is fed into the model), or dynamic (representation of the user with their up-to-date changes in interests, and recent interactions with the system). Alternatively, user models can be stereotyped. This means they utilize demographic information to classify users into distinct subtypes. The system infers or assumes other characteristics about this subset of users by making use of data gathered from other users also included within this subset. Lastly a user model can be highly adaptive and try to model the one user on their own, without stereotyping or inferring the characteristics of the user. This type of user modeling requires a large amount of data collection prior to its implementation.
 \\The model can gather information through direct interaction with its user (e.g., via a registration process), by observing and interpreting the users actions, or, by a combination of both, that is, the system may ask for feedback, and alter its approach depending on the user’s behavior.
-The type of user model used for this system will be decided upon after testing and obtaining user feedback.
 
-\subsection{Benefits and difficulties of user modeling in Search}
+\subsection{Benefits and difficulties of user modeling in earch}
 A user model needs to collect data before it can predict the user’s needs with accuracy, but once this is achieved, information can be presented according to the user’s knowledge, ability and goals. It can also effectively filter out irrelevant information and rank the remaining search results in the most relevant way according for the user.
 Creating a user model is not an easy task. The designer of the system has to set weights of parameters for the information that is fed into the model, and decide what course of action to take when two pieces of information may conflict. Some of the difficulties associated with deciding the priorities of elements of the model will be decided with user-feedback. Other elements of the user model will be based on modeling well-researched cognitive processes in ASD (for example, a user model that focuses on first-order, or, item-specific relations to form a search query, rather than hierarchical relations to form a search query).  
 
@@ -128,8 +127,8 @@ AskBoth – is a work in progress, and combines both Google and Bing, with a sec
 Spectra takes searching from Google, Bing and Yahoo engines one-small-step-further. This site allows users to assign weights and determine the way results are displayed. Spectra gathers the search results, ranks them and displays them according to their algorithm. Spectra does not provide an API for developers, and the rigor of the search is hard to test.
 
 \subsection{Conclusions and ways forward}
-These search engines allow users to see more results than what one search engine alone would present, they often do this with a cost -- redundancy. The benefits are that there is more information presented to the users at once but often at a cost of ‘cognitive overload’ and/ or near –duplicates. This is not ideal for users with ASD, as this is precisely the opposite of what the systems aims and objectives were see Section~\ref{prob}.
-To date, a user model for ASD within Search has not been built. The following section presents the proposed system that will try and address this issue.
+These search engines allow users to see more results than what one search engine alone would present, they often do this with a cost -- redundancy. The benefits are that there is more information presented to the users at once but often at a cost of ‘cognitive overload’ and/ or near –duplicates. This is not ideal for users with ASD, as this is precisely the opposite of what the application's aims and objectives were see Section~\ref{prob}.
+To date, a user model for ASD within Search has not been built. The following section proposes an application that will try and address this issue.
 
 
 \section{Proposed Search Page and Controller Web Application}\label{proposed}
@@ -147,16 +146,7 @@ This project will produce a search engine designed to enhance the user experienc
 
 \item The design and implementation of a user model to apply to these results to filter them according to specific user needs. The model will return concrete, managable (not text-overloaded) results, in a consistent mannar. The search engine will perform a Key Word In Context search and prioritise results where the key words are used direcly, or results have first-order semantic relations to the query words (see Section~\ref{the problem}), i.e., they appear in matched context to the search query.
 
-\item The system will utilise motion controllers to enhance embodiment within search, and enhance the search query process. I will investigate the use of the LEAP motion controller as the main device in the first instance.
-\end{enumerate}
-
-\subsubsection{Development Milestones}
-To achieve my goals I will need to test the system's feasibility. This will include;
-\begin{enumerate}
-\item Obtaining user feedback on the intital product by testing the web search with the LEAP motion controller, with a group of individuals diagnosed with ASD.
-
-\item Revising the model and the ideas to choose the best possible approach/tools to achieve optimization for people with ASD.
-
+\item The application will utilise motion controllers to enhance embodiment within search, and enhance the search query process. I will investigate the use of the LEAP motion controller as the main device in the first instance.
 \end{enumerate}
 
 \subsection{Non-core Features}
@@ -164,12 +154,12 @@ To achieve my goals I will need to test the system's feasibility. This will incl
 
 \item Investigating the user preferences when a page with a higher number of pictures ranks higher than those with many words. 
 
-\item An investigation of other motion controller devices, possibly the Oculus VR Rift, Xbox Kinnect.
+\item An investigation of other motion controller devices, possibly the Oculus VR Rift, Xbox Kinect.
 
 \end{enumerate}
 
-\section{Implementation of the System}\label{api}
-\subsection{Selection of Search Engines}
+\section{Implementing the Application}\label{api}
+\subsection{Selecting Existing Search Engines}
 The three most popular search engines (as calculated using an average of the unique monthly visitors) are Google (1,100,000,000 estimated monthly visitors), Bing (350.000.000 estimated monthly visitors) and Yahoo! (300,000,000 estimated monthly visitors)\cite{ebiz}. Google is the most recent and goliath question-answering system (query volume = 64.5\%)\cite{adam}, and the word has become synonymous with the word ‘search’ on the web.This search engine is often considered the most innovative and dynamic, and is the most popular amongst users worldwide (using global traffic rank figures, in March 2015). Yahoo (2003) was the first ever web directory service; it has stronger advertising and e-commerce partnerships and has a query volume of 19.8\%. Bing (Microsoft’s answer to search, previously known as msn search), was officially launched in 2005, and has a query volume of 12.8\%, which is substantially less than Google, but nevertheless, is within the top 3 search engines.Other search engines include Ask, AOL, WOW, which will not be included in the search system proposed here in order to limit the redundancy of the search results (of which there will already be a fair amount, see Section~\ref{Existing Combination/Advanced Search Engines}). 
 
 \subsection{APIs, Text-Search Libraries}
@@ -199,14 +189,19 @@ The Apache Lucene open-source search engine library written in Java allows conte
 \subsubsection{Google+ API}
 Persona (a type of user) development will support the user modeling process by identifying particular characteristics of individuals with ASD in Search. An individual’s personal information pertaining to the persona, will be stored in a Google+ user profile and can be used with the Google+ API (written in Java), containing information such as age, gender, lifestyle, frequent tasks, tools used, resources commonly used. It is also be possible to store information in the 'about me' section on the profile about individual diagnosis (Autism, Asperger, and high/low functioning). This information can be parsed when the query is submitted to the search engine.
 
-\subsubsection{Libraries for Hardware (Motion Controllers)}
+\subsubsection{API for LEAP Motion Controller}
+Leap Motion SDK offers 2 types of API to get tracking data from the Leap Motion Service. A native dynamic library interface, to create LEAP applications, and a WebSocket interface, allowing Leap Web Based applications. I will use the latter of the two.
 
-\subsubsection{Visual aesthetics: threeJs library (Non-Core Features)}
+The LEAP motion service has a WebSocket server listening in on http://127.0.0.1:6437. The user can enable or disable the WebSocket server as they choose to do so, in the device's control panel.
+The server sends tracking data in JSON messages and an application can send configuration messages back. This library will be used to establish connection to the server and consume the JSON messages \cite{leap}. 
+
+
+\subsubsection{threeJs library (Non-Core Feature)}
 This javascript library enables WebGL-3D in a web browser. WebGL brings hardware-accelerated 3D graphics to the browser without installing additional software. It may prove useful for integration with the motion controller to improve the experience of embodiment with the application.
 
 
-\section{Integrating the System with Motion Controller Hardware }\label{hardware}
-\subsection{Current Project’s Hardware Selection Process}
+\section{Integrating the Application with Motion Controller Hardware }\label{hardware}
+\subsection{Hardware Selection Process}
 Humans have many senses that go beyond the computer's screen. The usability of the hardware will this be determined as follows: 
 \begin{enumerate}
 \item Good timing of the device correlates to a good meaning and a good User Experience. The LEAP has options to ‘poll’ frames at a constant rate (to keep timing of movement accurate).
@@ -218,79 +213,110 @@ Humans have many senses that go beyond the computer's screen. The usability of t
 \end{enumerate}
 
 \subsection{LEAP Controller}
-\subsection{Oculus VR Rift}
+The leap controller can recognize and track hands, fingers and finger-like tools. It can report positions, motions and gestures using an infrared light and optical sensors along the x, y and z axes (Cartesian coordinate system). The controller has a 150-degree field of view, and can operate in a range of 1 inch to 2 feet. The API works with distance in millimetre resolution. Time is measured in microseconds, speed in mm/s and angles in radians.
 
-\subsection{Feasibility Testing}
+\begin{center}
+\includegraphics[scale=0.5]{leap}\\
+The LEAP controller, with 150 degree view \cite{leap}.
+\end{center}
 
-\subsection{Development}
+The LEAP uses frames to represent tracked entities such as hands, fingers, tools or gestures. Motion data is recorded as a set of frames (stored, read-only information) containing the detected information. 
+Frames can be created by calling the Controller.frame(), and up to 60 can be held in the history buffer with the current API. Frames may be 'dropped' if there are resource contrainsts, or, they are missed for example. Once a frame is created, the data can be gathered from the hands(), arms(), fingers(), tools() methods.
 
+\subsubsection{Hands}
+The Hand class, returns information about the ID, position of fingers associated with that hand, and arm infomration (left/right).
+
+\begin{center}
+\includegraphics[scale=0.6]{palm}\\
+The Hand palmNormal() method and direction vectors define the orientation of the hand \cite{leap}.
+\end{center}
+
+The software uses parts of visible hand, internal model and previous observations to form a model of the hand. Five finger positions will always be shown but subtle movements of hand, especially if they are tucked up into the hand are harder to detect. For this there is a Hand.confidence() method that provides a rating of how well the observed data fit the internal model \cite{leap}.
+
+\subsubsection{Arms}
+The Arms class can return information about orientation, length, width and end points of movements. The LEAP controller software bases these return measurements on previous observations of the user, and using typical human proportions.
+
+\subsubsection{Fingers}
+These characteristics are based on the anatomy of the hand, and recent observations. 
+
+\begin{center}
+\includegraphics[scale=0.7]{fingers}\\
+Finger tip position and direction are given as vectors. \cite{leap}.
+\end{center}
+
+
+\subsubsection{Tools \& Pointables}
+Tools can represent any real object (noun), but are longer, straighter and thinner than fingers. Tools must be cylindrical.
+
+\subsubsection{Gestures}
+The LEAP recognises certain movement patterns (for each finger or tool individually) allowing the user to indicate an intent. These gestures are observed in a frame and include: CircleGesture, KeyTapGesture, ScreenTapGesture and SwipeGestures.
 
 
 \section{Project Plan}\label{plan}
-\subsection{Project Timeline}
 
-\begin{table}[ht]
-\caption{Project Stage1 } 
+\subsection{Project Timeline}
+A highlevel plan of the project timeline is presented in table ~Table \ref{stages}
+
+\begin{table}
+\caption{Project Stages} 
 \centering 
 \begin{tabular}{c c}
 \hline\hline 
 Task \# & Stage 1 \\ [0.5ex]
 \hline 
-1 & Work on synthesis of search results\\ 
-2 & Configure back end of the system\\
+1 & Work on synthesis of search results\\
+2 & Configure back end of the application\\
 3 & Find relevant API’s and tools\\[1ex]
-
 \hline 
-\end{tabular}
-\label{stages1} 
-\end{table}
-
-\begin{table}[ht]
-\caption{Project Stage 2} 
-\centering 
-\begin{tabular}{c c}
+\end{tabular}\\ 
+\begin{tabular}{c c}\\
 \hline\hline 
-Task \# & Stage 2 \\ [0.5ex]
+Task \# & Stage 2\\  [0.5ex]
 \hline 
 1 & Build \& Research user model of ASD  \\ 
 2 & User interface feasibility testing\\
 3 & Finalise motion controller tools  \\[1ex]
-
 \hline 
-\end{tabular}
-\label{stages2} 
-\end{table}
-
-\begin{table}[ht]
-\caption{Project Stage 3} 
-\centering 
-\begin{tabular}{c c}
+\end{tabular}\\
+\begin{tabular}{c c}\\
 \hline\hline 
-Task \# & Stage 3 \\ [0.5ex]
+Task \# & Stage 3\\  [0.5ex]
 \hline 
-1 & Refine system using feedback \\ 
+1 & Refine application using feedback \\ 
 2 & Write up project \\
 3 & Present final product and research \\[1ex]
-
 \hline 
 \end{tabular}
-\label{stages3} 
+\label{stages} 
 \end{table}
 
-\subsection{Methodologies}
-\textbf{Agile Methodologies}\\
-What is agile methodology?\\
-Need to include user acceptance testing \\
-\textbf{Test Driven Development}\\
-Unit testing – TDD style\\
-Regression testing (testing the project as a whole unit to make sure nothing breaks)\\
-\textbf{Project Backlog}
+TODO!!
 Describe my Product Features\\
 Describe ‘user stories’ e.g., a user wants to be able to search for pages containing the most videos.\\
 Assign these a priority: Must Could Should Want (MCSW model)\\
 Set SPRINT deadlines to enable the functionality
 
-\subsubsection{Development Languages}
+
+\subsection{Methodology}
+\textbf{Agile Methodologies}\\
+What is agile methodology?\\
+
+
+
+\subsection{Development Languages}
+
+\subsection{Testing}
+\subsubsection{Feasibility Testing}
+To ascertain whether the goals of the project have been met I will need to test the application with people with Autism. This will include;
+\begin{itemize}
+\item Recruiting participants to take part in the research. Adolescents and adults with a diagnosis of ASD. Recruited from NAS, will be asked to test the application.
+\item Obtaining user feedback on the intital product by testing the web search with the LEAP motion controller, with a group of individuals diagnosed with ASD. I will design a questionnaire to test the application's feasibility. If time allows, I hope to use a Tobii Eye-tracker TX300 (in the Department of Psychology, Centre for Brain and Cognitive Development, Birkbeck University of London) to gather high resolution eye-tracking data on the participants as they use the application. This will inform my future developments for revising the application.
+\item Revising the model and the ideas to choose the best possible approach/tools to achieve optimization for people with ASD.
+\end{itemize}
+
+\subsubsection{Unit Testing}
+For testing the application code, I will be using Test Driven Development (TDD). For Java I will use the current version of JUnit (at the time of writing this is 4.12).External dependencies will be mock tested using Mockito. JSON Test will be used to test JavaScript Object Notation \cite{jsontest}. As well as unit testing, Regression testing will be used to testing the project as a whole unit.
+
 \subsection{Risks/Issues, probabilities and mitigation of impact}
 not being able to use the API freely\\
 the API not allowing the use of hieracrchical structure testing\\
@@ -301,15 +327,15 @@ find work around for this?
 
 
 \section{Directions and Implications}\label{future}
-As we move towards personalized information retrieval, we hope to move towards state of the art information access and retrieval. The future of Search will promise the return of personalized results, which are adapted to the users specific needs. This project deals with only one subset of the population, but the same can be achieved of any group of users. Search engines can deal with the information overload problem (i.e., multi-media, text information), by exploiting these user models to turn the masses of information available into a specific set of “information goods” for any one user, providing good quality personalized information for users.
-
-
+We are moving towards personalized information access and retrieval. The future of Search will promise the return of user specific results given their needs. This project aims to build a user model of Autism, but the same can be achieved of any group of users. Search engines can assist with the forthcoming information-overload problem by exploiting these user models to turn the masses of information available into a specific set of “information goods” for any one user, providing good quality personalized information.
 
 \begin{thebibliography}{100}
 
 \bibitem {gameshealth} Games for Health, 2012 Screen-based technologies and Autism. 1: 248-53
 
 \bibitem{moore}Moore, D. J., McGrath, P., \& Thorpe, J. (2000). Computer aided learning for people with autism—a framework for research and development. Innovations in Education and Training International, 37, 218–228.
+
+\bibitem{leap} 2015, https://developer.leapmotion.com/
 
 \bibitem{briggs}Briggs, Justin. A Better Understanding of Personalized Search. Retrieved21 April 2014.
 
@@ -323,6 +349,7 @@ As we move towards personalized information retrieval, we hope to move towards s
 \bibitem {Shane and Albert}J Autism Dev Disord. 2008 Sep;38(8):1499-508. doi: 10.1007/s10803-007-0527-5. Epub 2008 Feb 22. Electronic screen media for persons with autism spectrum disorders: results of a survey.
 Shane HC1, Albert PD.
 
+\bibitem{jsontest}http://www.jsontest.com/
 
 \bibitem {Lasater}Lasater, M. W., \& Brady, M. P. (1995). Effects of video self-modeling and feedback on task fluency: A home-based intervention. Education and treatment of children, 18, 389-407.
 
