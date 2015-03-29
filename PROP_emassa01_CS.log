@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.3.23)  28 MAR 2015 22:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.3.23)  29 MAR 2015 16:17
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -23,6 +23,9 @@ File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/multirow/multirow.sty
+\bigstrutjot=\dimen103
 )
 (/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2014/04/25 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
@@ -53,35 +56,35 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
 \Gread@gobject=\count87
 ))
-\Gin@req@height=\dimen103
-\Gin@req@width=\dimen104
+\Gin@req@height=\dimen104
+\Gin@req@width=\dimen105
 )
 (./PROP_emassa01_CS.aux)
 \openout1 = `PROP_emassa01_CS.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
 
 (/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count88
-\scratchdimen=\dimen105
+\scratchdimen=\dimen106
 \scratchbox=\box26
 \nofMPsegments=\count89
 \nofMParguments=\count90
 \everyMPshowfont=\toks15
 \MPscratchCnt=\count91
-\MPscratchDim=\dimen106
+\MPscratchDim=\dimen107
 \MPnumerator=\count92
 \makeMPintoPDFobject=\count93
 \everyMPtoPDFconversion=\toks16
@@ -134,13 +137,13 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 16.
+(Font)              <12> on input line 18.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 16.
+(Font)              <8> on input line 18.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 16.
+(Font)              <6> on input line 18.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 16.
+(Font)              <5> on input line 18.
 
 (./PROP_emassa01_CS.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -155,15 +158,15 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 File: images/asd.pdf Graphic file (type pdf)
 
 <use images/asd.pdf>
-Package pdftex.def Info: images/asd.pdf used on input line 36.
+Package pdftex.def Info: images/asd.pdf used on input line 38.
 (pdftex.def)             Requested size: 361.3491pt x 271.01183pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 41--43
+Underfull \hbox (badness 10000) in paragraph at lines 43--45
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 41--43
+Underfull \hbox (badness 10000) in paragraph at lines 43--45
 
  []
 
@@ -287,10 +290,10 @@ Missing character: There is no “ in font cmr10!
 File: images/searchEngArchi.pdf Graphic file (type pdf)
 
 <use images/searchEngArchi.pdf>
-Package pdftex.def Info: images/searchEngArchi.pdf used on input line 138.
+Package pdftex.def Info: images/searchEngArchi.pdf used on input line 140.
 (pdftex.def)             Requested size: 505.88655pt x 379.4149pt.
 
-Overfull \hbox (36.13156pt too wide) in paragraph at lines 138--138
+Overfull \hbox (36.13156pt too wide) in paragraph at lines 140--140
  [] 
  []
 
@@ -334,45 +337,37 @@ Missing character: There is no ™ in font cmr10!
 <images/leap.jpg, id=134, 712.6625pt x 263.98625pt>
 File: images/leap.jpg Graphic file (type jpg)
  <use images/leap.jpg>
-Package pdftex.def Info: images/leap.jpg used on input line 219.
+Package pdftex.def Info: images/leap.jpg used on input line 221.
 (pdftex.def)             Requested size: 356.33038pt x 131.9928pt.
 
 <palm.jpg, id=135, 286.06876pt x 204.765pt>
 File: palm.jpg Graphic file (type jpg)
  <use palm.jpg>
-Package pdftex.def Info: palm.jpg used on input line 230.
+Package pdftex.def Info: palm.jpg used on input line 232.
 (pdftex.def)             Requested size: 171.64258pt x 122.85992pt.
 
 <images/fingers.jpg, id=136, 333.245pt x 208.78pt>
 File: images/fingers.jpg Graphic file (type jpg)
  <use images/fingers.jpg>
-Package pdftex.def Info: images/fingers.jpg used on input line 243.
+Package pdftex.def Info: images/fingers.jpg used on input line 245.
 (pdftex.def)             Requested size: 233.2699pt x 146.14497pt.
 
 [11 <./images/leap.jpg> <./palm.jpg>]
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ™ in font cmr10!
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ˜ in font cmr10!
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
-
-Underfull \hbox (badness 10000) in paragraph at lines 301--303
-
- []
-
-[12 <./images/fingers.jpg>]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 312.
+ [12 <./images/fingers.jpg>]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 302.
 
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 312.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 302.
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no œ in font cmr10!
@@ -402,16 +397,17 @@ Missing character: There is no ™ in font cmr10!
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no “ in font cmr10!
+ [14]
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no “ in font cmr10!
- [14]
+
 [15] (./PROP_emassa01_CS.aux) ) 
 Here is how much of TeX's memory you used:
- 1577 strings out of 493117
- 22756 string characters out of 6135433
- 85165 words of memory out of 5000000
- 5035 multiletter control sequences out of 15000+600000
+ 1589 strings out of 493117
+ 23050 string characters out of 6135433
+ 85364 words of memory out of 5000000
+ 5043 multiletter control sequences out of 15000+600000
  8502 words of font info for 30 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  37i,11n,24p,1467b,294s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -429,7 +425,7 @@ cmr9.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cms
 y10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
 6.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.
 pfb>
-Output written on PROP_emassa01_CS.pdf (15 pages, 1787852 bytes).
+Output written on PROP_emassa01_CS.pdf (15 pages, 1789397 bytes).
 PDF statistics:
  197 PDF objects out of 1000 (max. 8388607)
  131 compressed objects within 2 object streams

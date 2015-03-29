@@ -4,6 +4,8 @@
 \setlength{\oddsidemargin}{-.13in}
 \setlength{\textwidth}{6.5in}
 
+\usepackage{multirow}
+
 \usepackage{graphicx}
 \graphicspath{{images/}}
 
@@ -109,7 +111,7 @@ Although adaptive search seems to have significant user benefit in terms of rele
 Recent research has suggested personalization also increases ‘background noise’ relative to the search results \cite{briggs}. Briggs (2014) suggests that there is a carry-over effect in personalized search for the users, whereby prior search results influence the results of subsequent searches \footnote{It should be noted that personalization of search results generally takes a lower priority for the ranking algorithms than the URLs ranked top in terms of their relevance for the search query.}.  Nevertheless this carry-over may be disadvantageous for people with ASD as it muddies their search space.
 In order to produce a search tool specifically tailored to reduce the filter bubble effect in ASD, widen the information gateway and reduce the possibility for restricted and repetitive searches, the weighting on previous search results needs to be reduced. This would be particularly important for individuals with restricted interests. For these users, it would limit the possibility that they get trapped in a spiraling loop of ever-narrowing user-relevant information and over personalization of self-reinforced information ecosystems.
 
-\subsection{Where and How will the User Information be Stored?}
+\subsection{Persisting the User's Information?}
 The user will be asked to sign in with a Google+ account (providing their demographic imformation), and the Google+ API will be used to store/retrieve this information about the current user. The API contains methods to access 4 resource  types; People, their Activities, Comments and Moments. A person is represented with many fields in Google +, including name, gender, title, occupation, all of which can be used to model individual users in the current project. Information about web searching history for any individual user can be obtained from the browser history (if needed). 
 
 \section{Existing Combination/Advanced Search Engines}\label{Existing Combination/Advanced Search Engines}
@@ -196,8 +198,8 @@ The LEAP motion service has a WebSocket server listening in on http://127.0.0.1:
 The server sends tracking data in JSON messages and an application can send configuration messages back. This library will be used to establish connection to the server and consume the JSON messages \cite{leap}. 
 
 
-\subsubsection{threeJs library (Non-Core Feature)}
-This javascript library enables WebGL-3D in a web browser. WebGL brings hardware-accelerated 3D graphics to the browser without installing additional software. It may prove useful for integration with the motion controller to improve the experience of embodiment with the application.
+\subsubsection{ThreeJs Library (Non-Core)}
+This javascript library enables WebGL-3D in a web browser. WebGL brings hardware-accelerated 3D graphics to the browser without installing additional software. This libaray may be used to better integrate the application with the motion controller, and improve the experience of embodiment with the application.
 
 
 \section{Integrating the Application with Motion Controller Hardware }\label{hardware}
@@ -255,37 +257,27 @@ The LEAP recognises certain movement patterns (for each finger or tool individua
 \section{Project Plan}\label{plan}
 
 \subsection{Project Timeline}
-A highlevel plan of the project timeline is presented in table ~Table \ref{stages}
-
-\begin{table}
+A highlevel plan of the project timeline is presented in table ~Table \ref{stages}. The start date of the project is June 5th 2015, and end date is September 13th 2015.
+\begin{table}[!htbp]
 \caption{Project Stages} 
-\centering 
-\begin{tabular}{c c}
+\centering
+\begin{tabular}{ c c}
 \hline\hline 
-Task \# & Stage 1 \\ [0.5ex]
+Dates \# & Task \\ [0.5ex]
 \hline 
-1 & Work on synthesis of search results\\
-2 & Configure back end of the application\\
-3 & Find relevant API’s and tools\\[1ex]
-\hline 
-\end{tabular}\\ 
-\begin{tabular}{c c}\\
-\hline\hline 
-Task \# & Stage 2\\  [0.5ex]
-\hline 
-1 & Build \& Research user model of ASD  \\ 
-2 & User interface feasibility testing\\
-3 & Finalise motion controller tools  \\[1ex]
-\hline 
-\end{tabular}\\
-\begin{tabular}{c c}\\
-\hline\hline 
-Task \# & Stage 3\\  [0.5ex]
-\hline 
-1 & Refine application using feedback \\ 
-2 & Write up project \\
-3 & Present final product and research \\[1ex]
-\hline 
+Jun 05 - Jun 12 & Gather relevant API's \& Libraries.\\
+Jun 13 - Jun 19 & Work on synthesis of search results.\\
+Jun 20 - Jun 27 & Build \& Research user model of ASD \\
+Jun 28 - Jul 06 & Work on configuration with Google+ API\\
+Jul 07 - Jul 14 & Apply User Model to Search\\ 
+Jul 14 - Jul 21 & Develop User Interface\\
+Jul 21 - Jul 28 & Integrate motion controller tools\\
+Jul 29 - Aug 05 & Develop Questionnaire and Eye-Tracker Set up.\\ 
+Aug 06 - Aug 13 & Test the model and ask for user feedback.\\
+Aug 14 - Aug 21 & Revise the Model and Interface\\
+Aug 11 - Aug 25 & Write up project report.\\ 
+Early Sep (tbc) & Present findings to supervisor. \\[1ex]
+\hline
 \end{tabular}
 \label{stages} 
 \end{table}
@@ -298,9 +290,7 @@ Set SPRINT deadlines to enable the functionality
 
 
 \subsection{Methodology}
-\textbf{Agile Methodologies}\\
-What is agile methodology?\\
-
+The current project has a relatively short deadline in which a single developer will research and deliver a system prototype and report. The APIs, technology and areas of development are unfamiliar. In addiion the final product depends on user feedback testing, there is an element of uncertainty about what the final product will be/should look like, a feature may be added/removed at the feedback stage. The characteristics of the current project mean that the most suitable methodology to deliver the application is Agile Methodology. I will focus on an incremental development and rapid feedback early in the development, to make changes to the project direction. This methodology works well with the demands and offers the most flexibility and adaptability.
 
 
 \subsection{Development Languages}
@@ -326,8 +316,9 @@ find work around for this?
 \end{enumerate}
 
 
-\section{Directions and Implications}\label{future}
-We are moving towards personalized information access and retrieval. The future of Search will promise the return of user specific results given their needs. This project aims to build a user model of Autism, but the same can be achieved of any group of users. Search engines can assist with the forthcoming information-overload problem by exploiting these user models to turn the masses of information available into a specific set of “information goods” for any one user, providing good quality personalized information.
+\section{Summary \& Concluding Statement}\label{future}
+I have proposed to research and build a User Model for people with Autism within Search. I presented my research on the downfalls of current search tools, and how they can be improved. I also discussed the use of motion controller hardware (the LEAP) to improve embodiment and user experience within Search. I outlined a proposed solution, and presented my research to date on the tools and resources and methodologies I will draw upon to meet the goals of the project. Last, I outlined the project's timeline.\\
+We are moving towards highly personalized information access and retrieval systems. The future of Search will promise the return of user specific results given their needs. This project aims to build a user model of Autism, but the same can be achieved of any group of users. Search engines can assist with the forthcoming information-overload problem by exploiting these user models to turn the masses of information available into a specific set of “information goods” for any one user, providing good quality personalized information.
 
 \begin{thebibliography}{100}
 
