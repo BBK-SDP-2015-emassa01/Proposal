@@ -15,7 +15,7 @@
 \contentsline {subsection}{\numberline {3.3}Benefits and difficulties of user modeling in earch}{6}
 \contentsline {subsection}{\numberline {3.4}Adaptive / Personalised Search}{6}
 \contentsline {subsection}{\numberline {3.5}Disadvantages of Curent Adaptive Search for Individuals with ASD}{6}
-\contentsline {subsection}{\numberline {3.6}Persisting the User\'s Information?}{6}
+\contentsline {subsection}{\numberline {3.6}Persisting the User's Information?}{6}
 \contentsline {section}{\numberline {4}Existing Combination/Advanced Search Engines}{7}
 \contentsline {subsection}{\numberline {4.1}Bing vs Google}{7}
 \contentsline {subsection}{\numberline {4.2}Qrobe.it}{7}
