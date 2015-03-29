@@ -5,6 +5,8 @@
 \setlength{\textwidth}{6.5in}
 
 \usepackage{multirow}
+\usepackage{array}
+\newcolumntype{L}{>{\centering\arraybackslash}m{3cm}}
 
 \usepackage{graphicx}
 \graphicspath{{images/}}
@@ -25,7 +27,7 @@ The current proposal presents my objective to research and build a user model wi
 
 \section{Introduction}
 \subsection{Problem Statement} \label{prob}
-Most search engines apply a general user model to refine search queries. These models are designed to work with the general population, e.g., the auto-complete, query understanding, site and page quality signals, user content and synonym snippets are all geared towards working with the typical user. Very little research to date has attempted to define a user model within search for individuals with Autism Spectrum Disorder (ASD). It is currently unknown whether current user models need to be adjusted for this subgroup. Although people with ASD are relatively proficient with technologies, we argue that the user models that underlie the way in which search queries are handled and the needs of the user differ to the mainstream models. This project aims to build a suitable user model of ASD to address this issue.
+Most search engines apply a general user model to refine search queries. Very little research to date has attempted to define a user model within search for individuals with Autism Spectrum Disorder (ASD). It is currently unknown whether current user models need to be adjusted for this subgroup. Although people with ASD are relatively proficient with technologies, we argue that the user models that underlie the way in which search queries are handled and the needs of the user differ to the mainstream models. This project aims to build a suitable user model of ASD to address this issue.
 As it has been shown that individuals with ASD are more engaged (sand how sustained attention) when using technology that is receptive (games, responsive consoles, motion controlled devices) and interactive compared to technology that is not, this project will combine interactive, Motion Recognition hardware with Search to improve the User Interface and architecture of Search for individuals with ASD.
 
 \subsection{The Role of Context In Search}
@@ -36,39 +38,39 @@ The prevalence of Autism Spectrum Disorder (ASD) is amongst the most common neur
 
 \begin{center}
 \includegraphics[scale=0.5]{asd}\\
-The ASD Triad (source: http://media.kingdown.wilts.sch.uk/mod/page/view.php?id=7374)
+The ASD Triad \cite{triad}
 \end{center}
 
 \subsection{Aims and Objectives}\label{the problem}
-Search engines assume that the user is context-driven, and attempt to model the user's intent using higher-order contextual information gathered from available web pages. This process also models the human brain's ability to extract context and semantic associations from information. However, people with ASD are less context-sensitive, preferring a more detail-focused processing style \cite{mottron}. They would intuitively form search queries very differently. Individuals with ASD are also less likely to engage in a relational (hierarchically organized) style of processing \cite{bowler} suggesting that relating information in a hierarchically organised framework is less likely. Hierarchical organisation implies a great deal of flexibility and mental-shifting, as a simple example, in a search for 'apple', it would imply awareness that the word is related to 'pear' but also to 'fruit'. Awareness of this latter relation also suggests awareness that 'apple' is related to 'pomegranate'. Of course, in genuine search queries these associations can get very complex very quickly. Generally speaking, individuals with ASD prefer, and are more likely to engage in an item-specific processing style, and, whilst intelligent cognition is definitely possible, search queries are more likely formed of first-order associations\footnote{Of course there is a great deal of individual variability in Autism Spectrum Disorder.}. \\
+Search engines assume that the user is context-driven, and attempt to model the user's intent using higher-order contextual information gathered from available web pages. This process also models the human brain's ability to extract context and semantic associations from information. However, people with ASD are less context-sensitive, preferring a more detail-focused processing style \cite{mottron}. They would intuitively form search queries very differently. Individuals with ASD are also less likely to engage in a relational (hierarchically organized) style of processing \cite{bowler} suggesting that relating information in a hierarchically organised framework is less likely. Hierarchical organisation implies a great deal of flexibility and mental-shifting, as a simple example, in a search for 'apple', it would imply awareness that the word is related to 'pear' but also to 'fruit'. Awareness of this latter relation also suggests awareness that 'apple' is related to 'pomegranate'. This is of course, a simple example, but these associations can get very complex very quickly. Generally speaking, individuals with ASD prefer, and are more likely to engage in an item-specific processing style, and, whilst intelligent cognition is definitely possible, search queries are more likely formed of first-order associations\footnote{Of course there is a great deal of individual variability in Autism Spectrum Disorder.}. \\
 \\Several Psychology learning and intervention studies for individuals with high functioning ASD have suggested that assimilation and accommodation of new information is most appropriate when:\\
 \begin{enumerate}
 \item Information is concrete (i.e, not abstract).
-\item Information is presented in small manageable chunks.
+\item Information is presented in contextually-relevant chunks.
 \item Information is not verbally "overloaded" (not too many words).
 \item Information is presented in a set visual format to aid navigation.
 \end{enumerate}
-Several interventions have been built around this body of literature (www.autismspeaks.org).
-Given these findings from the literature we can make several adjustments to current Search tools to enhance their benefit for people with ASD. For example, a user with ASD would have improved user-experience if their search results:
+Several interventions have been built around this body of literature (see www.autismspeaks.org).
+Given these findings from the literature we can make several adjustments to current Search tools to enhance their benefit for people with ASD. For example:
 \begin{enumerate}
-\item Were first assessed (before presentation to the user) for the Key Word In a suitable context.
-\item Followed a similar order of semantic association, in line with the search query itself (preference for first-order relations). 
-\item Had smaller snippets and presented in a more manageable way (less overloaded with words).
-\item Were visually consistent.
-\item Had a high degree of verbal consistency/similarity with the search query.
+\item Assessing the results for the Key Word In (a suitable) Context.
+\item Using a similar order of semantic association, in line with the search query itself (precedence for first-order relations). 
+\item Smaller snippets and presenting in a more manageable way (less overloaded with words).
+\item Visual consistency.
+\item A high degree of verbal consistency/similarity with the search query.
 \end{enumerate}
 
 This project will \textbf{integrate} these insights from the Psychology literature with the proposed application.
 
 \subsection{Proposal Organisation}
 
-This proposal outlines my research to date on the field of Search, ASD, and Motion Controller interfaces. I also include my preliminary planning of the methods I will use to implement the enhanced Search tool for ASD. The remaining chapters discuss:
+This proposal outlines my research to date on Search, ASD, and Motion Controller interfaces. I also include my preliminary planning of the methods I will use to implement the enhanced Search tool for ASD. The remaining chapters discuss:
 \begin{enumerate}
 \item in Section~\ref{What should Search offer people with ASD}, I give a brief introduction to Search engines, and the downfalls of current Search engines for individuals with ASD. I discuss the motivation behind the proposed work
 \item in Section~\ref{usermodel}, I discuss the potential for user modeling within Search
 \item in Section~\ref{Existing Combination/Advanced Search Engines} I review current existing combination search engines 
 \item in Section~\ref{proposed} I outline my proposed search application for ASD
-\item in Section~\ref{api}, I briefly discuss API's and Libraries that I will use during the project, including Custom Search Engine APIs such as the Google Custom Search API, and Yahoo BOSS, Lucene Key Word In Context
+\item in Section~\ref{api}, I briefly discuss API's and Libraries that I will use during the project, including Custom Search Engine APIs such as the Google Custom Search API, and Yahoo BOSS, Apache Lucene Key Word In Context
 \item in Section~\ref{hardware} I review motion controller hardware that I aim to integrate with the search application
 \item in Section~\ref{plan} I outline my project plan, and
 \item in Section~\ref{future} I discuss the future directions and implications of this research.
@@ -81,7 +83,7 @@ This proposal outlines my research to date on the field of Search, ASD, and Moti
 The Internet is one of the largest resources of information, and can be searched by users from different areas of the world relatively quickly. Search engines allow users to collate hundreds of links on a single topic, using only a few words or phrases. The information returned is vast, and the depth of users’ searches can be determined by more advanced refinement options \footnote{For example, using the keyword NOT, or, by applying precedence to a selection of search query terms likely to be returned. This implies the user can flexiblly shift perspective to guess the keywords likely to be picked up and returned by the search engine. Assuming the user has this knowledge they may choose to do a targeted search for just some specific key term.}. Search is an therefore an important learning tool; its significance is duly noted because of the learning benefits it brings for children and adolescents as they begin to navigate the Internet and gain an understanding of several subjects. 
 
 \subsection{Clues from virtual reality and gaming}
-Almost all teenagers (97\% of those aged 12-17) use a computer, web, portable or console devices, 73\% of which is desktop or laptop based. Teenagers with ASD also use technology and spend a substantial amount of their time using devices \cite{Shane and Albert}. They are proficient, and use these devices with relative ease, showing high levels of engagement with consoles like the Xbox (Kinect) or Wii, Portable Gaming Devices (Nintendo DS), or cell phone or handheld device. For individuals with ASD, computer-based technologies can provide a stable, consistent learning environment that can be customized \cite{moore}. With this in mind, the proposed application will utilize motion controllers to facilitate user attention and engagement with Search. 
+Almost all teenagers (97\% of those aged 12-17) use a computer, web, portable or console devices, 73\% of which is desktop or laptop based. Teenagers with ASD also use technology and spend a substantial amount of their time using devices \cite{Shane and Albert}. They are proficient, and use these devices with relative ease, showing high levels of engagement with consoles like the Xbox (Kinect) or Wii, Portable Gaming Devices (Nintendo DS), or cell phone or handheld devices. For individuals with ASD, computer-based technologies can provide a stable, consistent learning environment that can be customized \cite{moore}. With this in mind, the proposed application will utilize motion controllers to facilitate user attention and engagement with Search. 
 
 \subsection{Motion Controllers}
 Motion recognition devices can be programmed to make consistent responses to environmental triggers. This is unlike real-world situations where environmental responses are not always consistent and may require further interpretation or ‘guess-work’. These controlled and interactive environments have shown promise for improving social communication skills and reducing repetitive behaviours \cite{gameshealth}.
@@ -96,18 +98,19 @@ A user model is a collection of information associated with a particular user, w
 Persona development will support the user modeling process by identifying particular characteristics of individuals with ASD in Search. An individual’s personal information pertaining to the persona, will be stored in a user profile which will contain information such as age, gender, lifestyle, frequent tasks, tools used, resources commonly used and crucially for this project, the profile will include information about diagnosis (Autism, Asperger, and high/low functioning).
 
 \subsection{Types of user models}
-User models can be static, and unchanging (i.e., no algorithms are used in order to teach the model about the changing preferences of the user, and no new information is fed into the model), or dynamic (representation of the user with their up-to-date changes in interests, and recent interactions with the system). Alternatively, user models can be stereotyped. This means they utilize demographic information to classify users into distinct subtypes. The system infers or assumes other characteristics about this subset of users by making use of data gathered from other users also included within this subset. Lastly a user model can be highly adaptive and try to model the one user on their own, without stereotyping or inferring the characteristics of the user. This type of user modeling requires a large amount of data collection prior to its implementation.
-\\The model can gather information through direct interaction with its user (e.g., via a registration process), by observing and interpreting the users actions, or, by a combination of both, that is, the system may ask for feedback, and alter its approach depending on the user’s behavior.
+User models can be static, and unchanging (i.e., no algorithms are used in order to teach the model about the changing preferences of the user, and no new information is fed into the model), or dynamic (representation of the user with their up-to-date changes in interests, and recent interactions with the system). Alternatively, user models can be stereotyped. This means they utilize demographic information to classify users into distinct subtypes. The system infers or assumes other characteristics about this subset of users by making use of data gathered from other users also included within this subset. Lastly a user model can be highly adaptive and try to model the one user on their own, without stereotyping or inferring the characteristics of the user. This type of user modeling requires a large amount of data collection prior to its implementation.\\
+The model can gather information through direct interaction with its user (e.g., via a registration process), by observing and interpreting the users actions, or, by a combination of both, that is, the system may ask for feedback, and alter its approach depending on the user’s behaviour.\\
+I will develop a stereotyped user model in the first instance, with the aim to add functionality and increase the adaptiveness of the model as it acquires more data via user-interaction.
 
 \subsection{Benefits and difficulties of user modeling in earch}
 A user model needs to collect data before it can predict the user’s needs with accuracy, but once this is achieved, information can be presented according to the user’s knowledge, ability and goals. It can also effectively filter out irrelevant information and rank the remaining search results in the most relevant way according for the user.
-Creating a user model is not an easy task. The designer of the system has to set weights of parameters for the information that is fed into the model, and decide what course of action to take when two pieces of information may conflict. Some of the difficulties associated with deciding the priorities of elements of the model will be decided with user-feedback. Other elements of the user model will be based on modeling well-researched cognitive processes in ASD (for example, a user model that focuses on first-order, or, item-specific relations to form a search query, rather than hierarchical relations to form a search query).  
+Creating a user model is not an easy task. The designer of the system has to set weights of parameters for the information that is fed into the model, and decide what course of action to take when two pieces of information may conflict. Some of the difficulties associated with deciding the priorities of elements of the model will be decided with user-feedback. Other elements of the user model will be based on modeling well-understood cognitive processes in ASD (for example, a user model that focuses on first-order, or, item-specific relations to form a search query, rather than hierarchical relations to form a search query).  
 
 \subsection{Adaptive / Personalised Search}
 Adaptive or Personalised search, is one way in which search engines including Google, Yahoo and Bing have attempted to tailor the search results for their users. The feature was first introduced as part of a GoogleLabs project in 2004 and implemented in 2005. It associates each user search with a HTTP cookie – this is a piece of data (a text file) sent from the website and saved in the users’ browser when the user navigates that website. These cookies contain information such as login information (gender, age), preferences (languages, interests) and other information about previous searches based on site traffic. The cookies allow the website to ‘remember’ stateful information about what buttons the user clicked on, or what sites they visited. This cookie record allows the search engine to return results that are highly relevant to the search query, but also highly relevant to the pages that the user visited through previous searches. When personalised or adaptive search is combined with GPS data from a smartphone or device, it can provide useful information about the places that user has previously visited to higher rank local items in the users returned results. This creates a personalized or adaptive web search, as the feature allows the web search to be tailored to the user’s preferences over the course of time, and as more searches are recorded.
 
 \subsection{Disadvantages of Curent Adaptive Search for Individuals with ASD}
-Although adaptive search seems to have significant user benefit in terms of relevance to the user for that search query, it decreases the likelihood that the user encounters new information and biases the results towards the users location and their previous site traffic.  This has the unwanted effect of creating a filter bubble (Pariser, 2011), which is argued to close us off from important and relevant information and create a personal ecosystem of information for one particular user, creating the impression that “our narrow self interest is all that exists”. The filter bubble also has potential privacy problems, as the user may be unaware that the search has been specifically tailored towards their interests and they wonder why things that they have previously searched for have become more and more relevant. The filter bubble may positively reinforce restricted interests in ASD as the user constantly receives feedback about their previous (idiosyncratic and personalized) searches without being able to break out of that repetitive loop. 
+Although adaptive search seems to have significant user benefit in terms of relevance to the user for that search query, it decreases the likelihood that the user encounters new information and biases the results towards the users location and their previous site traffic.  This has the unwanted effect of creating a filter bubble (Pariser, 2011), which is argued to close us off from important and relevant information and create a personal ecosystem of information for one particular user, creating the impression that “our narrow self interest is all that exists”. The filter bubble also has potential privacy problems, as the user may be unaware that the search has been specifically tailored towards their interests and they wonder why things that they have previously searched for have become more and more relevant. There are search engines that have attempted to address this unwanted effect, by not tracking or saving user information (e.g., DuckDuckGo.com). As users are not linked to their search queries, it limits them being targetted by adverts related to their previous searches. The filter bubble may positively reinforce restricted interests in ASD as the user constantly receives feedback about their previous (idiosyncratic and personalized) searches without being able to break out of that repetitive loop. 
 Recent research has suggested personalization also increases ‘background noise’ relative to the search results \cite{briggs}. Briggs (2014) suggests that there is a carry-over effect in personalized search for the users, whereby prior search results influence the results of subsequent searches \footnote{It should be noted that personalization of search results generally takes a lower priority for the ranking algorithms than the URLs ranked top in terms of their relevance for the search query.}.  Nevertheless this carry-over may be disadvantageous for people with ASD as it muddies their search space.
 In order to produce a search tool specifically tailored to reduce the filter bubble effect in ASD, widen the information gateway and reduce the possibility for restricted and repetitive searches, the weighting on previous search results needs to be reduced. This would be particularly important for individuals with restricted interests. For these users, it would limit the possibility that they get trapped in a spiraling loop of ever-narrowing user-relevant information and over personalization of self-reinforced information ecosystems.
 
@@ -115,6 +118,8 @@ In order to produce a search tool specifically tailored to reduce the filter bub
 The user will be asked to sign in with a Google+ account (providing their demographic imformation), and the Google+ API will be used to store/retrieve this information about the current user. The API contains methods to access 4 resource  types; People, their Activities, Comments and Moments. A person is represented with many fields in Google +, including name, gender, title, occupation, all of which can be used to model individual users in the current project. Information about web searching history for any individual user can be obtained from the browser history (if needed). 
 
 \section{Existing Combination/Advanced Search Engines}\label{Existing Combination/Advanced Search Engines}
+There are several search engines which return combined results to users wishing to conduct a more 'complete' search, four of which are described below. 
+
 \subsection{Bing vs Google}
 Bing vs. Google presents the users’ search query results from both search engines to allow the user to make a comparison (the Google and Bing results can be presented vertically or horizontally beside each other), and provides the experience of navigating both search pages simultaneously.  
 The number of other personal preferences options is very limited (the orientation of the results is just about all the user has the option to choose). There is also double the information on the page, so not suitable for the current project.
@@ -130,15 +135,15 @@ Spectra takes searching from Google, Bing and Yahoo engines one-small-step-furth
 
 \subsection{Conclusions and ways forward}
 These search engines allow users to see more results than what one search engine alone would present, they often do this with a cost -- redundancy. The benefits are that there is more information presented to the users at once but often at a cost of ‘cognitive overload’ and/ or near –duplicates. This is not ideal for users with ASD, as this is precisely the opposite of what the application's aims and objectives were see Section~\ref{prob}.
-To date, a user model for ASD within Search has not been built. The following section proposes an application that will try and address this issue.
+The following section proposes an application that will try and address this issue.
 
 
 \section{Proposed Search Page and Controller Web Application}\label{proposed}
 This project will produce a search engine designed to enhance the user experience within search for people with ASD. Below I list the core and non-core features to include:
 
 \begin{center}
-\includegraphics[scale=0.7]{searchEngArchi}\\
-(ref for Search Engine Architecture Image: https://insightsdelight.wordpress.com/2012/01/24/inverted-index-the-basic-ingredient-behind-the-recipe-called-search-engine/)
+\includegraphics[scale=0.7]{searchEngArchi}
+Proposed application: The User Model will be applied to existing Search Engine Architecture\cite{seimage}, and be integrated with a Motion Controlled interface.
 \end{center}
 
 
@@ -155,7 +160,7 @@ This project will produce a search engine designed to enhance the user experienc
 \begin{enumerate}
 
 \item Investigating the user preferences when a page with a higher number of pictures ranks higher than those with many words. 
-
+\item Investigating the use of the three.Js library for 3D user interface (based on WebGL)
 \item An investigation of other motion controller devices, possibly the Oculus VR Rift, Xbox Kinect.
 
 \end{enumerate}
@@ -192,9 +197,7 @@ The Apache Lucene open-source search engine library written in Java allows conte
 Persona (a type of user) development will support the user modeling process by identifying particular characteristics of individuals with ASD in Search. An individual’s personal information pertaining to the persona, will be stored in a Google+ user profile and can be used with the Google+ API (written in Java), containing information such as age, gender, lifestyle, frequent tasks, tools used, resources commonly used. It is also be possible to store information in the 'about me' section on the profile about individual diagnosis (Autism, Asperger, and high/low functioning). This information can be parsed when the query is submitted to the search engine.
 
 \subsubsection{API for LEAP Motion Controller}
-Leap Motion SDK offers 2 types of API to get tracking data from the Leap Motion Service. A native dynamic library interface, to create LEAP applications, and a WebSocket interface, allowing Leap Web Based applications. I will use the latter of the two.
-
-The LEAP motion service has a WebSocket server listening in on http://127.0.0.1:6437. The user can enable or disable the WebSocket server as they choose to do so, in the device's control panel.
+Leap Motion SDK offers an API to get tracking data from the Leap Motion Service. A WebSocket interface, allows LEAP Web Based applications, and a WebSocket server listening in on http://127.0.0.1:6437. The user can enable or disable the WebSocket server as they choose to do so, in the device's control panel.
 The server sends tracking data in JSON messages and an application can send configuration messages back. This library will be used to establish connection to the server and consume the JSON messages \cite{leap}. 
 
 
@@ -258,45 +261,42 @@ The LEAP recognises certain movement patterns (for each finger or tool individua
 
 \subsection{Project Timeline}
 A highlevel plan of the project timeline is presented in table ~Table \ref{stages}. The start date of the project is June 5th 2015, and end date is September 13th 2015.
-\begin{table}[!htbp]
+\begin{table}[h]
 \caption{Project Stages} 
 \centering
-\begin{tabular}{ c c}
+\begin{tabular}{ L |c| L}
 \hline\hline 
-Dates \# & Task \\ [0.5ex]
+Dates \# & Task & Priority\\ [0.5ex]
 \hline 
-Jun 05 - Jun 12 & Gather relevant API's \& Libraries.\\
-Jun 13 - Jun 19 & Work on synthesis of search results.\\
-Jun 20 - Jun 27 & Build \& Research user model of ASD \\
-Jun 28 - Jul 06 & Work on configuration with Google+ API\\
-Jul 07 - Jul 14 & Apply User Model to Search\\ 
-Jul 14 - Jul 21 & Develop User Interface\\
-Jul 21 - Jul 28 & Integrate motion controller tools\\
-Jul 29 - Aug 05 & Develop Questionnaire and Eye-Tracker Set up.\\ 
-Aug 06 - Aug 13 & Test the model and ask for user feedback.\\
-Aug 14 - Aug 21 & Revise the Model and Interface\\
-Aug 11 - Aug 25 & Write up project report.\\ 
-Early Sep (tbc) & Present findings to supervisor. \\[1ex]
+Jun 05 - Jun 12 & Gather relevant API's \& Libraries & MUST\\
+Jun 13 - Jun 19 & Work on synthesis of search results & MUST\\
+Jun 20 - Jun 27 & Build \& Research user model of ASD & MUST\\
+Jun 28 - Jul 06 & Work on configuration with Google+ API& MUST\\
+Jul 07 - Jul 14 & Apply User Model to Search& MUST\\ 
+Jul 14 - Jul 21 & Develop User Interface& MUST\\
+Jul 21 - Jul 28 & Integrate motion controller tools& MUST\\
+Jul 29 - Aug 05 & Develop Questionnaire and Eye-Tracker Set up & MUST\\ 
+Aug 06 - Aug 13 & Test the model and ask for user feedback & MUST\\
+Aug 14 - Aug 21 & Revise the Model and Interface & MUST\\
+Aug 14 - Aug 21 & Develop user interface with other motion controllers & COULD (time permitting)\\
+Aug 22 - Aug 29 & Develop user interface using WebGL/threeJs library & COULD (time permitting)\\
+Aug 22 - Aug 29 & Write up project report & MUST\\ 
+Early Sep (tbc) & Present findings to supervisor & MUST\\
+Sep 13 & Submit report & MUST\\[1ex]
 \hline
 \end{tabular}
 \label{stages} 
 \end{table}
-
-TODO!!
-Describe my Product Features\\
-Describe ‘user stories’ e.g., a user wants to be able to search for pages containing the most videos.\\
-Assign these a priority: Must Could Should Want (MCSW model)\\
-Set SPRINT deadlines to enable the functionality
-
 
 \subsection{Methodology}
 The current project has a relatively short deadline in which a single developer will research and deliver a system prototype and report. The APIs, technology and areas of development are unfamiliar. In addiion the final product depends on user feedback testing, there is an element of uncertainty about what the final product will be/should look like, a feature may be added/removed at the feedback stage. The characteristics of the current project mean that the most suitable methodology to deliver the application is Agile Methodology. I will focus on an incremental development and rapid feedback early in the development, to make changes to the project direction. This methodology works well with the demands and offers the most flexibility and adaptability.
 
 
 \subsection{Development Languages}
+I will use Eclipse text editor and attempt to make the application compatible with Google Chrome browser (as it is WebGL-compatible and may be useful for 3D interfaces). The Google, Yahoo, Bing and Apache Lucene APIs are available in Java. The LEAP SDK sends Frame information in JSON format to Web Browsers. As a non-core feature, I may use a 3D interface with the three.Js library which is also JSON format. I will use HTML5 for the developemnt of the development of the Web Application itself. I will use Git for Version Control, JUnit and JSON Test and Mockito for testing.
 
 \subsection{Testing}
-\subsubsection{Feasibility Testing}
+\subsubsection{User Testing}
 To ascertain whether the goals of the project have been met I will need to test the application with people with Autism. This will include;
 \begin{itemize}
 \item Recruiting participants to take part in the research. Adolescents and adults with a diagnosis of ASD. Recruited from NAS, will be asked to test the application.
@@ -307,13 +307,25 @@ To ascertain whether the goals of the project have been met I will need to test 
 \subsubsection{Unit Testing}
 For testing the application code, I will be using Test Driven Development (TDD). For Java I will use the current version of JUnit (at the time of writing this is 4.12).External dependencies will be mock tested using Mockito. JSON Test will be used to test JavaScript Object Notation \cite{jsontest}. As well as unit testing, Regression testing will be used to testing the project as a whole unit.
 
-\subsection{Risks/Issues, probabilities and mitigation of impact}
-not being able to use the API freely\\
-the API not allowing the use of hieracrchical structure testing\\
-find work around for this?
-\begin{enumerate}
-\item There is a likelihood the Google, Yahoo and Bing APIs will 
-\end{enumerate}
+\subsection{Risks/issues, probabilities and mitigation of impact}
+The possible risks associated with the projects development, their impact and how I will attempt to mitigate these risks is outlined in ~Table \ref{risks}. 
+\begin{table}[h]
+\caption{Risks \& Impact Mitigation} 
+\centering
+\begin{tabular}{|c | c | L | L |}
+\hline\hline 
+Liklihood & Impact \# & Risk & Mitigation\\ [0.5ex]
+\hline 
+LOW & HIGH & API's require significantly high payment & Find/use alternative\\
+LOW & HIGH & KWIC library does not offer methods needed to acheive goals of contextual text search & See if I can implement the method, or find additional API\\
+LOW & MEDIUM & Cannot get research participants with Autism to take part in a usability test & Expand age range of interest in attempt to find participants\\ 
+MEDIUM & MEDIUM & Google+ API does not configure a user persona/user model well & Use Facebook or alternative\\
+MEDIUM & HIGH & LEAP does not integrate with web application & Investigate user forums, contact LEAP to source answers, adjust web application accordingly.\\
+MEDIUM & HIGH & Not enough turn around time to implement the feedback & Develop plan and prototype in time for report submission\\[1ex]
+\hline
+\end{tabular}
+\label{risks} 
+\end{table}
 
 
 \section{Summary \& Concluding Statement}\label{future}
@@ -342,6 +354,8 @@ Shane HC1, Albert PD.
 
 \bibitem{jsontest}http://www.jsontest.com/
 
+\bibitem{triad}source: http://media.kingdown.wilts.sch.uk/mod/page/view.php?id=7374
+
 \bibitem {Lasater}Lasater, M. W., \& Brady, M. P. (1995). Effects of video self-modeling and feedback on task fluency: A home-based intervention. Education and treatment of children, 18, 389-407.
 
 
@@ -350,6 +364,8 @@ Shane HC1, Albert PD.
 \bibitem{fabienne}Fabienne Samson, Laurent Mottron, Isabelle Soulières, Thomas A. Zeffiro. Enhanced visual functioning in autism: An ALE meta-analysis. Human Brain Mapping, 2011; DOI: 10.1002/hbm.21307
 
 \bibitem{kwic}Manning, C. D., Schütze, H.: Foundations of Statistical Natural Language Processing, p.35. The MIT Press, 1999
+
+\bibitem{seimage}https://insightsdelight.wordpress.com/2012/01/24/inverted-index-the-basic-ingredient-behind-the-recipe-called-search-engine/
 
 \bibitem {Economist} Invisible sieve: Hidden, specially for you. The Economist. 30 June 2011. Retrieved June 27, 2011. Mr Pariser’s book provides a survey of the internet’s evolution towards personalisation, examines how presenting information alters the way in which it is perceived and concludes with prescriptions for bursting the filter bubble that surrounds each user.
 

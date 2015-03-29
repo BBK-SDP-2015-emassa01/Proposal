@@ -12,10 +12,10 @@
 \contentsline {section}{\numberline {3}Creating a User Model of ASD}{5}
 \contentsline {subsection}{\numberline {3.1}What is a user model?}{5}
 \contentsline {subsection}{\numberline {3.2}Types of user models}{5}
-\contentsline {subsection}{\numberline {3.3}Benefits and difficulties of user modeling in earch}{5}
+\contentsline {subsection}{\numberline {3.3}Benefits and difficulties of user modeling in earch}{6}
 \contentsline {subsection}{\numberline {3.4}Adaptive / Personalised Search}{6}
 \contentsline {subsection}{\numberline {3.5}Disadvantages of Curent Adaptive Search for Individuals with ASD}{6}
-\contentsline {subsection}{\numberline {3.6}Persisting the User's Information?}{6}
+\contentsline {subsection}{\numberline {3.6}Persisting the User\'s Information?}{6}
 \contentsline {section}{\numberline {4}Existing Combination/Advanced Search Engines}{7}
 \contentsline {subsection}{\numberline {4.1}Bing vs Google}{7}
 \contentsline {subsection}{\numberline {4.2}Qrobe.it}{7}
@@ -47,10 +47,10 @@
 \contentsline {subsubsection}{\numberline {7.2.5}Gestures}{12}
 \contentsline {section}{\numberline {8}Project Plan}{12}
 \contentsline {subsection}{\numberline {8.1}Project Timeline}{12}
-\contentsline {subsection}{\numberline {8.2}Methodology}{12}
+\contentsline {subsection}{\numberline {8.2}Methodology}{13}
 \contentsline {subsection}{\numberline {8.3}Development Languages}{13}
 \contentsline {subsection}{\numberline {8.4}Testing}{13}
-\contentsline {subsubsection}{\numberline {8.4.1}Feasibility Testing}{13}
+\contentsline {subsubsection}{\numberline {8.4.1}User Testing}{13}
 \contentsline {subsubsection}{\numberline {8.4.2}Unit Testing}{13}
-\contentsline {subsection}{\numberline {8.5}Risks/Issues, probabilities and mitigation of impact}{13}
+\contentsline {subsection}{\numberline {8.5}Risks/issues, probabilities and mitigation of impact}{13}
 \contentsline {section}{\numberline {9}Summary \& Concluding Statement}{13}
