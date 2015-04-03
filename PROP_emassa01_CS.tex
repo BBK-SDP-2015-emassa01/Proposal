@@ -13,7 +13,7 @@
 
 \begin{document}
 
-\title{A User Model for People with Autism within Search }
+\title{User Modeling and Personalisation in Search for People with Autism}
 \author{Esha Massand\\
 MSc Computer Science Project Proposal\footnote{This proposal is substantially the result of my own work, expressed in my own words, except where explicitly indicated in the text. I give my permission for it to be submitted to the JISC Plagiarism Detection Service. }}
 \date{\today}
@@ -27,8 +27,8 @@ The current proposal presents my objective to research and build a user model wi
 
 \section{Introduction \& Background}
 \subsection{Problem Statement} \label{prob}
-Most search engines apply user models to refine search queries. No research to date has attempted to define a user model within search for individuals with Autism. It is currently unknown whether current user models need to be adjusted for this subgroup of the population. We argue that the user models that underlie the way in which search queries are handled, and the needs of the user differ to the mainstream models. This project aims to build a user model of Autism to address this issue.
-As it has been shown that individuals with Autism are more engaged (demonstrate sustained attention) when using technology that is receptive and interactive (e.g., games, responsive consoles, motion controlled devices) compared to technology that is not. This project will combine interactive, motion recognition hardware with Search to improve the UI and architecture of Search for individuals with Autism.
+Most search engines apply general user models to refine user search queries. These models can often lack specificity for specific users, and are generally not adapted for specific groups of users \cite{usermodel}. Adaptive search engines have now become prominent; they use search history, locale, and demographics to match results to the user's intentions. However, these models make several a priori assumptions about users from specific subgroups. No research to date has attempted to define a user model within search for individuals with Autism. It is currently unknown whether current user models need to be adjusted for this subgroup of the population. We argue that general user models, and the needs of the user with Autism differ. This project aims to build a user model of Autism to address this issue.
+As it has been shown that individuals with Autism are more engaged (demonstrate sustained attention) when using technology that is receptive and interactive (e.g., games, responsive consoles, motion controlled devices) compared to technology that is not \cite{motioncontrollerforautism}, this project will combine interactive, motion recognition hardware with Search to improve the UI and architecture of Search for individuals with Autism.
 
 \subsection{The Role of Context In Search}
 It is unlikely that any given page on the web will contain a word or phrase that means exactly (or nearly) the same as another word or phrase in that language (e.g., shut and close). How is it then that your search engine of choice picks these phrases to mean the same thing, and returns them synonymously in the results of your query? Well, quite simply put, it is by virtue of the fact that each of their neighbouring words and associations are similar. These are indirect, higher-order associations, and provide the context in which the search engine can index keywords. This context plays a crucial role in search; first, in the interpretation of the user query, and second, it is reflected in the results returned to the user.
@@ -114,6 +114,32 @@ Given these findings from the literature we can make several adjustments to curr
 
 This project will \textbf{integrate} these insights from the Psychology literature with the proposed application.
 
+\subsection{Proposed Search and Controller Web Application}\label{proposed}
+This project will produce a Search web application designed to enhance the UI and UX within search for people with Autism. Below I list the core and non-core features included:
+
+\begin{center}
+\includegraphics[scale=0.7]{searchEngArchi}
+Proposed application: The User Model will be applied to existing Search Engine Architecture\cite{seimage}, and be integrated with a Motion Controlled interface.
+\end{center}
+
+
+\subsubsection{Core Features}
+\begin{enumerate}
+\item  A web application that synthesises the results from three of the largest and most popular search engines (Google, 67.5\%, Microsoft Bing 18.4\% and Yahoo 10.3\%) \cite{adam}
+
+\item The design and implementation of a stereotyped user model to apply to the search results, and filter them according to specific user needs. The model will return concrete, manageable (not text-overloaded) results, in a consistent manner. The search engine will perform a Key Word In Context search and prioritise results where the key words are used directly, or results have first-order semantic relations to the query words (see Section~\ref{the problem}), i.e., they appear in matched context to the search query.
+
+\item The application will utilise motion controllers to enhance embodiment within search, and enhance the search query process. I will investigate the use of the LEAP motion controller as the main device in the first instance.
+\end{enumerate}
+
+\subsubsection{Non-core Features}
+\begin{enumerate}
+
+\item Investigating the user preferences for pages with a higher number of pictures. Implement a ranking system for pages with more images to score higher than those with many words. 
+\item Investigating the use of the three.Js library for 3D UI (based on WebGL) to integrate with motion controllers.
+\item Investigating other motion controller devices (e.g., head-mounted devices).
+
+\end{enumerate}
 
 \section{Plan for Developing the Solution}
 
@@ -143,32 +169,7 @@ The user will be asked to sign in with a Google+ account (providing their demogr
 
 
 
-\subsection{Proposed Search and Controller Web Application}\label{proposed}
-This project will produce a Search web application designed to enhance the UI and UX within search for people with Autism. Below I list the core and non-core features included:
 
-\begin{center}
-\includegraphics[scale=0.7]{searchEngArchi}
-Proposed application: The User Model will be applied to existing Search Engine Architecture\cite{seimage}, and be integrated with a Motion Controlled interface.
-\end{center}
-
-
-\subsubsection{Core Features}
-\begin{enumerate}
-\item  A web application that synthesises the results from three of the largest and most popular search engines (Google, 67.5\%, Microsoft Bing 18.4\% and Yahoo 10.3\%) \cite{adam}
-
-\item The design and implementation of a stereotyped user model to apply to the search results, and filter them according to specific user needs. The model will return concrete, manageable (not text-overloaded) results, in a consistent manner. The search engine will perform a Key Word In Context search and prioritise results where the key words are used directly, or results have first-order semantic relations to the query words (see Section~\ref{the problem}), i.e., they appear in matched context to the search query.
-
-\item The application will utilise motion controllers to enhance embodiment within search, and enhance the search query process. I will investigate the use of the LEAP motion controller as the main device in the first instance.
-\end{enumerate}
-
-\subsubsection{Non-core Features}
-\begin{enumerate}
-
-\item Investigating the user preferences for pages with a higher number of pictures. Implement a ranking system for pages with more images to score higher than those with many words. 
-\item Investigating the use of the three.Js library for 3D UI (based on WebGL) to integrate with motion controllers.
-\item Investigating other motion controller devices (e.g., head-mounted devices).
-
-\end{enumerate}
 
 \subsection{Implementing the Application}\label{api}
 \subsubsection{Selecting Existing Search Engines} 
@@ -305,7 +306,7 @@ JSON is light weight, language-independent data format, and a good tool for shar
 To ascertain whether the goals of the project have been met I will need to test the application with people with Autism. This will include;
 \begin{itemize}
 \item Recruiting participants to take part in the research. Adolescents and adults with a diagnosis of Autism Spectrum. Recruited from NAS, will be asked to test the application.
-\item Obtaining user feedback on the initial product by testing the web search with the LEAP motion controller, with a group of individuals diagnosed with Autism. I will design a questionnaire to test the application's feasibility. If time allows, I hope to use a Tobii Eye-tracker TX300 (in the Department of Psychology, Centre for Brain and Cognitive Development, Birkbeck University of London) to gather high resolution eye-tracking data on the participants as they use the application. This will inform my future developments for revising the application.
+\item Obtaining user feedback (relevance/explicit feedback, and, implicit feedback, e.g., mouse-clicks) on the initial product by testing the web search with the LEAP motion controller, with a group of individuals diagnosed with Autism. I will design a questionnaire to test the application's feasibility. If time allows, I hope to use a Tobii Eye-tracker TX300 (in the Department of Psychology, Centre for Brain and Cognitive Development, Birkbeck University of London) to gather high resolution eye-tracking data on the participants as they use the application. This will inform my future developments for revising the application.
 \item Revising the model and the ideas to choose the best possible approach/tools to achieve optimization for people with Autism.
 \end{itemize}
 
@@ -330,7 +331,9 @@ LOW & MEDIUM & Cannot get research participants with Autism to take part in a us
 MEDIUM & MEDIUM & Google+ API does not configure a user persona/user model well & Use Facebook or alternative\\
 \hline 
 MEDIUM & HIGH & LEAP does not integrate with web application & Investigate user forums, contact LEAP to source answers, adjust web application accordingly.\\
-\hline 
+\hline
+MEDIUM & HIGH & User Model lacks power and users are unhappy with the Search system & Gather feedback for a further iteration. Modify weights of parameters in the algorithm. Revise the model. \\
+\hline
 MEDIUM & HIGH & Not enough turn around time to implement the feedback & Develop plan and prototype in time for report submission\\[1ex]
 \hline
 \end{tabular}
@@ -345,6 +348,10 @@ We are moving towards highly personalized information access and retrieval syste
 \begin{thebibliography}{100}
 
 \bibitem {gameshealth} Games for Health (2012) Screen-based technologies and Autism. 1: 248-53
+
+\bibitem {usermodel}Xuehua Shen, Bin Tan, ChengXiang Zhai (2005) Implicit User Modeling for Personalized Search, Conference on Information and Knowledge Management, Bremen, Germany.
+
+\bibitem{motioncontrollerforautism} Franca Garzotto, Matteo Valoriani and Laura Bartoli (2014), Touchless Motion-Based Interaction for Therapy of Autistic Children, Virtual, Augmented Reality and Serious Games for Healthcare 1 Intelligent Systems Reference Library Volume 68, 2014, pp 471-494
 
 \bibitem{moore}Moore, D. J., McGrath, P., \& Thorpe, J. (2000). Computer aided learning for people with autism—a framework for research and development. Innovations in Education and Training International, 37, 218–228.
 
