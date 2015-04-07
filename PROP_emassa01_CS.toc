@@ -9,49 +9,49 @@
 \contentsline {subsubsection}{\numberline {1.5.3}Motion Controllers}{4}
 \contentsline {subsubsection}{\numberline {1.5.4}Visual not text-based}{4}
 \contentsline {subsection}{\numberline {1.6}Existing Combination/Advanced Search Engines}{4}
-\contentsline {subsubsection}{\numberline {1.6.1}Bing vs Google}{5}
+\contentsline {subsubsection}{\numberline {1.6.1}Bing vs Google}{4}
 \contentsline {subsubsection}{\numberline {1.6.2}Qrobe.it}{5}
 \contentsline {subsubsection}{\numberline {1.6.3}AskBoth}{5}
 \contentsline {subsubsection}{\numberline {1.6.4}Spectra}{5}
 \contentsline {subsubsection}{\numberline {1.6.5}Conclusions and ways forward}{5}
 \contentsline {section}{\numberline {2}Aims and Objectives}{5}
-\contentsline {subsection}{\numberline {2.1}Proposed Search and Controller Web Application}{6}
+\contentsline {subsection}{\numberline {2.1}Proposed Search and Controller Web Application}{5}
 \contentsline {subsubsection}{\numberline {2.1.1}Core Features}{6}
-\contentsline {subsubsection}{\numberline {2.1.2}Non-core Features}{7}
+\contentsline {subsubsection}{\numberline {2.1.2}Non-core Features}{6}
 \contentsline {section}{\numberline {3}Plan for Developing the Solution}{7}
 \contentsline {subsection}{\numberline {3.1}Creating a User Model of Autism}{7}
 \contentsline {subsubsection}{\numberline {3.1.1}What is a user model?}{7}
 \contentsline {subsubsection}{\numberline {3.1.2}Types of user models}{7}
 \contentsline {subsubsection}{\numberline {3.1.3}Benefits and difficulties of user modeling in Search}{7}
-\contentsline {subsubsection}{\numberline {3.1.4}Adaptive / Personalised Search}{8}
+\contentsline {subsubsection}{\numberline {3.1.4}Adaptive / Personalised Search}{7}
 \contentsline {subsubsection}{\numberline {3.1.5}Disadvantages of Current Adaptive Search for Individuals with Autism}{8}
 \contentsline {subsubsection}{\numberline {3.1.6}Persisting the User's Information}{8}
-\contentsline {subsection}{\numberline {3.2}Implementing the Application}{9}
-\contentsline {subsubsection}{\numberline {3.2.1}Selecting Existing Search Engines}{9}
+\contentsline {subsection}{\numberline {3.2}Implementing the Application}{8}
+\contentsline {subsubsection}{\numberline {3.2.1}Selecting Existing Search Engines}{8}
 \contentsline {subsubsection}{\numberline {3.2.2}APIs, Text-Search Libraries}{9}
 \contentsline {subsubsection}{\numberline {3.2.3}Google Custom Search}{9}
 \contentsline {subsubsection}{\numberline {3.2.4}Yahoo BOSS}{9}
 \contentsline {subsubsection}{\numberline {3.2.5}Bing Search API (Data)}{9}
 \contentsline {subsubsection}{\numberline {3.2.6}Faroo API}{9}
-\contentsline {subsubsection}{\numberline {3.2.7}Apache Lucene Library}{10}
+\contentsline {subsubsection}{\numberline {3.2.7}Apache Lucene Library}{9}
 \contentsline {subsubsection}{\numberline {3.2.8}Key Word In Context}{10}
 \contentsline {subsubsection}{\numberline {3.2.9}Google+ API}{10}
 \contentsline {subsubsection}{\numberline {3.2.10}API for LEAP Motion Controller}{10}
 \contentsline {subsubsection}{\numberline {3.2.11}ThreeJs Library (Non-Core)}{10}
 \contentsline {subsection}{\numberline {3.3}Integrating the Application with Motion Controller Hardware }{10}
 \contentsline {subsubsection}{\numberline {3.3.1}Hardware Selection Process}{10}
-\contentsline {subsubsection}{\numberline {3.3.2}LEAP Controller}{11}
+\contentsline {subsubsection}{\numberline {3.3.2}LEAP Controller}{10}
 \contentsline {subsubsection}{\numberline {3.3.3}Hands}{11}
 \contentsline {subsubsection}{\numberline {3.3.4}Arms}{11}
-\contentsline {subsubsection}{\numberline {3.3.5}Fingers}{12}
+\contentsline {subsubsection}{\numberline {3.3.5}Fingers}{11}
 \contentsline {subsubsection}{\numberline {3.3.6}Tools \& Pointables}{12}
 \contentsline {subsubsection}{\numberline {3.3.7}Gestures}{12}
 \contentsline {subsection}{\numberline {3.4}Project Plan}{12}
 \contentsline {subsubsection}{\numberline {3.4.1}Project Timeline}{12}
-\contentsline {subsubsection}{\numberline {3.4.2}Methodology}{13}
+\contentsline {subsubsection}{\numberline {3.4.2}Methodology}{12}
 \contentsline {subsubsection}{\numberline {3.4.3}Development Languages}{13}
 \contentsline {subsubsection}{\numberline {3.4.4}Testing}{13}
 \contentsline {subsubsection}{\numberline {3.4.5}User Testing}{13}
 \contentsline {subsubsection}{\numberline {3.4.6}Unit Testing}{13}
 \contentsline {subsubsection}{\numberline {3.4.7}Risks/issues, probabilities and mitigation of impact}{13}
-\contentsline {subsection}{\numberline {3.5}Summary \& Concluding Statement}{14}
+\contentsline {subsection}{\numberline {3.5}Summary \& Concluding Statement}{13}

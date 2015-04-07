@@ -28,7 +28,7 @@ The current proposal presents my objective to research and build a user model an
 \section{Introduction \& Background}
 \subsection{Problem Statement} \label{prob}
 Most search engines apply user models to refine user search queries. These models can often lack specificity for users/groups of users \cite{usermodel}. Although adaptive search engines have now become prominent; they use search history, locale, and demographics to match results to the user's intentions, these models make several a priori assumptions about users from specific subgroups. No attempts have been made to define a user model within search for individuals with Autism, so it is currently unknown whether current user models need to be adjusted for this subgroup. We argue that general user models, and the needs of the user with Autism differ, and the project aims to build a user model of Autism to address this issue.\\
-As it is well established that individuals with Autism are more engaged when using technology that is receptive and interactive (e.g., games, responsive consoles, motion controlled devices) compared to technology that is not \cite{motioncontrollerforautism}, this project will combine interactive, motion recognition hardware with Search to improve the UI and architecture of Search for individuals with Autism.
+As it is well established that individuals with Autism are more engaged when using technology that is receptive and interactive (e.g., games, responsive consoles, motion controlled devices) compared to technology that is not \cite{motioncontrollerforautism}, this project will combine interactive, motion recognition hardware with Search to improve the UI (user interface) and architecture of Search for individuals with Autism.
 
 \subsection{What is the Autism Spectrum?}
 Autism is amongst the most common neurodevelopmental condition and it is currently estimated that 1/68 children meet criteria for Autism Spectrum (CDC, 2014). Autism is five times more common amongst boys than girls (1/42 boys, and 1/189 girls). According to the DSM-V (2013) diagnostic manual, Autism is characterized by persistent and early deficits in reciprocal social interaction and repetitive behaviours. Individuals vary from high functioning to low functioning (along a spectrum), with behaviours emerging around 2 to 3 years of age. 
@@ -95,27 +95,10 @@ These search engines allow users to see more results than what one search engine
 I will work on the creation and synthesis of the results using the Google, Bing and Yahoo API's, and incorporate a user model of Autism.
 
 \section{Aims and Objectives} 
-Psychology learning and intervention studies for individuals with high functioning Autism have suggested that assimilation and accommodation of new information is most appropriate when:
-\begin{enumerate}
-\item Information is concrete (not abstract).
-\item Information is presented in contextually-relevant chunks.
-\item Information is not verbally "overloaded" (not too many words).
-\item Information is presented in a set visual format.
-\end{enumerate}
-Several interventions have been built around this body of literature (see www.autismspeaks.org).
-Given these findings from the literature we can make several adjustments to current Search tools to enhance their benefit for people with Autism. For example:
-\begin{enumerate}
-\item Assessing the results for the Key Word In (a suitable) Context.
-\item Using a similar order of semantic association, in line with the search query itself (precedence for first-order relations). 
-\item Smaller snippets and presenting in a more manageable way (less overloaded with words).
-\item Visual consistency.
-\item A high degree of verbal consistency/similarity with the search query.
-\end{enumerate}
-
-This project will \textbf{integrate} these insights from the Psychology literature with the proposed application.
+It has been suggested in the Psychology literature that individuals with Autism best assimilate new information when it is: concrete (not abstract); presented in contextually-relevant chunks; not verbally "overloaded" (not too many words); and presented in a set visual format. Given that several interventions have been built around this body of literature (see www.autismspeaks.org), we can make adjustments to current Search to enhance its benefit for people with Autism. For example, results can: be assessed for the Key Word In (a suitable) Context; use a similar order of semantic association, in line with the search query itself (precedence for first-order relations); have smaller snippets and be presented in a more manageable way (less overloaded with words); have visual consistency; have a high degree of verbal consistency/similarity with the search query.\\This project will \textbf{integrate} these insights from the Psychology literature with the proposed application.
 
 \subsection{Proposed Search and Controller Web Application}\label{proposed}
-This project will produce a Search web application designed to enhance the UI and UX within search for people with Autism. Below I list the core and non-core features included:
+Below I list the core and non-core features of the Search tool:
 
 \begin{center}
 \includegraphics[scale=0.7]{searchEngArchi}
@@ -127,21 +110,21 @@ Proposed application: The User Model will be applied to existing Search Engine A
 \begin{enumerate}
 \item  A web application that synthesises the results from three of the largest and most popular search engines (Google, 67.5\%, Microsoft Bing 18.4\% and Yahoo 10.3\%) \cite{adam}
 
-\item The design and implementation of a stereotyped user model to filter user search results
+\item The design and implementation of a stereotyped user model of Autism to filter user search results
 
-\item The application will perform a Key Word In Context search; returning verbally-concrete, not text-overloaded results, in a consistent manner. 
+\item Key Word In Context search; returning verbally-concrete, not text-overloaded results, in a consistent manner. 
 
-\item The search engine will prioritise results where the key words are used directly, or results have first-order semantic relations to the query words (see Section~\ref{the problem}), i.e., they appear in matched context to the search query.
+\item Prioritisation of results which have first-order semantic relations to the query words (see Section~\ref{the problem}), i.e., they appear in matched context to the search query.
 
-\item The application will utilise motion controllers to enhance embodiment within search, and enhance the search query process. I will investigate the use of the LEAP motion controller as the main device in the first instance.
+\item Motion controlled UI with the LEAP.
 \end{enumerate}
 
 \subsubsection{Non-core Features}
 \begin{enumerate}
 
-\item Investigating the user preferences for pages with a higher number of pictures. Implement a ranking system for pages with more images to score higher than those with many words. 
-\item Investigating the use of the three.Js library for 3D UI (based on WebGL) to integrate with motion controllers.
-\item Investigating other motion controller devices (e.g., head-mounted devices).
+\item Implement a higher ranking for pages with most images. 
+\item Use of WebGL and the three.Js library for 3D UI .
+\item Compatibility with other motion controller devices (e.g., head-mounted devices).
 
 \end{enumerate}
 
@@ -373,7 +356,7 @@ We are moving towards highly personalized information access and retrieval syste
 
 \bibitem{moore}Moore, D. J., McGrath, P., \& Thorpe, J. (2000). Computer aided learning for people with autism—a framework for research and development. Innovations in Education and Training International, 37, 218–228.
 
-\bibitem{workingmem}Baddeley, A.D., & Hitch, G. (1974). Working memory. In G.H. Bower (Ed.), The psychology of learning and motivation: Advances in research and theory (Vol. 8, pp. 47–89). New York: Academic Press.
+\bibitem{workingmem}Baddeley, A.D., \& Hitch, G. (1974). Working memory. In G.H. Bower (Ed.), The psychology of learning and motivation: Advances in research and theory (Vol. 8, pp. 47–89). New York: Academic Press.
 
 \bibitem{leap} https://developer.leapmotion.com/ Retrieved 1 April 2015.
 
