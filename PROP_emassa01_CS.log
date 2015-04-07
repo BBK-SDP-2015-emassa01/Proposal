@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.3.23)  3 APR 2015 22:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.3.23)  6 APR 2015 22:39
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -162,13 +162,18 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 \tf@toc=\write3
 \openout3 = `PROP_emassa01_CS.toc'.
 
- [2] <images/asd.pdf, id=19, 722.7pt x 542.025pt>
+ <images/asd.pdf, id=16, 722.7pt x 542.025pt>
 File: images/asd.pdf Graphic file (type pdf)
 
 <use images/asd.pdf>
-Package pdftex.def Info: images/asd.pdf used on input line 40.
+Package pdftex.def Info: images/asd.pdf used on input line 37.
 (pdftex.def)             Requested size: 361.3491pt x 271.01183pt.
- [3 <./images/asd.pdf>]
+ [2]
+Underfull \hbox (badness 10000) in paragraph at lines 42--44
+
+ []
+
+[3 <./images/asd.pdf>]
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ˜ in font cmr10!
@@ -181,73 +186,64 @@ Missing character: There is no ™ in font cmr10!
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ™ in font cmr10!
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ˜ in font cmr10!
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ™ in font cmr10!
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ˜ in font cmr10!
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ™ in font cmr10!
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ˜ in font cmr10!
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ™ in font cmr10!
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ˜ in font cmr10!
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ™ in font cmr10!
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no “ in font cmr10!
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ™ in font cmr10!
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ˜ in font cmr10!
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ™ in font cmr10!
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no “ in font cmr10!
  [4]
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
+Missing character: There is no ™ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
 Missing character: There is no ˜ in font cmr10!
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
-
-Underfull \hbox (badness 10000) in paragraph at lines 95--96
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 98--99
-
- []
-
-[5] <images/searchEngArchi.pdf, id=46, 722.7pt x 542.025pt>
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ˜ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ™ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ˜ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ™ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ˜ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ™ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no “ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ™ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ˜ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ™ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no “ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ˜ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ™ in font cmr10!
+ [5]
+<images/searchEngArchi.pdf, id=46, 722.7pt x 542.025pt>
 File: images/searchEngArchi.pdf Graphic file (type pdf)
 
 <use images/searchEngArchi.pdf>
-Package pdftex.def Info: images/searchEngArchi.pdf used on input line 121.
+Package pdftex.def Info: images/searchEngArchi.pdf used on input line 119.
 (pdftex.def)             Requested size: 505.88655pt x 379.4149pt.
 
-Overfull \hbox (36.13156pt too wide) in paragraph at lines 121--123
+Overfull \hbox (36.13156pt too wide) in paragraph at lines 119--121
  [] 
  []
 
@@ -298,13 +294,13 @@ Missing character: There is no ˜ in font cmr10!
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
+ [8]
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ˜ in font cmr10!
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
- [8]
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
@@ -331,30 +327,30 @@ Missing character: There is no ™ in font cmr10!
 <images/leap.jpg, id=134, 712.6625pt x 263.98625pt>
 File: images/leap.jpg Graphic file (type jpg)
  <use images/leap.jpg>
-Package pdftex.def Info: images/leap.jpg used on input line 229.
+Package pdftex.def Info: images/leap.jpg used on input line 231.
 (pdftex.def)             Requested size: 356.33038pt x 131.9928pt.
 
 <palm.jpg, id=135, 286.06876pt x 204.765pt>
 File: palm.jpg Graphic file (type jpg)
  <use palm.jpg>
-Package pdftex.def Info: palm.jpg used on input line 240.
+Package pdftex.def Info: palm.jpg used on input line 242.
 (pdftex.def)             Requested size: 171.64258pt x 122.85992pt.
 
 <images/fingers.jpg, id=136, 333.245pt x 208.78pt>
 File: images/fingers.jpg Graphic file (type jpg)
  <use images/fingers.jpg>
-Package pdftex.def Info: images/fingers.jpg used on input line 253.
+Package pdftex.def Info: images/fingers.jpg used on input line 255.
 (pdftex.def)             Requested size: 233.2699pt x 146.14497pt.
 
 [11 <./images/leap.jpg> <./palm.jpg>] [12 <./images/fingers.jpg>]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 308.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 324.
 
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 308.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 324.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -380,7 +376,7 @@ Missing character: There is no ¨ in font cmr10!
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no ¼ in font cmr10!
 
-Underfull \hbox (badness 10000) in paragraph at lines 384--385
+Underfull \hbox (badness 10000) in paragraph at lines 400--401
 []\OT1/cmr/m/n/10 https://insightsdelight.wordpress.com/2012/01/24/inverted-ind
 ex-the-basic-ingredient-behind-the-
  []
@@ -402,7 +398,7 @@ Missing character: There is no “ in font cmr10!
 Here is how much of TeX's memory you used:
  1640 strings out of 493117
  23698 string characters out of 6135433
- 90116 words of memory out of 5000000
+ 90119 words of memory out of 5000000
  5091 multiletter control sequences out of 15000+600000
  8502 words of font info for 30 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -421,7 +417,7 @@ nts/cm/cmr7.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts
 sy10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cms
 y6.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8
 .pfb>
-Output written on PROP_emassa01_CS.pdf (16 pages, 1792181 bytes).
+Output written on PROP_emassa01_CS.pdf (16 pages, 1792240 bytes).
 PDF statistics:
  200 PDF objects out of 1000 (max. 8388607)
  133 compressed objects within 2 object streams

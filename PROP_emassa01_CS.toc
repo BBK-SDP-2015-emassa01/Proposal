@@ -1,7 +1,7 @@
 \contentsline {section}{\numberline {1}Introduction \& Background}{2}
 \contentsline {subsection}{\numberline {1.1}Problem Statement}{2}
-\contentsline {subsection}{\numberline {1.2}The Role of Context In Search}{2}
-\contentsline {subsection}{\numberline {1.3}What is the Autism Spectrum?}{3}
+\contentsline {subsection}{\numberline {1.2}What is the Autism Spectrum?}{2}
+\contentsline {subsection}{\numberline {1.3}The Role of Context In Search}{3}
 \contentsline {subsection}{\numberline {1.4}Proposal Organisation}{3}
 \contentsline {subsection}{\numberline {1.5}What should Search offer people with Autism?}{4}
 \contentsline {subsubsection}{\numberline {1.5.1}Search and Learning}{4}
@@ -9,16 +9,15 @@
 \contentsline {subsubsection}{\numberline {1.5.3}Motion Controllers}{4}
 \contentsline {subsubsection}{\numberline {1.5.4}Visual not text-based}{4}
 \contentsline {subsection}{\numberline {1.6}Existing Combination/Advanced Search Engines}{4}
-\contentsline {subsubsection}{\numberline {1.6.1}Bing vs Google}{4}
-\contentsline {subsubsection}{\numberline {1.6.2}Qrobe.it}{4}
+\contentsline {subsubsection}{\numberline {1.6.1}Bing vs Google}{5}
+\contentsline {subsubsection}{\numberline {1.6.2}Qrobe.it}{5}
 \contentsline {subsubsection}{\numberline {1.6.3}AskBoth}{5}
 \contentsline {subsubsection}{\numberline {1.6.4}Spectra}{5}
 \contentsline {subsubsection}{\numberline {1.6.5}Conclusions and ways forward}{5}
-\contentsline {section}{\numberline {2}The Problem}{5}
-\contentsline {subsection}{\numberline {2.1}Aims and Objectives}{5}
-\contentsline {subsection}{\numberline {2.2}Proposed Search and Controller Web Application}{6}
-\contentsline {subsubsection}{\numberline {2.2.1}Core Features}{6}
-\contentsline {subsubsection}{\numberline {2.2.2}Non-core Features}{7}
+\contentsline {section}{\numberline {2}Aims and Objectives}{5}
+\contentsline {subsection}{\numberline {2.1}Proposed Search and Controller Web Application}{6}
+\contentsline {subsubsection}{\numberline {2.1.1}Core Features}{6}
+\contentsline {subsubsection}{\numberline {2.1.2}Non-core Features}{7}
 \contentsline {section}{\numberline {3}Plan for Developing the Solution}{7}
 \contentsline {subsection}{\numberline {3.1}Creating a User Model of Autism}{7}
 \contentsline {subsubsection}{\numberline {3.1.1}What is a user model?}{7}
@@ -34,7 +33,7 @@
 \contentsline {subsubsection}{\numberline {3.2.4}Yahoo BOSS}{9}
 \contentsline {subsubsection}{\numberline {3.2.5}Bing Search API (Data)}{9}
 \contentsline {subsubsection}{\numberline {3.2.6}Faroo API}{9}
-\contentsline {subsubsection}{\numberline {3.2.7}Apache Lucene Library}{9}
+\contentsline {subsubsection}{\numberline {3.2.7}Apache Lucene Library}{10}
 \contentsline {subsubsection}{\numberline {3.2.8}Key Word In Context}{10}
 \contentsline {subsubsection}{\numberline {3.2.9}Google+ API}{10}
 \contentsline {subsubsection}{\numberline {3.2.10}API for LEAP Motion Controller}{10}
