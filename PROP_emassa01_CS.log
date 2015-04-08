@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.3.23)  8 APR 2015 23:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.3.23)  9 APR 2015 00:26
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -239,7 +239,7 @@ Missing character: There is no ò in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
- [6] <images/searchEngArchi.pdf, id=51, 722.7pt x 542.025pt>
+ <images/searchEngArchi.pdf, id=47, 722.7pt x 542.025pt>
 File: images/searchEngArchi.pdf Graphic file (type pdf)
 
 <use images/searchEngArchi.pdf>
@@ -250,10 +250,7 @@ Overfull \hbox (36.13156pt too wide) in paragraph at lines 109--111
  [] 
  []
 
-[7 <./images/searchEngArchi.pdf>]
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ô in font cmr10!
+[6] [7 <./images/searchEngArchi.pdf>]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
@@ -268,12 +265,6 @@ Missing character: There is no ò in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ú in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ù in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ò in font cmr10!
@@ -309,24 +300,24 @@ File: images/leap.jpg Graphic file (type jpg)
 Package pdftex.def Info: images/leap.jpg used on input line 212.
 (pdftex.def)             Requested size: 356.33038pt x 131.9928pt.
 
-[11] <palm.jpg, id=139, 286.06876pt x 204.765pt>
+[11 <./images/leap.jpg>] <palm.jpg, id=139, 286.06876pt x 204.765pt>
 File: palm.jpg Graphic file (type jpg)
- <use palm.jpg>
+
+<use palm.jpg>
 Package pdftex.def Info: palm.jpg used on input line 222.
 (pdftex.def)             Requested size: 171.64258pt x 122.85992pt.
-
-<images/fingers.jpg, id=140, 333.245pt x 208.78pt>
+ <images/fingers.jpg, id=140, 333.245pt x 208.78pt>
 File: images/fingers.jpg Graphic file (type jpg)
- <use images/fingers.jpg>
+
+<use images/fingers.jpg>
 Package pdftex.def Info: images/fingers.jpg used on input line 235.
 (pdftex.def)             Requested size: 233.2699pt x 146.14497pt.
-
-[12 <./images/leap.jpg> <./palm.jpg>]
+ [12 <./palm.jpg> <./images/fingers.jpg>]
 Overfull \hbox (29.21432pt too wide) in paragraph at lines 254--290
  [][] 
  []
 
-[13 <./images/fingers.jpg>]
+[13]
 Underfull \hbox (badness 10000) in paragraph at lines 325--325
 []|\OT1/cmr/m/n/10.95 API's re-quire sig-nif-i-cantly
  []
@@ -341,14 +332,16 @@ Underfull \hbox (badness 2626) in paragraph at lines 333--334
 \OT1/cmr/m/n/10.95 ad-just web ap-pli-ca-tion ac-
  []
 
-[14]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ú in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
- [15]
+[14] [15]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no î in font cmr10!
@@ -401,31 +394,28 @@ oogle-bing/, Re-trieved
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ì in font cmr10!
-[17] (./PROP_emassa01_CS.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+[17] (./PROP_emassa01_CS.aux) ) 
 Here is how much of TeX's memory you used:
  1633 strings out of 493117
  23538 string characters out of 6135433
- 88161 words of memory out of 5000000
+ 87160 words of memory out of 5000000
  5085 multiletter control sequences out of 15000+600000
  10377 words of font info for 36 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 37i,11n,24p,2061b,282s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
-></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
-</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></
-usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></us
-r/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/
-local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/loc
-al/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/
-texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/tex
-live/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texli
-ve/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive
-/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on PROP_emassa01_CS.pdf (18 pages, 1782899 bytes).
+ 37i,11n,24p,1986b,282s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2014/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmr10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmr12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmr17.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmr6.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmr8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmr9.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmsy6.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmsy8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+ti10.pfb>
+Output written on PROP_emassa01_CS.pdf (18 pages, 1784728 bytes).
 PDF statistics:
  198 PDF objects out of 1000 (max. 8388607)
  131 compressed objects within 2 object streams
