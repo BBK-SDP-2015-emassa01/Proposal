@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.3.23)  9 APR 2015 00:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.3.23)  9 APR 2015 00:36
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -27,11 +27,19 @@ File: size11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 (/usr/local/texlive/2014/texmf-dist/tex/latex/multirow/multirow.sty
 \bigstrutjot=\dimen103
 )
+(/usr/local/texlive/2014/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count87
+\float@exts=\toks14
+\float@box=\box26
+\@float@everytoks=\toks15
+\@floatcapt=\box27
+)
 (/usr/local/texlive/2014/texmf-dist/tex/latex/tools/array.sty
 Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
 \col@sep=\dimen104
 \extrarowheight=\dimen105
-\NC@list=\toks14
+\NC@list=\toks16
 \extratabsurround=\skip43
 \backup@length=\skip44
 )
@@ -40,7 +48,7 @@ Package: graphicx 2014/04/25 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/05/08 v1.15 key=value parser (DPC)
-\KV@toks@=\toks15
+\KV@toks@=\toks17
 )
 (/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
@@ -62,7 +70,7 @@ Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 (/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
-\Gread@gobject=\count87
+\Gread@gobject=\count88
 ))
 \Gin@req@height=\dimen106
 \Gin@req@width=\dimen107
@@ -70,32 +78,32 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 (./PROP_emassa01_CS.aux)
 \openout1 = `PROP_emassa01_CS.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
 
 (/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count88
+\scratchcounter=\count89
 \scratchdimen=\dimen108
-\scratchbox=\box26
-\nofMPsegments=\count89
-\nofMParguments=\count90
-\everyMPshowfont=\toks16
-\MPscratchCnt=\count91
+\scratchbox=\box28
+\nofMPsegments=\count90
+\nofMParguments=\count91
+\everyMPshowfont=\toks18
+\MPscratchCnt=\count92
 \MPscratchDim=\dimen109
-\MPnumerator=\count92
-\makeMPintoPDFobject=\count93
-\everyMPtoPDFconversion=\toks17
+\MPnumerator=\count93
+\makeMPintoPDFobject=\count94
+\everyMPtoPDFconversion=\toks19
 ) (/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
@@ -145,21 +153,21 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 22.
+(Font)              <12> on input line 23.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 22.
+(Font)              <8> on input line 23.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 22.
+(Font)              <6> on input line 23.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 22.
+(Font)              <5> on input line 23.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 22.
+(Font)              <9> on input line 23.
 
 [1
 
 {/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 33.
+(Font)              <10.95> on input line 34.
 
 [1
 
@@ -173,17 +181,17 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 <images/asd.pdf, id=23, 722.7pt x 542.025pt>
 File: images/asd.pdf Graphic file (type pdf)
  <use images/asd.pdf>
-Package pdftex.def Info: images/asd.pdf used on input line 61.
+Package pdftex.def Info: images/asd.pdf used on input line 62.
 (pdftex.def)             Requested size: 361.3491pt x 271.01183pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 66--68
+Underfull \hbox (badness 10000) in paragraph at lines 67--69
 
  []
 
 [4
 
  <./images/asd.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 69--70
+Underfull \hbox (badness 10000) in paragraph at lines 70--71
 
  []
 
@@ -243,10 +251,10 @@ Missing character: There is no ™ in font cmr10!
 File: images/searchEngArchi.pdf Graphic file (type pdf)
 
 <use images/searchEngArchi.pdf>
-Package pdftex.def Info: images/searchEngArchi.pdf used on input line 109.
+Package pdftex.def Info: images/searchEngArchi.pdf used on input line 110.
 (pdftex.def)             Requested size: 505.88655pt x 379.4149pt.
 
-Overfull \hbox (36.13156pt too wide) in paragraph at lines 109--111
+Overfull \hbox (36.13156pt too wide) in paragraph at lines 110--112
  [] 
  []
 
@@ -255,7 +263,7 @@ Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
 
-Underfull \hbox (badness 10000) in paragraph at lines 140--141
+Underfull \hbox (badness 10000) in paragraph at lines 141--142
 
  []
 
@@ -276,7 +284,7 @@ Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
  [9]
-Overfull \hbox (16.36476pt too wide) in paragraph at lines 180--181
+Overfull \hbox (16.36476pt too wide) in paragraph at lines 181--182
 \OT1/cmr/m/n/10.95 The Apache li-brary also al-lows contextual-text search, als
 o known as Key Word In Con-text (KWIC)[[]].
  []
@@ -297,51 +305,49 @@ Missing character: There is no ™ in font cmr10!
  <images/leap.jpg, id=135, 712.6625pt x 263.98625pt>
 File: images/leap.jpg Graphic file (type jpg)
  <use images/leap.jpg>
-Package pdftex.def Info: images/leap.jpg used on input line 212.
+Package pdftex.def Info: images/leap.jpg used on input line 213.
 (pdftex.def)             Requested size: 356.33038pt x 131.9928pt.
 
 [11 <./images/leap.jpg>] <palm.jpg, id=139, 286.06876pt x 204.765pt>
 File: palm.jpg Graphic file (type jpg)
 
 <use palm.jpg>
-Package pdftex.def Info: palm.jpg used on input line 222.
+Package pdftex.def Info: palm.jpg used on input line 223.
 (pdftex.def)             Requested size: 171.64258pt x 122.85992pt.
  <images/fingers.jpg, id=140, 333.245pt x 208.78pt>
 File: images/fingers.jpg Graphic file (type jpg)
 
 <use images/fingers.jpg>
-Package pdftex.def Info: images/fingers.jpg used on input line 235.
+Package pdftex.def Info: images/fingers.jpg used on input line 236.
 (pdftex.def)             Requested size: 233.2699pt x 146.14497pt.
  [12 <./palm.jpg> <./images/fingers.jpg>]
-Overfull \hbox (29.21432pt too wide) in paragraph at lines 254--290
+Overfull \hbox (29.21432pt too wide) in paragraph at lines 255--291
  [][] 
  []
 
 [13]
-Underfull \hbox (badness 10000) in paragraph at lines 325--325
+Underfull \hbox (badness 10000) in paragraph at lines 326--326
 []|\OT1/cmr/m/n/10.95 API's re-quire sig-nif-i-cantly
  []
 
 
-Underfull \hbox (badness 1960) in paragraph at lines 327--328
+Underfull \hbox (badness 1960) in paragraph at lines 328--329
 \OT1/cmr/m/n/10.95 method, or find ad-di-tional
  []
 
 
-Underfull \hbox (badness 2626) in paragraph at lines 333--334
+Underfull \hbox (badness 2626) in paragraph at lines 334--335
 \OT1/cmr/m/n/10.95 ad-just web ap-pli-ca-tion ac-
  []
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
+[14]
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no œ in font cmr10!
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no  in font cmr10!
-[14] [15]
+ [15]
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ” in font cmr10!
@@ -359,13 +365,13 @@ Missing character: There is no ¨ in font cmr10!
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no ¼ in font cmr10!
 
-Underfull \hbox (badness 1077) in paragraph at lines 384--385
+Underfull \hbox (badness 1077) in paragraph at lines 385--386
 []\OT1/cmr/m/n/10.95 Pray, S. \OT1/cmr/m/it/10.95 In-verted In-dex : The ba-sic
  in-gre-di-ent be-hind the recipe called Search En-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 384--385
+Underfull \hbox (badness 10000) in paragraph at lines 385--386
 \OT1/cmr/m/it/10.95 gine\OT1/cmr/m/n/10.95 https://insightsdelight.wordpress.co
 m/2012/01/24/inverted-index-the-basic-ingredient-
  []
@@ -380,13 +386,13 @@ Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no “ in font cmr10!
 
-Underfull \hbox (badness 10000) in paragraph at lines 408--409
+Underfull \hbox (badness 10000) in paragraph at lines 409--410
 []\OT1/cmr/m/n/10.95 Parrack, D.\OT1/cmr/m/it/10.95 4 Search En-gines That Com-
 bine Google & Bing\OT1/cmr/m/n/10.95 ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 408--409
+Underfull \hbox (badness 10000) in paragraph at lines 409--410
 \OT1/cmr/m/n/10.95 http://www.makeuseof.com/tag/4-search-engines-that-combine-g
 oogle-bing/, Re-trieved
  []
@@ -396,10 +402,10 @@ Missing character: There is no € in font cmr10!
 Missing character: There is no “ in font cmr10!
 [17] (./PROP_emassa01_CS.aux) ) 
 Here is how much of TeX's memory you used:
- 1633 strings out of 493117
- 23538 string characters out of 6135433
- 87160 words of memory out of 5000000
- 5085 multiletter control sequences out of 15000+600000
+ 1693 strings out of 493117
+ 24327 string characters out of 6135433
+ 88527 words of memory out of 5000000
+ 5141 multiletter control sequences out of 15000+600000
  10377 words of font info for 36 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  37i,11n,24p,1986b,282s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -415,7 +421,7 @@ s/cm/cmr9.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/c
 m/cmsy6.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/
 cmsy8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cm
 ti10.pfb>
-Output written on PROP_emassa01_CS.pdf (18 pages, 1784728 bytes).
+Output written on PROP_emassa01_CS.pdf (18 pages, 1784773 bytes).
 PDF statistics:
  198 PDF objects out of 1000 (max. 8388607)
  131 compressed objects within 2 object streams
