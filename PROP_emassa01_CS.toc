@@ -30,7 +30,7 @@
 \contentsline {subsubsection}{\numberline {3.2.3}Google Custom Search}{8}
 \contentsline {subsubsection}{\numberline {3.2.4}Yahoo BOSS}{8}
 \contentsline {subsubsection}{\numberline {3.2.5}Bing Search API (Data)}{8}
-\contentsline {subsubsection}{\numberline {3.2.6}Faroo API}{9}
+\contentsline {subsubsection}{\numberline {3.2.6}Faroo API}{8}
 \contentsline {subsubsection}{\numberline {3.2.7}Apache Lucene Library}{9}
 \contentsline {subsubsection}{\numberline {3.2.8}Key Word In Context}{9}
 \contentsline {subsubsection}{\numberline {3.2.9}Google+ API}{9}
@@ -40,18 +40,18 @@
 \contentsline {subsubsection}{\numberline {3.3.1}Hardware Selection Process}{9}
 \contentsline {subsubsection}{\numberline {3.3.2}LEAP Controller}{10}
 \contentsline {subsubsection}{\numberline {3.3.3}Hands}{10}
-\contentsline {subsubsection}{\numberline {3.3.4}Arms}{11}
+\contentsline {subsubsection}{\numberline {3.3.4}Arms}{10}
 \contentsline {subsubsection}{\numberline {3.3.5}Fingers}{11}
 \contentsline {subsubsection}{\numberline {3.3.6}Tools \& Pointables}{11}
 \contentsline {subsubsection}{\numberline {3.3.7}Gestures}{11}
 \contentsline {subsection}{\numberline {3.4}Project Plan}{11}
 \contentsline {subsubsection}{\numberline {3.4.1}Project Timeline}{11}
-\contentsline {subsubsection}{\numberline {3.4.2}Methodology}{11}
-\contentsline {subsubsection}{\numberline {3.4.3}Development Languages}{11}
+\contentsline {subsubsection}{\numberline {3.4.2}Methodology}{12}
+\contentsline {subsubsection}{\numberline {3.4.3}Development Languages}{12}
 \contentsline {subsubsection}{\numberline {3.4.4}Testing}{12}
 \contentsline {subsubsection}{\numberline {3.4.5}User Testing}{12}
 \contentsline {subsubsection}{\numberline {3.4.6}Unit Testing}{12}
-\contentsline {subsubsection}{\numberline {3.4.7}Risks/issues, probabilities and mitigation of impact}{13}
+\contentsline {subsubsection}{\numberline {3.4.7}Risks/issues, probabilities and mitigation of impact}{12}
 \contentsline {subsection}{\numberline {3.5}Summary \& Concluding Statement}{13}
-\contentsline {subsection}{\numberline {3.6}Appendices}{14}
-\contentsline {subsubsection}{\numberline {3.6.1}Abbreviations}{14}
+\contentsline {section}{\numberline {4}Appendices}{14}
+\contentsline {subsection}{\numberline {4.1}Abbreviations}{14}
