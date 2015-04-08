@@ -16,33 +16,33 @@
 \contentsline {subsubsection}{\numberline {2.5.5}Conclusions and ways forward}{6}
 \contentsline {section}{\numberline {3}Aims and Objectives}{6}
 \contentsline {subsection}{\numberline {3.1}Proposed Search and Controller Web Application}{7}
-\contentsline {subsubsection}{\numberline {3.1.1}Core Features}{8}
+\contentsline {subsubsection}{\numberline {3.1.1}Core Features}{7}
 \contentsline {subsubsection}{\numberline {3.1.2}Non-core Features}{8}
 \contentsline {section}{\numberline {4}Plan for Developing the Solution}{8}
 \contentsline {subsection}{\numberline {4.1}Creating a User Model of Autism}{8}
 \contentsline {subsubsection}{\numberline {4.1.1}What is a user model?}{8}
 \contentsline {subsubsection}{\numberline {4.1.2}Types of user models}{8}
-\contentsline {subsubsection}{\numberline {4.1.3}Adaptive / Personalised Search}{9}
-\contentsline {subsubsection}{\numberline {4.1.4}Disadvantages of Current Adaptive Search for Individuals with Autism}{9}
+\contentsline {subsubsection}{\numberline {4.1.3}Adaptive / Personalised Search}{8}
+\contentsline {subsubsection}{\numberline {4.1.4}Disadvantages of Current Adaptive Search for Individuals with Autism}{8}
 \contentsline {subsubsection}{\numberline {4.1.5}Persisting the User's Information}{9}
-\contentsline {subsection}{\numberline {4.2}Implementing the Application}{10}
-\contentsline {subsubsection}{\numberline {4.2.1}Selecting Search Engines}{10}
-\contentsline {subsubsection}{\numberline {4.2.2}APIs, Text-Search Libraries}{10}
+\contentsline {subsection}{\numberline {4.2}Implementing the Application}{9}
+\contentsline {subsubsection}{\numberline {4.2.1}Selecting Search Engines}{9}
+\contentsline {subsubsection}{\numberline {4.2.2}APIs, Text-Search Libraries}{9}
 \contentsline {subsubsection}{\numberline {4.2.3}Google Custom Search}{10}
 \contentsline {subsubsection}{\numberline {4.2.4}Yahoo BOSS}{10}
 \contentsline {subsubsection}{\numberline {4.2.5}Bing Search API (Data)}{10}
 \contentsline {subsubsection}{\numberline {4.2.6}Faroo API}{10}
 \contentsline {subsubsection}{\numberline {4.2.7}Apache Lucene Library}{10}
-\contentsline {subsubsection}{\numberline {4.2.8}Key Word In Context}{11}
-\contentsline {subsubsection}{\numberline {4.2.9}Google+ API}{11}
+\contentsline {subsubsection}{\numberline {4.2.8}Key Word In Context}{10}
+\contentsline {subsubsection}{\numberline {4.2.9}Google+ API}{10}
 \contentsline {subsubsection}{\numberline {4.2.10}API for 'LEAP' Motion Controller}{11}
 \contentsline {subsubsection}{\numberline {4.2.11}ThreeJs Library (Non-Core)}{11}
 \contentsline {subsection}{\numberline {4.3}Integrating the Application with Motion Controller Hardware }{11}
 \contentsline {subsubsection}{\numberline {4.3.1}Hardware Selection Process}{11}
-\contentsline {subsubsection}{\numberline {4.3.2}LEAP Controller}{12}
+\contentsline {subsubsection}{\numberline {4.3.2}LEAP Controller}{11}
 \contentsline {subsubsection}{\numberline {4.3.3}Hands}{12}
 \contentsline {subsubsection}{\numberline {4.3.4}Arms}{12}
-\contentsline {subsubsection}{\numberline {4.3.5}Fingers}{13}
+\contentsline {subsubsection}{\numberline {4.3.5}Fingers}{12}
 \contentsline {subsubsection}{\numberline {4.3.6}Tools \& Pointables}{13}
 \contentsline {subsubsection}{\numberline {4.3.7}Gestures}{13}
 \contentsline {subsection}{\numberline {4.4}Project Plan}{13}
@@ -54,4 +54,3 @@
 \contentsline {subsubsection}{\numberline {4.4.6}Unit Testing}{14}
 \contentsline {subsubsection}{\numberline {4.4.7}Risks/issues, probabilities and mitigation of impact}{15}
 \contentsline {subsection}{\numberline {4.5}Summary \& Concluding Statement}{15}
-\contentsline {section}{\numberline {5}Appendices}{17}

@@ -38,6 +38,7 @@ GCS & Google Custom Search\\
 HCI & Human Computer Interaction\\
 JSON & JavaScript Object Notation\\
 KWIC & Key Word In Context\\
+TDD & Test Driven Development\\
 UI & User Interface\\
 UX & User Experience\\
 VR & Virtual Reality\\
@@ -101,13 +102,9 @@ These search engines allow users to see more results than what one search engine
 I will work on the creation and synthesis of the results using the Google, Bing and Yahoo API's, and incorporate a user model of Autism.
 
 \section{Aims and Objectives} 
-It has been suggested in the Psychology literature that individuals with Autism best assimilate new information when it is: concrete (not abstract); presented in contextually-relevant chunks; not verbally "overloaded" (not too many words); and presented in a set visual format. Given that several interventions have been built around this body of literature (see www.autismspeaks.org), we can make adjustments to current Search to enhance its benefit for people with Autism. For example, results can: be assessed for the Key Word In (a suitable) Context; use a similar order of semantic association, in line with the search query itself (precedence for first-order relations); have smaller snippets and be presented in a more manageable way (less overloaded with words); have visual consistency; have a high degree of verbal consistency/similarity with the search query.
-\\As a whole, the user model will refine search results based on the presence of first-order, or, item-specific relations to a search query (rather than hierarchical relations). The model will be developed around well-understood cognitive processes in Autism. Other elements of the user model will be decided with user-feedback (during testing). 
-\\This project will integrate these insights from the Psychology literature with the proposed application.
+I propose to build a user model within Search for people with Autism. The model will be developed around well-understood cognitive processes in Autism. Below I list the core and non-core features. 
 
 \subsection{Proposed Search and Controller Web Application}\label{proposed}
-Below I list the core and non-core features of the Search tool:
-
 \begin{center}
 \includegraphics[scale=0.7]{searchEngArchi}
 Proposed application: The User Model will be applied to existing Search Engine Architecture\cite{seimage}, and be integrated with a Motion Controlled interface.
@@ -314,14 +311,14 @@ I will test the application with a group of individuals with Autism. I will
 \end{enumerate}
 
 \subsubsection{Unit Testing}
-For testing the application code, I will be using Test Driven Development (TDD). For Java I will use the current version of JUnit (at the time of writing this is 4.12).External dependencies will be mock tested using Mockito. JSON Test will be used to test JavaScript Object Notation \cite{jsontest}. As well as unit testing, Regression testing will be used to testing the project as a whole unit.
+I will be implementing Test Driven Development (TDD)\footnote{The TDD process involves iterating through the write-test-then-write-code process. First writing a test for some functionality, and second, writing just enough production code to make the test pass.} with JUnit (version 4.12), and where there are external dependencies, these will be mock tested using Mockito \footnote{mockito.org}. JSON Test will be used to test JavaScript Object Notation \cite{jsontest}. I will run both unit and regression tests.
 
 \subsubsection{Risks/issues, probabilities and mitigation of impact}
 The risks associated with the project, their impact and how I will mitigate them, is outlined in~Table \ref{risks}. 
 \begin{table}[h]
 \caption{Risks \& Impact Mitigation} 
 \centering
-\begin{tabular}{|c | c | L | L |}
+\begin{tabular}{|c | c | p{5cm} | p{5cm} |}
 \hline\hline 
 Liklihood & Impact & Risk & Mitigation\\ [0.5ex]
 \hline 
@@ -343,14 +340,8 @@ MEDIUM & HIGH & Not enough turn around time to implement the feedback & Develop 
 \label{risks} 
 \end{table}
 
-
 \subsection{Summary \& Concluding Statement}\label{future}
 I have proposed to research and build a User Model within Search for people with Autism. I describe a model (based on well-understood aspects of cognition in Autism) to apply to search results, using text and content based libraries which will refine search results for these individuals. I hope these insights will assist with the forthcoming information-overload problem by exploiting these user models to turn the masses of information available into a specific set of “information goods”. 
-
-\clearpage
-
-\section{Appendices}
-
 
 \clearpage
 \begin{thebibliography}{100}
@@ -365,7 +356,7 @@ I have proposed to research and build a User Model within Search for people with
 
 \bibitem{workingmem}Baddeley, A.D., \& Hitch, G. (1974). Working memory. In G.H. Bower (Ed.), \textit{The psychology of learning and motivation: Advances in research and theory, 8}, 47–89. New York: Academic Press.
 
-\bibitem{leap} Leap Motion, \textit{Java SDK Documentation}, https://developer.leapmotion.com/documentation/java/index.html Retrieved 1 April 2015.
+\bibitem{leap} Leap Motion, \textit{Java SDK Documentation}, \\https://developer.leapmotion.com/documentation/java/index.html Retrieved 1 April 2015.
 
 \bibitem{briggs}Briggs, J. \textit{A Better Understanding of Personalized Search}. https://www.briggsby.com/better-understanding-personalized-search/, Retrieved 5 April 2015.
 
@@ -380,7 +371,7 @@ I have proposed to research and build a User Model within Search for people with
 
 \bibitem{jsontest}jsontest \textit{JSON Test}, http://www.jsontest.com/, Retrieved 8 April 2015.
 
-\bibitem{triad}National Autistic Society, \textit{The Autistic Spectrum}, http://media.kingdown.wilts.sch.uk/mod/page/view.php?id=7374, Retrieved 20 March 2015
+\bibitem{triad}National Autistic Society, \textit{The Autistic Spectrum}, \\http://media.kingdown.wilts.sch.uk/mod/page/view.php?id=7374, Retrieved 20 March 2015
 
 \bibitem {Lasater}Lasater, M. W., \& Brady, M. P. (1995). Effects of video self-modeling and feedback on task fluency: A home-based intervention. \textit{Education and treatment of children, 18}, 389-407.
 
@@ -404,7 +395,7 @@ I have proposed to research and build a User Model within Search for people with
 
 \bibitem {Thiemann}Thiemann, K. S., \& Goldstein, H. (2001). Social stories, written text cues, and video feedback: Effects on social communication of children with autism. \textit{Journal of Applied Behavior Analysis, 34}, 425-446.
 
-\bibitem{ebiz}www.eBizMBA.com; 2015
+\bibitem{ebiz}eBizMBA inc, \textit{The eBusiness Guide}, www.eBizMBA.com; Retrieved 20 March 2015
 
 \bibitem {Google}Sullivan, D. \textit{Google Still World’s Most Popular Search Engine By Far, But Share Of Unique Searchers Dips Slightly},  http://searchengineland.com/google-worlds-most-popular-search-engine-148089, Retrieved 20 March 2015.  
 
