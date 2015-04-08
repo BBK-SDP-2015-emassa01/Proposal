@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.3.23)  8 APR 2015 15:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.3.23)  8 APR 2015 22:10
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -9,8 +9,8 @@ LaTeX2e <2014/05/01>
 Babel <3.9k> and hyphenation patterns for 78 languages loaded.
 (/usr/local/texlive/2014/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
-(/usr/local/texlive/2014/texmf-dist/tex/latex/base/size10.clo
-File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/base/size11.clo
+File: size11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
 \c@section=\count80
@@ -145,103 +145,54 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 20.
+(Font)              <12> on input line 22.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 20.
+(Font)              <8> on input line 22.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 20.
+(Font)              <6> on input line 22.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 20.
+(Font)              <5> on input line 22.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <9> on input line 22.
 
-(./PROP_emassa01_CS.toc
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 2.
- [1
+[1
 
-{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}])
+{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <10.95> on input line 33.
+
+[1
+
+] (./PROP_emassa01_CS.toc [2
+
+])
 \tf@toc=\write3
 \openout3 = `PROP_emassa01_CS.toc'.
 
- <images/asd.pdf, id=16, 722.7pt x 542.025pt>
+ [3]
+<images/asd.pdf, id=23, 722.7pt x 542.025pt>
 File: images/asd.pdf Graphic file (type pdf)
-
-<use images/asd.pdf>
-Package pdftex.def Info: images/asd.pdf used on input line 37.
+ <use images/asd.pdf>
+Package pdftex.def Info: images/asd.pdf used on input line 60.
 (pdftex.def)             Requested size: 361.3491pt x 271.01183pt.
- [2]
-Underfull \hbox (badness 10000) in paragraph at lines 42--44
+
+Underfull \hbox (badness 10000) in paragraph at lines 65--67
 
  []
 
+[4
 
-Underfull \hbox (badness 10000) in paragraph at lines 45--46
+ <./images/asd.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 68--69
 
  []
 
-[3 <./images/asd.pdf>]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ò in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ô in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ô in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ò in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ô in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ò in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ô in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ò in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ô in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ì in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ô in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ò in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ô in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ì in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ò in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ô in font cmr10!
- [4]
-<images/searchEngArchi.pdf, id=43, 722.7pt x 542.025pt>
-File: images/searchEngArchi.pdf Graphic file (type pdf)
-
-<use images/searchEngArchi.pdf>
-Package pdftex.def Info: images/searchEngArchi.pdf used on input line 89.
-(pdftex.def)             Requested size: 505.88655pt x 379.4149pt.
-
-Overfull \hbox (36.13156pt too wide) in paragraph at lines 89--91
- [] 
- []
-
 [5]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
@@ -249,18 +200,75 @@ Missing character: There is no ô in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
-
-Underfull \hbox (badness 10000) in paragraph at lines 120--121
-
- []
-
-[6 <./images/searchEngArchi.pdf>]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ò in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ò in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ò in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ì in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ò in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ì in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ò in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+ [6] <images/searchEngArchi.pdf, id=51, 722.7pt x 542.025pt>
+File: images/searchEngArchi.pdf Graphic file (type pdf)
+
+<use images/searchEngArchi.pdf>
+Package pdftex.def Info: images/searchEngArchi.pdf used on input line 112.
+(pdftex.def)             Requested size: 505.88655pt x 379.4149pt.
+
+Overfull \hbox (36.13156pt too wide) in paragraph at lines 112--114
+ [] 
+ []
+
+[7 <./images/searchEngArchi.pdf>]
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+
+Underfull \hbox (badness 10000) in paragraph at lines 143--144
+
+ []
+
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ò in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+[8]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ú in font cmr10!
@@ -273,55 +281,53 @@ Missing character: There is no ò in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
- [7]
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ô in font cmr10!
- [8]
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ô in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ò in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ô in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ò in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ô in font cmr10!
  [9]
-<images/leap.jpg, id=131, 712.6625pt x 263.98625pt>
-File: images/leap.jpg Graphic file (type jpg)
- <use images/leap.jpg>
-Package pdftex.def Info: images/leap.jpg used on input line 191.
-(pdftex.def)             Requested size: 356.33038pt x 131.9928pt.
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
 
-<palm.jpg, id=132, 286.06876pt x 204.765pt>
+Overfull \hbox (16.36476pt too wide) in paragraph at lines 183--184
+\OT1/cmr/m/n/10.95 The Apache li-brary also al-lows contextual-text search, als
+o known as Key Word In Con-text (KWIC)[[]].
+ []
+
+[10]
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ò in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ò in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+ [11] <images/leap.jpg, id=138, 712.6625pt x 263.98625pt>
+File: images/leap.jpg Graphic file (type jpg)
+
+<use images/leap.jpg>
+Package pdftex.def Info: images/leap.jpg used on input line 215.
+(pdftex.def)             Requested size: 356.33038pt x 131.9928pt.
+ <palm.jpg, id=139, 286.06876pt x 204.765pt>
 File: palm.jpg Graphic file (type jpg)
- <use palm.jpg>
-Package pdftex.def Info: palm.jpg used on input line 202.
+
+<use palm.jpg>
+Package pdftex.def Info: palm.jpg used on input line 225.
 (pdftex.def)             Requested size: 171.64258pt x 122.85992pt.
- [10 <./images/leap.jpg> <./palm.jpg>] <images/fingers.jpg, id=136, 333.245pt x
- 208.78pt>
+ <images/fingers.jpg, id=140, 333.245pt x 208.78pt>
 File: images/fingers.jpg Graphic file (type jpg)
 
 <use images/fingers.jpg>
-Package pdftex.def Info: images/fingers.jpg used on input line 215.
+Package pdftex.def Info: images/fingers.jpg used on input line 238.
 (pdftex.def)             Requested size: 233.2699pt x 146.14497pt.
- [11 <./images/fingers.jpg>]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 284.
+ [12 <./images/leap.jpg> <./palm.jpg>]
+Overfull \hbox (29.21432pt too wide) in paragraph at lines 257--293
+ [][] 
+ []
 
-
-(/usr/local/texlive/2014/texmf-dist/tex/latex/base/omscmr.fd
-File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 284.
-
+[13 <./images/fingers.jpg>] [14]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
@@ -331,7 +337,9 @@ Missing character: There is no ú in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
-[12] [13]
+[15] [16] [17
+
+]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no î in font cmr10!
@@ -342,25 +350,20 @@ Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ì in font cmr10!
 
-Overfull \hbox (25.80531pt too wide) in paragraph at lines 346--347
-[]\OT1/cmr/m/n/10 Leap Mo-tion, \OT1/cmr/m/it/10 Java SDK Doc-u-men-ta-tion\OT1
-/cmr/m/n/10 , https://developer.leapmotion.com/documentation/java/index.html
- []
-
-
-Underfull \hbox (badness 1946) in paragraph at lines 348--349
-[]\OT1/cmr/m/n/10 Briggs, J. \OT1/cmr/m/it/10 A Bet-ter Un-der-stand-ing of Per
--son-al-ized Search\OT1/cmr/m/n/10 . https://www.briggsby.com/better-
+Overfull \hbox (72.88304pt too wide) in paragraph at lines 368--369
+[]\OT1/cmr/m/n/10.95 Leap Mo-tion, \OT1/cmr/m/it/10.95 Java SDK Doc-u-men-ta-ti
+on\OT1/cmr/m/n/10.95 , https://developer.leapmotion.com/documentation/java/inde
+x.html
  []
 
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ì in font cmr10!
 
-Overfull \hbox (61.83981pt too wide) in paragraph at lines 361--362
-[]\OT1/cmr/m/n/10 National Autis-tic So-ci-ety, \OT1/cmr/m/it/10 The Autis-tic 
-Spec-trum\OT1/cmr/m/n/10 , http://media.kingdown.wilts.sch.uk/mod/page/view.php
-?id=7374,
+Overfull \hbox (112.3408pt too wide) in paragraph at lines 383--384
+[]\OT1/cmr/m/n/10.95 National Autis-tic So-ci-ety, \OT1/cmr/m/it/10.95 The Auti
+s-tic Spec-trum\OT1/cmr/m/n/10.95 , http://media.kingdown.wilts.sch.uk/mod/page
+/view.php?id=7374,
  []
 
 Missing character: There is no √ in font cmr10!
@@ -368,61 +371,66 @@ Missing character: There is no ® in font cmr10!
 Missing character: There is no √ in font cmr10!
 Missing character: There is no º in font cmr10!
 
-Underfull \hbox (badness 6625) in paragraph at lines 371--372
-[]\OT1/cmr/m/n/10 Pray, S. \OT1/cmr/m/it/10 In-verted In-dex : The ba-sic in-gr
-e-di-ent be-hind the recipe called Search En-
+Underfull \hbox (badness 1077) in paragraph at lines 393--394
+[]\OT1/cmr/m/n/10.95 Pray, S. \OT1/cmr/m/it/10.95 In-verted In-dex : The ba-sic
+ in-gre-di-ent be-hind the recipe called Search En-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 371--372
-\OT1/cmr/m/it/10 gine\OT1/cmr/m/n/10 https://insightsdelight.wordpress.com/2012
-/01/24/inverted-index-the-basic-ingredient-behind-
+Underfull \hbox (badness 10000) in paragraph at lines 393--394
+\OT1/cmr/m/it/10.95 gine\OT1/cmr/m/n/10.95 https://insightsdelight.wordpress.co
+m/2012/01/24/inverted-index-the-basic-ingredient-
  []
 
-[14]
+[18
+
+]
 Missing character: There is no ‚ in font cmti10!
 Missing character: There is no Ä in font cmti10!
 Missing character: There is no ô in font cmti10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ì in font cmr10!
 
-Underfull \hbox (badness 2150) in paragraph at lines 385--386
-\OT1/cmr/m/it/10 Dips Slightly\OT1/cmr/m/n/10 , http://searchengineland.com/goo
-gle-worlds-most-popular-search-engine-148089, Re-
+Underfull \hbox (badness 10000) in paragraph at lines 417--418
+[]\OT1/cmr/m/n/10.95 Parrack, D.\OT1/cmr/m/it/10.95 4 Search En-gines That Com-
+bine Google & Bing\OT1/cmr/m/n/10.95 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 417--418
+\OT1/cmr/m/n/10.95 http://www.makeuseof.com/tag/4-search-engines-that-combine-g
+oogle-bing/, Re-trieved
  []
 
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ì in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ì in font cmr10!
-[15] (./PROP_emassa01_CS.aux) ) 
+[19] (./PROP_emassa01_CS.aux) ) 
 Here is how much of TeX's memory you used:
- 1642 strings out of 493117
- 23720 string characters out of 6135433
- 89116 words of memory out of 5000000
- 5092 multiletter control sequences out of 15000+600000
- 8848 words of font info for 31 fonts, out of 8000000 for 9000
+ 1633 strings out of 493117
+ 23538 string characters out of 6135433
+ 88161 words of memory out of 5000000
+ 5085 multiletter control sequences out of 15000+600000
+ 10377 words of font info for 36 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 37i,11n,24p,2061b,276s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 37i,11n,24p,2061b,282s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2014/texmf-dist/fonts/type1/
 public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/p
 ublic/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmbx9.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmr10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmr12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmr17.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmr6.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmr7.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmr8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmr9.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cms
-y10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
-6.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.
-pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.p
-fb>
-Output written on PROP_emassa01_CS.pdf (15 pages, 1808215 bytes).
+blic/amsfonts/cm/cmr10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmr12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmr17.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmr6.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmr8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmr9.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmsy6.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmsy8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+ti10.pfb>
+Output written on PROP_emassa01_CS.pdf (20 pages, 1782703 bytes).
 PDF statistics:
- 201 PDF objects out of 1000 (max. 8388607)
- 134 compressed objects within 2 object streams
+ 205 PDF objects out of 1000 (max. 8388607)
+ 136 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  26 words of extra memory for PDF output out of 10000 (max. 10000000)
 

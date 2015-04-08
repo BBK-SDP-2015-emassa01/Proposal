@@ -1,4 +1,4 @@
-\documentclass[10pt]{article}
+\documentclass[a4paper, 11pt]{article}
 \setlength{\topmargin}{-0.8in}
 \setlength{\textheight}{9.5in}
 \setlength{\oddsidemargin}{-.13in}
@@ -13,22 +13,45 @@
 
 \begin{document}
 
+\begin{titlepage}
+
 \title{User Modeling and Personalisation in Search for People with Autism}
-\author{Esha Massand\\
+\author{Author: Esha Massand\\Supervisor: Keith Mannock\\
 MSc Computer Science Project Proposal\footnote{This proposal is substantially the result of my own work, expressed in my own words, except where explicitly indicated in the text. I give my permission for it to be submitted to the JISC Plagiarism Detection Service. }}
 \date{\today}
 \maketitle
 
+
 \begin{abstract}
 The current proposal presents my objective to research and build a user model and web application for individuals on the Autism Spectrum within Search. The model will be built around the core features of Autism. The model will be applied to results returned from a synthesis of three leading existing search engines. The web application will be integrated with motion-controlled user interfaces (UI). The project will provide novel insights into the needs and wants of individuals with Autism within search, and enable future development and interventions within these information streams and communication channels.
 \end{abstract}
+\end{titlepage}
+\clearpage
+
+
+\section{Abbreviations}
+\begin{tabular}{l l }
+API & Application Programming Interface\\
+ASD & Autism Spectrum Disorder\\
+DSM & Diagnostic and Statistical Manual\\
+GCS & Google Custom Search\\
+HCI & Human Computer Interaction\\
+JSON & JavaScript Object Notation\\
+KWIC & Key Word In Context\\
+UI & User Interface\\
+UX & User Experience\\
+VR & Virtual Reality\\
+\end{tabular}
+\clearpage
+
 
 \tableofcontents
+\clearpage
 
 \section{Introduction \& Background}
 \subsection{Problem Statement} \label{prob}
-Most search engines apply user models to refine user search queries. These models can often lack specificity for users/groups of users \cite{usermodel}. Although adaptive search engines have now become prominent; they use search history, locale, and demographics to match results to the user's intentions, these models make several a priori assumptions about users from specific subgroups. No attempts have been made to define a user model within search for individuals with Autism, so it is currently unknown whether current user models need to be adjusted for this subgroup. We argue that general user models, and the needs of the user with Autism differ, and the project aims to build a user model of Autism to address this issue.\\
-As it is well established that individuals with Autism are more engaged when using technology that is receptive and interactive (e.g., games, responsive consoles, motion controlled devices) compared to technology that is not \cite{motioncontrollerforautism}, this project will combine interactive, motion recognition hardware with Search to improve the UI (user interface) and architecture of Search for individuals with Autism.
+Most search engines apply user models to refine user search queries. These models can often lack specificity for users/groups of users \cite{usermodel}. Although adaptive search engines have now become prominent (using search history, locale, and demographics to guess the user's intentions) these models make several a priori assumptions about users from specific subgroups. Based on the Psychology literature, general user models and the needs of the user with Autism differ. To address this issue, the current project aims to build a user model within Search for individuals with Autism.\\
+As it is well established that individuals with Autism are more engaged when using technology that is receptive and interactive (e.g., games, responsive consoles, motion controlled devices) compared to technology that is not \cite{motioncontrollerforautism}, this project will combine interactive, motion recognition hardware with Search to also improve the UI (user interface) of Search for individuals with Autism.
 
 \subsection{What is the Autism Spectrum?}
 Autism is amongst the most common neurodevelopmental condition and it is currently estimated that 1/68 children meet criteria for Autism Spectrum (CDC, 2014). Autism is five times more common amongst boys than girls (1/42 boys, and 1/189 girls). According to the DSM-V (2013) diagnostic manual, Autism is characterized by persistent and early deficits in reciprocal social interaction and repetitive behaviours. Individuals vary from high functioning to low functioning (along a spectrum), with behaviours emerging around 2 to 3 years of age. 
@@ -131,79 +154,79 @@ Although adaptive search seems to have significant user benefit in terms of rele
 In order to produce a search tool specifically tailored to reduce the filter bubble effect in Autism, widen the information gateway and reduce the possibility for restricted and repetitive searches, the weighting on previous search results needs to be reduced. This is something I will investigate in the project, particularly for individuals with restricted interests. For these users, it would limit the possibility that they get trapped in a spiraling loop of ever-narrowing user-relevant information and over personalization of self-reinforced information ecosystems.
 
 \subsubsection{Persisting the User's Information}
-The user will be asked to sign in with a Google+ account, and their data will be linked to the web application. The Google+ API includes methods to access 4 resource  types; People, their Activities, Comments and Moments. A person is represented with many fields in Google +, including name, gender, title, occupation, all of which can be used to model individual users in the current project. Information about web searching history for any individual user can also be obtained from the browser history. 
+The user will be asked to authenticate a link between their Google+ account and the web application. The Google+ API includes methods to access 4 resource  types; People, their Activities, Comments and Moments. A person is represented with many fields in Google +, including name, gender, title, occupation and so forth. Information about web-search history for any individual user can be obtained from the browser history. 
 
 \subsection{Implementing the Application}\label{api}
 \subsubsection{Selecting Search Engines} 
 The three most popular search engines (as calculated using an average of the unique monthly visitors) are Google (1,100,000,000), Bing (350.000.000) and Yahoo! (300,000,000)\cite{ebiz}. Google is the goliath question-answering system (query volume = 64.5\%)\cite{adam}, and is often considered the most innovative and dynamic. It is popular amongst users worldwide (using global traffic rank figures, in March 2015). Yahoo (2003) was the first ever web directory service; it has stronger advertising and e-commerce partnerships and has a query volume of 19.8\%. Bing was officially launched in 2005, and has a query volume of 12.8\%, which is substantially less than Google, but nevertheless, is within the top 3 search engines. Other search engines were not included, to limit redundancy of the search results returned (see Section~\ref{Existing Combination/Advanced Search Engines}). 
 
 \subsubsection{APIs, Text-Search Libraries}
-I will use API’s provided by Google, Yahoo and Bing, as they are far more efficient than inspecting the source code for the search results page (e.g., Apache Lucene Key Word In Context is optimised for maximum search efficiency see Section~\ref{apache}). 
+I will use API’s provided by Google, Yahoo and Bing. These are more efficient than inspecting the source code for each search-result page (e.g., the Apache Lucene Key Word In Context (KWIC) library is optimised for maximum search efficiency see Section~\ref{apache}). 
 
 \subsubsection{Google Custom Search}
-Google Custom Search (GCS) provides a Java API to create a personalised search engine that can be configured to search web pages and images. It works on a pay per search principle. Once signed up, the GCS requires a consumer key and secret, which are hardcoded in the development of the search.\\
-The API has methods which (amongst other things) allows the extraction of image search results, page dates, formatting dates, custom snippets, sort by and filter methods. However, this may not be enough, and the GCS API may need to be used in conjunction with a textual-search library in order to reach the goals of this project (the API does not offer Key Word In Context Search in order to trace the contextual information being returned to the user). Costs \$0.01/search.
+Google Custom Search (GCS) API (available in Java) can be used to create a personalised search engine. GCS requires a domain name and server at configuration, and provides a consumer key and secret, which are hardcoded in the application.\\
+Using the API I can extract image search results, page dates, formatting dates, custom snippets, and sort and filter the results. The API alone may not be comprehensive for textual-search (KWIC), and an addional library may be required (see Section~\ref{apache}). Costs \$0.01/search.
 
 \subsubsection{Yahoo BOSS}
-Just like Google Custom Search, the Yahoo BOSS Java API required the creation of a search engine project (pay per search) with a consumer key and secret. The API is also easy to use and offers the same functionality as the CSC but again is not sufficient alone to reach the goals of the project. Costs \$0.01/search.
+To use the Yahoo BOSS Java API, I will create a search engine 'project' to obtain a consumer key and secret. The API offers similar functionality as the GSC, so is not sufficient alone to reach the goals of the project. Costs \$0.01/search.
 
 \subsubsection{Bing Search API (Data)}
-The Bing Search API, similar to Yahoo BOSS and GCS will produce results for Web, Images, News, Videos, Related Search. Bing Search Java API also includes spelling suggestions based on the query entered. Costs \$0.00/search (max 5000 searches/month)
+The Bing Search API can produce results for Web, Images, News, Videos, Related Search. It also includes spelling suggestions based on the query entered. Costs \$0.00/search (max 5000 searches/month)
 
 \subsubsection{Faroo API}
-Is a free alternative Java API to Google Custom Search API (business), Yahoo BOSS API  (commercial) and Bing Web Search Enterprise (commercial). It offers the possibility to do a Web Search with more that 2 billion pages indexed. Faroo can return news search (articles from newspapers, magazines and blogs) and sort results by publishing date, with author and article image. Trending news pages are also indexed and can be grouped by topic. The API includes suggestions with auto-completes for misspelled items in the search query \cite{faroo}.
+Faroo is a free (Java) API, claiming to combine Google, Yahoo and Bing. Faroo can return news search, trending pages, and can sort results \cite{faroo}. However, as it only offers Web Search from 2 billion pages it has indexed (compared to Google: 46.7 billion \cite{websize}), it is not comprehensive enough for the current project.
 
 \subsubsection{Apache Lucene Library}\label{apache}
-Apache Lucene Library is a text-based context search. It is particularly relevant for the current project because it provides powerful, accurate and efficient algorithms to search textual data, the algorithms are scalable and high performance, so will enable users to receive results from their search query with good speed. The API offers the possibility to carry out phrase, wildcard, proximity and range queries which will mean the goals of the project can be fulfilled (Package org.apache.lucene.search.highlight, for the aims of the project refer to ~Section \ref{the problem}). The library also affords ranked searches, with type tolerant suggesters and field searching.
+Apache Lucene Library is a text-search library (written in Java), and provides powerful, scalable, accurate and efficient algorithms to search textual data. The API offers the possibility to carry out phrase, wildcard, proximity and range queries. The library also affords ranked searches, with type tolerant suggesters and field searching.
 
 \subsubsection{Key Word In Context} \label{KWIC} 
-The Apache Lucene open-source search engine library written in Java allows contextual-text search, also known as Key Word In Context (KWIC)\cite{kwic}. KWIC works by forming an index to allow each word to be searchable. The library takes care of the efficiency of this process, and can return weighted terms of a given query (as an example).
+The Apache library also allows contextual-text search, also known as Key Word In Context (KWIC)\cite{kwic}. KWIC works by forming an index to allow each word to be searchable. The library takes care of the efficiency of this process, and can return weighted terms of a given query (as an example).
 
 
 \subsubsection{Google+ API}
-Persona (a type of user) development will support the user modeling process by identifying particular characteristics of individuals with Autism in Search. An individual’s personal information pertaining to the persona, will be stored in a Google+ user profile and can be used with the Google+ API (written in Java), containing information such as age, gender, lifestyle, frequent tasks, tools used, and the resources they commonly use. It is also be possible to store information in the 'about me' section on the profile about individual diagnosis (Autism, Asperger, and high/low functioning). This information can be parsed when the query is submitted to the search engine.
+A user will first authenticate their personal Google+ user profile with the web application being developed, and these data (including age, gender, lifestyle, frequent tasks, tools/resources commonly used) will therefore be acccessible via the API (available in Java)\footnote{It is also be possible to store information in the 'about me' section on the profile about individual diagnosis (Autism, Asperger, and high/low functioning). This information can be parsed when the query is submitted to the search engine.}. 
 
 \subsubsection{API for 'LEAP' Motion Controller}
-LEAP Motion SDK offers an API to get tracking data from the LEAP Motion Service. A WebSocket interface, allows LEAP Web Based applications, and a WebSocket server listening in on http://127.0.0.1:6437. The user can enable or disable the WebSocket server as they choose to do so, in the device's control panel.
+LEAP Motion SDK offers an API to get tracking data from the LEAP Motion Service. A WebSocket interface, allows LEAP Web Based applications, and a WebSocket server listening in on http://127.0.0.1:6437\footnote{The user can enable or disable the WebSocket server as they choose to do so, in the device's control panel.}.
 The server sends tracking data in JSON messages and an application can send configuration messages back. This library will be used to establish connection to the server and consume the JSON messages \cite{leap}. 
 
 
 \subsubsection{ThreeJs Library (Non-Core)}
-This javascript library enables WebGL-3D in a web browser. WebGL brings hardware-accelerated 3D graphics to the browser without installing additional software. This library may be used to better integrate the application with the motion controller, and improve the experience of embodiment, and UI of the application.
+This Javascript library enables WebGL-3D in a web browser. WebGL brings hardware-accelerated 3D graphics to the browser without installing additional software. This library may be used to better integrate the application with the motion controller, and improve the experience of embodiment, UX, and UI of the application.
 
 
 \subsection{Integrating the Application with Motion Controller Hardware }\label{hardware}
 \subsubsection{Hardware Selection Process}
-The usability of the hardware will be determined as follows: 
+Two options were available; the Oculus Rift Virtual Reality head mounted display, and, the LEAP motion controller. The hardware was selected as follows: 
 \begin{enumerate}
-\item Good timing of the device correlates to a good meaning and a good UX. The LEAP has options to ‘poll’ frames at a constant rate (to keep timing of movement accurate).
+\item Accurate timing of the device correlates a good UX. The LEAP has options to ‘poll’ frames at a constant rate (to keep timing of movement accurate).
 \item Cognitive ‘lag’ time. Each of our senses operates with a different lag time. Hearing has the fastest sense-to-cognition/understanding time; sight is the slowest. The device should therefore work with the combinatorial configuration of the senses.
-\item As this is a tool to be used with individuals with Autism, the sensory experience of the device cannot be overwhelming.
-\item Cognitive-load should not be high (the device is being used to assist with search, so operating the device should not require a great deal of cognitive effort).
+\item As this is a tool to be used with individuals with Autism, the sensory experience (imposition) of the device cannot be overwhelming.
+\item Cognitive-load should not be high (operating the device should not require a great deal of cognitive effort).
 \item The device should integrate with concrete behaviours, e.g., drop or grab. 
-
+\item Affordability for users.
 \end{enumerate}
+The two main reasons to persue the LEAP before the Oculus VR were, (1) it's non-imposing nature (no head mount), and (2), the affordability of the controller.
 
 \subsubsection{LEAP Controller}
-The leap controller can recognize and track hands, fingers and finger-like tools. It can report positions, motions and gestures using an infrared light and optical sensors along the x, y and z axes (Cartesian coordinate system). The controller has a 150-degree field of view, and can operate in a range of 1 inch to 2 feet. The API works with distance in millimetre resolution. Time is measured in microseconds, speed in mm/s and angles in radians.
+The LEAP can recognize and track hands, fingers, finger-like tools, positions, motions and gestures using infrared light and optical sensors along the x, y and z axes (cartesian coordinate system). The controller has a 150-degree field of view, and can operate in a range of 1 inch to 2 feet. The API works with distance in millimetre resolution. Time is measured in microseconds, speed in mm/s and angles in radians.
 
 \begin{center}
 \includegraphics[scale=0.5]{leap}\\
 The LEAP controller, with 150 degree view \cite{leap}.
 \end{center}
 
-The LEAP uses frames to represent tracked entities such as hands, fingers, tools or gestures. Motion data is recorded as a set of frames (stored, read-only) containing the detected information. 
-Frames can be created by calling the Controller.frame(), and up to 60 can be held in the history buffer with the current API. Frames may be 'dropped' if there are resource contrainsts, or, they are missed for example. Once a frame is created, the data can be gathered from the hands(), arms(), fingers(), tools() methods.
+The LEAP uses frames to represent tracked entities such as hands, fingers, tools or gestures. Motion data is recorded as a set of frames (stored, read-only) containing the detected information. Frames can be created by calling the Controller.frame(). Up to 60 can be held in the history buffer. Frames may be 'dropped' if there are resource contrainsts, or, they are missed.
 
 \subsubsection{Hands}
-The Hand class, returns information about the ID, position of fingers associated with that hand, and arm infomration (left/right).
+The Hand class, returns information about the position of fingers, and arm (left/right).
 
 \begin{center}
 \includegraphics[scale=0.6]{palm}\\
 The Hand palmNormal() method and direction vectors define the orientation of the hand \cite{leap}\\.
 \end{center}
 
-The software uses parts of visible hand, internal model and previous observations to form a model of the hand. Five finger positions will always be shown but subtle movements of hand, especially if they are tucked up into the hand are harder to detect. For this there is a Hand.confidence() method that provides a rating of how well the observed data fit the internal model \cite{leap}.
+The software uses parts of visible hands, internal models and previous observations to form a model of the hand. There is a Hand.confidence() method that provides a rating of how well the observed data fit the internal model \cite{leap}.
 
 \subsubsection{Arms}
 The Arms class can return information about orientation, length, width and end points of movements. The LEAP controller software bases these return measurements on previous observations of the user, and using typical human proportions.
@@ -221,13 +244,13 @@ Finger tip position and direction are given as vectors. \cite{leap}.
 Tools can represent any real object (noun), but are longer, straighter and thinner than fingers. Tools must be cylindrical.
 
 \subsubsection{Gestures}
-The LEAP recognises certain movement patterns (for each finger or tool individually) allowing the user to indicate an intent. These gestures are observed in a frame and include: CircleGesture, KeyTapGesture, ScreenTapGesture and SwipeGestures.
+The LEAP recognises certain movement patterns (CircleGesture, KeyTapGesture, ScreenTapGesture and SwipeGestures) allowing the user to indicate an intent.
 
 
 \subsection{Project Plan}\label{plan}
 
 \subsubsection{Project Timeline}
-A high level plan of the project timeline is presented in table ~Table \ref{stages}. The start date of the project is June 5th 2015, and end date is September 13th 2015.
+The start date of the project is June 5th 2015, and end date is September 13th 2015. 
 \begin{table}[h]
 \caption{Project Stages} 
 \centering
@@ -235,9 +258,9 @@ A high level plan of the project timeline is presented in table ~Table \ref{stag
 \hline\hline 
 Dates & Task & Priority\\ [0.5ex]
 \hline 
-Jun 05 - Jun 12 & Gather relevant API's \& Libraries & MUST\\
+Jun 05 - Jun 12 & Configure relevant API's \& Libraries to domain name/server & MUST\\
 \hline 
-Jun 13 - Jun 19 & Work on synthesis of search results & MUST\\
+Jun 13 - Jun 19 & Synthesise search results & MUST\\
 \hline 
 Jun 20 - Jun 27 & Research \& build user (and data) model of Autism & MUST\\
 \hline 
@@ -270,27 +293,31 @@ Sep 13 & Submit report & MUST\\[1ex]
 \end{table}
 
 \subsubsection{Methodology}
-The current project has a relatively short deadline in which a single developer will research and deliver a system prototype and report. The APIs, technology and areas of development are unfamiliar. As the final product depends on user feedback testing, there is an element of uncertainty about what the final product will be/should look like, i.e., a feature could be added/removed at the feedback stage. The characteristics of the current project mean that the most suitable methodology to deliver the application is Agile Methodology. I will focus on development and rapid feedback early in the development, to make changes to the project direction. This methodology works well with the demands and offers the most flexibility and adaptability.
+There is a relatively short deadline in which a single developer will research and deliver a system prototype and report. The APIs, technology and areas of development are unfamiliar. As the final product depends on user feedback testing, there is an element of uncertainty about what the final product will be/should look like. These characteristics suggest that the most suitable methodology to deliver the application is an Agile-like Methodology. I will focus on early development and rapid feedback to make adjustments to the project's direction. This methodology offers the most flexibility and adaptability.
 
 
 \subsubsection{Development Languages}
-I will use Eclipse text editor and attempt to make the application compatible with Google Chrome browser (as it is WebGL-compatible and may be useful for 3D interfaces). The Google, Yahoo, Bing and Apache Lucene APIs are available in Java. The LEAP SDK sends Frame information in JSON format to Web Browsers. As a non-core feature, I may use a 3D interface with the three.Js library which is also JSON format. I will use HTML5 for the development of the Web Application itself. I will use Git for Version Control, JUnit, JSON Test (for testing code) and Mockito (for testing when there are user/external dependencies). \\
-JSON is light weight, language-independent data format, and a good tool for sharing data. Importantly JSON offers faster execution and server-side parsing by storing the data in arrays, so that the transfer of data is faster. Faster parsing is particularly important for sharing the LEAP motion controller data. Some of the drawbacks of JSON are that it only has limited support tools available, and little error handling capabilities. It is also vulnerable as it returns responses in wrapped function calls which are vulnerable to attack. Java is a platform and operating-system independent language. It offers a simple, dynamic and robust object oriented, functional language.
+The Google, Yahoo, Bing and Apache Lucene APIs are available in Java. The LEAP SDK sends Frame information in JSON format to Web Browsers. As a non-core feature, I may use a 3D interface with the three.Js library which is also JSON format. I will use HTML5 for the development of the aesthetics of the Web Application itself.
+For testing I will use JUnit, JSON Test and Mockito (for user/external dependencies).\\
+JSON is light weight, language-independent data format, and a good tool for sharing data. Importantly JSON offers faster execution and server-side parsing by storing the data in arrays, so that the transfer of data is faster. Faster parsing is particularly important for sharing the LEAP motion controller data. Some of the drawbacks of JSON are that it only has limited support tools available, and little error handling capabilities. It is also vulnerable as it returns responses in wrapped function calls which are vulnerable to attack. Java is a platform and operating-system independent language. It offers a simple, dynamic, robust object oriented, and functional language. There is excellent documentation available for the language, with many third party, open source libraries.\\
+I will use Eclipse text editor and attempt to make the application compatible with Google Chrome browser (as it is WebGL-compatible and useful for 3D interfaces). I will use Git for Version Control.
 
 \subsubsection{Testing}
 \subsubsection{User Testing}
-To ascertain whether the goals of the project have been met I will need to test the application with people with Autism. This will include;
-\begin{itemize}
-\item Recruiting participants to take part in the research. Adolescents and adults with a diagnosis of Autism Spectrum. Recruited from NAS, will be asked to test the application.
-\item Obtaining user feedback (relevance/explicit feedback, and, implicit feedback, e.g., mouse-clicks) on the initial product by testing the web search with the LEAP motion controller, with a group of individuals diagnosed with Autism. I will design a questionnaire to test the application's feasibility. If time allows, I hope to use a Tobii Eye-tracker TX300 (in the Department of Psychology, Centre for Brain and Cognitive Development, Birkbeck University of London) to gather high resolution eye-tracking data on the participants as they use the application. This will inform my future developments for revising the application.
-\item Revising the model and the ideas to choose the best possible approach/tools to achieve optimization for people with Autism.
-\end{itemize}
+I will test the application with a group of individuals with Autism. I will
+\begin{enumerate}
+\item Invite adolescents and adults Autism to use the web application.
+\item Obtain their feedback (relevance/explicit feedback, and, implicit feedback, e.g., 'clicks'). 
+\item Design a questionnaire to gather qualitative data. 
+\item If time allows, I will use the Tobii Eye-tracker TX300 (Department of Psychology, Birkbeck University of London) to gather high resolution eye-tracking data as users test the application. 
+\item Revise the model and ideas. Choosing the best possible approach/tools to achieve optimization for this group of individuals.
+\end{enumerate}
 
 \subsubsection{Unit Testing}
 For testing the application code, I will be using Test Driven Development (TDD). For Java I will use the current version of JUnit (at the time of writing this is 4.12).External dependencies will be mock tested using Mockito. JSON Test will be used to test JavaScript Object Notation \cite{jsontest}. As well as unit testing, Regression testing will be used to testing the project as a whole unit.
 
 \subsubsection{Risks/issues, probabilities and mitigation of impact}
-The possible risks associated with the projects development, their impact and how I will attempt to mitigate these risks is outlined in ~Table \ref{risks}. 
+The risks associated with the project, their impact and how I will mitigate them, is outlined in~Table \ref{risks}. 
 \begin{table}[h]
 \caption{Risks \& Impact Mitigation} 
 \centering
@@ -320,17 +347,12 @@ MEDIUM & HIGH & Not enough turn around time to implement the feedback & Develop 
 \subsection{Summary \& Concluding Statement}\label{future}
 I have proposed to research and build a User Model within Search for people with Autism. I describe a model (based on well-understood aspects of cognition in Autism) to apply to search results, using text and content based libraries which will refine search results for these individuals. I hope these insights will assist with the forthcoming information-overload problem by exploiting these user models to turn the masses of information available into a specific set of “information goods”. 
 
-\section{Appendices}
-\subsection{Abbreviations}
-\begin{tabular}{l l }
-API & Application Programming Interface\\
-ASD & Autism Spectrum Disorder\\
-DSM & Diagnostic and Statistical Manual\\
-HCI & Human Computer Interaction\\
-UI & User Interface\\
-UX & User Experience\\
-\end{tabular}
+\clearpage
 
+\section{Appendices}
+
+
+\clearpage
 \begin{thebibliography}{100}
 
 \bibitem {gameshealth} Games for Health (2012) \textit{Screen-based technologies and Autism. 1}: 248-53
@@ -373,6 +395,8 @@ UX & User Experience\\
 \bibitem {Economist} Pariser, E. (2011) \textit{Invisible sieve: Hidden, specially for you}. The Economist. Retrieved April 8, 2015. Mr 
 
 \bibitem {MacDuff} MacDuff, Krantz, \& McClannahan (2001). Prompts and prompt-fading strategies for people with autism. In C. Maurice, \& G. Green (Eds.), \textit{Making a difference: Behavioral intervention for autism}, 37-50. Austin, TX: Pro-Ed.
+
+\bibitem{websize} Kunder, M. D. \textit{The size of the World Wide Web: Estimated size of Google's index}, http://www.worldwidewebsize.com/, Retrieved 8 April 2015.
 
 
 \bibitem {Sherer}Sherer, M., Pierce, K. L., Paredes, S., Kisacky, K. L., Ingersoll, B., Schriebman, L. (2001). Enhancing conversation skills in children with autism via video technology. \textit{Behavior Modification, 25}, 140-158.
