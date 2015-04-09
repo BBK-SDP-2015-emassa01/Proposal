@@ -30,7 +30,7 @@ The current proposal presents my objective to research and build a user model an
 
 \tableofcontents
 
-\section{Abbreviations}
+\section*{Abbreviations}
 \begin{tabular}{l l }
 API & Application Programming Interface\\
 ASD & Autism Spectrum Disorder\\
@@ -44,9 +44,6 @@ UI & User Interface\\
 UX & User Experience\\
 VR & Virtual Reality\\
 \end{tabular}
-
-
-
 
 \clearpage
 
@@ -75,7 +72,7 @@ Research has suggested personalization also increases ‘background noise’ rel
 
 
 \subsection{Existing Combination/Advanced Search Engines}\label{Existing Combination/Advanced Search Engines}
-I will first synthesise results from a combination of search engines, before appling my user model of Autism to filter them. Existing solutions for the synthesis of search results already exist, and the ones of note include \textbf{'Bing vs. Google'}, which presents search query results from Bing and Google side-by-side, allowing the user to make a comparison, and providing the experience of navigating both search pages simultaneously. Alternatively, \textbf{'Qrobe'} combines three search engines’ results (Google, Bing and Ask) on one page, but the user can also search ‘web’, ‘images’ or ‘popular’. \textbf{'AskBoth'} combines both Google and Bing results, integrating a section in the middle, dedicated to a twitter feed. \textbf{Spectra} attempts to include user preferences by combining results from Google, Bing and Yahoo and allowing users to assign 'weights' to each engine. However, the number of personal preference options is very limited. In addition, there is often double (or triple) the amount of verbal information on the results page, resulting in verbal (and cognitive) overload for users with Autism, as well as redundancy (near-duplicates). Furthermore, where an RSS-feed such as twitter may add to the aesthetics and user experience (UX) for a typical user, for individuals with Autism who prefer rigid routines, continuous updates are distracting and sub-optimal. I will therefore synthesise the results from search engines using their individual Application Programming Interfaces (API) (which I discuss later, in Section~\ref{api})
+I will first synthesise results from a combination of search engines, before appling my user model of Autism to filter them. Existing solutions for the synthesis of search results already exist, and the ones of note include \textbf{'Bing vs. Google'}, which presents search query results from Bing and Google side-by-side, allowing the user to make a comparison, and providing the experience of navigating both search pages simultaneously. Alternatively, \textbf{'Qrobe'} combines three search engines’ results (Google, Bing and Ask) on one page, but the user can also search ‘web’, ‘images’ or ‘popular’. \textbf{'AskBoth'} combines both Google and Bing results, integrating a section in the middle, dedicated to a twitter feed. \textbf{'Spectra'} attempts to include user preferences by combining results from Google, Bing and Yahoo and allowing users to assign 'weights' to each engine. However, the number of personal preference options is very limited. In addition, there is often double (or triple) the amount of verbal information on the results page, resulting in verbal (and cognitive) overload for users with Autism, as well as redundancy (near-duplicates). Furthermore, where an RSS-feed such as twitter may add to the aesthetics and user experience (UX) for a typical user, for individuals with Autism who prefer rigid routines, continuous updates are distracting and sub-optimal. I will therefore synthesise the results from search engines using their individual Application Programming Interfaces (API) (which I discuss later, in Section~\ref{api})
 
 \section{Aims and Objectives} 
 I propose to build a user model of Autism, for a motion-controlled, web search. The core and non-core features of the application are given below. I elaborate on each of the key features in the following sections. 
@@ -111,33 +108,17 @@ Proposed application: The User Model will be applied to existing Search Engine A
 
 \section{Plan for Developing the Solution}
 
-\subsection {Building a User Model of Autism}\label{usermodel}
+\subsection{Building the Combination Search Engine: Core Feature 1.} 
+I selected the three most popular search engines (as calculated using an average of the unique monthly visitors) are Google (1,100,000,000), Bing (350.000.000) and Yahoo! (300,000,000)\cite{ebiz}. Google is the goliath question-answering system (query volume = 64.5\%)\cite{adam}, and is often considered the most innovative and dynamic. It is popular amongst users worldwide (using global traffic rank figures, in March 2015). Yahoo (2003) was the first ever web directory service; it has stronger advertising and e-commerce partnerships and has a query volume of 19.8\%. Bing was officially launched in 2005, and has a query volume of 12.8\%, which is substantially less than Google, but nevertheless, is within the top 3 search engines. Other search engines were not included, to limit redundancy of the search results returned (see Section~\ref{Existing Combination/Advanced Search Engines}). 
 
+To combine search results, I will use API’s provided by Google, Yahoo and Bing, as this is more efficient than inspecting the source code for every query result-page. For Google search results, the \textbf{Google Custom Search} (GCS) API (available in Java) will be used to create a personalised search engine. GCS requires a domain name and server at configuration, and provides a consumer key and secret, which are hardcoded in the application. Using the API I will extract image search results, page dates, formatting dates, custom snippets, and sort and filter the results. For Yahoo search, the \textbf{Yahoo BOSS} Java API will be used. The API offers similar functionality as the GSC. Lastly, for Bing, the \textbf{Bing Search} API can produce results for Web, Images, News, Videos, Related Search. It also includes spelling suggestions based on the query entered\footnote{The APIs alone may not be comprehensive for textual-search (KWIC), and an addional library may be required (see Section~\ref{apache}).}. Each costs \$0.01/search (max 5000 searches/month).
+
+\subsection {Building a User Model of Autism: Core Feature 2}\label{usermodel}
 A user model is a collection of information associated with a particular user (usually a data structure), with which a system can adapt/customise its behaviour in line with user needs. User modeling has strong implications for human-computer interaction (HCI); by creating a representation of the user, the system can be better informed about how to behave in various circumstances. In the current case the user will be required to set up a Google+ account, where their basic information (demographics, needs, preferences, likes, dislikes, goals, plans, knowledge, and skill), will be gathered. They will authenticate their Google+ account with the web application to start the formation of their data model. I will access these data via the Google+ API (see Section~\ref{api}), which includes methods to access 4 resource  types; People, their Activities, Comments and Moments. A person is represented with many fields in Google+, including name, gender, title, occupation and so forth. Information about web-search history for any individual user can be obtained from the browser history. 
 
-User models can be static/unchanging (i.e., no algorithms update the model about the changing preferences of the user/ no new information is fed into the model), or dynamic (representation of the user with their up-to-date changes in interests, and interactions with the system). User models may also be stereotyped, where the system infers or assumes characteristics about a user from data gathered from other users within that distinct subset. Or, a user model can be highly adaptive and model the user on their own, without stereotyping, however this requires a large amount of data before implementation. Stereotyped user models are the most advantageous in the current case as they can be built quickly using clusters of characteristics of groups of individuals. Because I will have limited data to work with at the start of the project (only basic information gathered via a registration process, and diagnostic information), I will build a stereotyped user model, around a cluster of characteristics of well-researched cognitive aspects of Autism (outlined in Section~\ref{core}.
+User models can be static/unchanging (i.e., no algorithms update the model about the changing preferences of the user/ no new information is fed into the model), or dynamic (representation of the user with their up-to-date changes in interests, and interactions with the system). User models may also be stereotyped, where the system infers or assumes characteristics about a user from data gathered from other users within that distinct subset. Or, a user model can be highly adaptive and model the user on their own, without stereotyping, however this requires a large amount of data before implementation. Stereotyped user models are the most advantageous in the current case as they can be built quickly using clusters of characteristics of groups of individuals. I will have limited data to work with at the start of the project (only basic information gathered via a registration process, and diagnostic information). So, to address core feature 2, I will build a stereotyped user model, around a cluster of characteristics of well-researched cognitive aspects of Autism (see Section~\ref{core}).
 
-\subsection{Implementing the Application}\label{api}
-\subsubsection{Selecting Search Engines} 
-The three most popular search engines (as calculated using an average of the unique monthly visitors) are Google (1,100,000,000), Bing (350.000.000) and Yahoo! (300,000,000)\cite{ebiz}. Google is the goliath question-answering system (query volume = 64.5\%)\cite{adam}, and is often considered the most innovative and dynamic. It is popular amongst users worldwide (using global traffic rank figures, in March 2015). Yahoo (2003) was the first ever web directory service; it has stronger advertising and e-commerce partnerships and has a query volume of 19.8\%. Bing was officially launched in 2005, and has a query volume of 12.8\%, which is substantially less than Google, but nevertheless, is within the top 3 search engines. Other search engines were not included, to limit redundancy of the search results returned (see Section~\ref{Existing Combination/Advanced Search Engines}). 
-
-\subsubsection{APIs, Text-Search Libraries}
-I will use API’s provided by Google, Yahoo and Bing. These are more efficient than inspecting the source code for each search-result page (e.g., the Apache Lucene Key Word In Context (KWIC) library is optimised for maximum search efficiency see Section~\ref{apache}). 
-
-\subsubsection{Google Custom Search}
-Google Custom Search (GCS) API (available in Java) can be used to create a personalised search engine. GCS requires a domain name and server at configuration, and provides a consumer key and secret, which are hardcoded in the application.\\
-Using the API I can extract image search results, page dates, formatting dates, custom snippets, and sort and filter the results. The API alone may not be comprehensive for textual-search (KWIC), and an addional library may be required (see Section~\ref{apache}). Costs \$0.01/search.
-
-\subsubsection{Yahoo BOSS}
-To use the Yahoo BOSS Java API, I will create a search engine 'project' to obtain a consumer key and secret. The API offers similar functionality as the GSC, so is not sufficient alone to reach the goals of the project. Costs \$0.01/search.
-
-\subsubsection{Bing Search API (Data)}
-The Bing Search API can produce results for Web, Images, News, Videos, Related Search. It also includes spelling suggestions based on the query entered. Costs \$0.00/search (max 5000 searches/month)
-
-\subsubsection{Faroo API}
-Faroo is a free (Java) API, claiming to combine Google, Yahoo and Bing. Faroo can return news search, trending pages, and can sort results \cite{faroo}. However, as it only offers Web Search from 2 billion pages it has indexed (compared to Google: 46.7 billion \cite{websize}), it is not comprehensive enough for the current project.
-
-\subsubsection{Apache Lucene Library}\label{apache}
+\subsection{Key Word In Context Search: Core Feature 3}\label{apache}
 Apache Lucene Library is a text-search library (written in Java), and provides powerful, scalable, accurate and efficient algorithms to search textual data. The API offers the possibility to carry out phrase, wildcard, proximity and range queries. The library also affords ranked searches, with type tolerant suggesters and field searching.
 
 \subsubsection{Key Word In Context} \label{KWIC} 

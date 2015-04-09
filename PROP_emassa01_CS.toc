@@ -1,41 +1,34 @@
-\contentsline {section}{\numberline {1}Abbreviations}{2}
-\contentsline {section}{\numberline {2}Introduction \& Background}{3}
-\contentsline {subsection}{\numberline {2.1}Problem Statement}{3}
-\contentsline {subsection}{\numberline {2.2}The Role of Context Within Search}{3}
-\contentsline {subsection}{\numberline {2.3}The Downfalls of Current Search Tools for People with Autism}{3}
-\contentsline {subsection}{\numberline {2.4}Existing Combination/Advanced Search Engines}{4}
-\contentsline {section}{\numberline {3}Aims and Objectives}{4}
-\contentsline {subsection}{\numberline {3.1}Proposed Application}{5}
-\contentsline {subsubsection}{\numberline {3.1.1}Core Features}{5}
-\contentsline {subsubsection}{\numberline {3.1.2}Non-core Features}{5}
-\contentsline {section}{\numberline {4}Plan for Developing the Solution}{6}
-\contentsline {subsection}{\numberline {4.1}Building a User Model of Autism}{6}
-\contentsline {subsection}{\numberline {4.2}Implementing the Application}{6}
-\contentsline {subsubsection}{\numberline {4.2.1}Selecting Search Engines}{6}
-\contentsline {subsubsection}{\numberline {4.2.2}APIs, Text-Search Libraries}{6}
-\contentsline {subsubsection}{\numberline {4.2.3}Google Custom Search}{6}
-\contentsline {subsubsection}{\numberline {4.2.4}Yahoo BOSS}{6}
-\contentsline {subsubsection}{\numberline {4.2.5}Bing Search API (Data)}{7}
-\contentsline {subsubsection}{\numberline {4.2.6}Faroo API}{7}
-\contentsline {subsubsection}{\numberline {4.2.7}Apache Lucene Library}{7}
-\contentsline {subsubsection}{\numberline {4.2.8}Key Word In Context}{7}
-\contentsline {subsubsection}{\numberline {4.2.9}Google+ API}{7}
-\contentsline {subsubsection}{\numberline {4.2.10}API for 'LEAP' Motion Controller}{7}
-\contentsline {subsubsection}{\numberline {4.2.11}ThreeJs Library (Non-Core)}{7}
-\contentsline {subsection}{\numberline {4.3}Integrating the Application with Motion Controller Hardware }{7}
-\contentsline {subsubsection}{\numberline {4.3.1}Hardware Selection Process}{7}
-\contentsline {subsubsection}{\numberline {4.3.2}LEAP Controller}{8}
-\contentsline {subsubsection}{\numberline {4.3.3}Hands}{8}
-\contentsline {subsubsection}{\numberline {4.3.4}Arms}{8}
-\contentsline {subsubsection}{\numberline {4.3.5}Fingers}{9}
-\contentsline {subsubsection}{\numberline {4.3.6}Tools \& Pointables}{9}
-\contentsline {subsubsection}{\numberline {4.3.7}Gestures}{9}
-\contentsline {subsection}{\numberline {4.4}Project Plan}{9}
-\contentsline {subsubsection}{\numberline {4.4.1}Project Timeline}{9}
-\contentsline {subsubsection}{\numberline {4.4.2}Methodology}{9}
-\contentsline {subsubsection}{\numberline {4.4.3}Development Languages}{10}
-\contentsline {subsubsection}{\numberline {4.4.4}Testing}{10}
-\contentsline {subsubsection}{\numberline {4.4.5}User Testing}{10}
-\contentsline {subsubsection}{\numberline {4.4.6}Unit Testing}{10}
-\contentsline {subsubsection}{\numberline {4.4.7}Challenges/issues, probabilities and mitigation of impact}{10}
-\contentsline {subsection}{\numberline {4.5}Concluding Statement}{11}
+\contentsline {section}{\numberline {1}Introduction \& Background}{3}
+\contentsline {subsection}{\numberline {1.1}Problem Statement}{3}
+\contentsline {subsection}{\numberline {1.2}The Role of Context Within Search}{3}
+\contentsline {subsection}{\numberline {1.3}The Downfalls of Current Search Tools for People with Autism}{3}
+\contentsline {subsection}{\numberline {1.4}Existing Combination/Advanced Search Engines}{4}
+\contentsline {section}{\numberline {2}Aims and Objectives}{4}
+\contentsline {subsection}{\numberline {2.1}Proposed Application}{5}
+\contentsline {subsubsection}{\numberline {2.1.1}Core Features}{5}
+\contentsline {subsubsection}{\numberline {2.1.2}Non-core Features}{5}
+\contentsline {section}{\numberline {3}Plan for Developing the Solution}{6}
+\contentsline {subsection}{\numberline {3.1}Building the Combination Search Engine: Core Feature 1.}{6}
+\contentsline {subsection}{\numberline {3.2}Building a User Model of Autism: Core Feature 2}{6}
+\contentsline {subsection}{\numberline {3.3}Key Word In Context Search: Core Feature 3}{6}
+\contentsline {subsubsection}{\numberline {3.3.1}Key Word In Context}{7}
+\contentsline {subsubsection}{\numberline {3.3.2}Google+ API}{7}
+\contentsline {subsubsection}{\numberline {3.3.3}API for 'LEAP' Motion Controller}{7}
+\contentsline {subsubsection}{\numberline {3.3.4}ThreeJs Library (Non-Core)}{7}
+\contentsline {subsection}{\numberline {3.4}Integrating the Application with Motion Controller Hardware }{7}
+\contentsline {subsubsection}{\numberline {3.4.1}Hardware Selection Process}{7}
+\contentsline {subsubsection}{\numberline {3.4.2}LEAP Controller}{8}
+\contentsline {subsubsection}{\numberline {3.4.3}Hands}{8}
+\contentsline {subsubsection}{\numberline {3.4.4}Arms}{8}
+\contentsline {subsubsection}{\numberline {3.4.5}Fingers}{8}
+\contentsline {subsubsection}{\numberline {3.4.6}Tools \& Pointables}{9}
+\contentsline {subsubsection}{\numberline {3.4.7}Gestures}{9}
+\contentsline {subsection}{\numberline {3.5}Project Plan}{9}
+\contentsline {subsubsection}{\numberline {3.5.1}Project Timeline}{9}
+\contentsline {subsubsection}{\numberline {3.5.2}Methodology}{9}
+\contentsline {subsubsection}{\numberline {3.5.3}Development Languages}{9}
+\contentsline {subsubsection}{\numberline {3.5.4}Testing}{10}
+\contentsline {subsubsection}{\numberline {3.5.5}User Testing}{10}
+\contentsline {subsubsection}{\numberline {3.5.6}Unit Testing}{10}
+\contentsline {subsubsection}{\numberline {3.5.7}Challenges/issues, probabilities and mitigation of impact}{10}
+\contentsline {subsection}{\numberline {3.6}Concluding Statement}{11}
