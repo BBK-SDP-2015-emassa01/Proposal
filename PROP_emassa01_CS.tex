@@ -1,4 +1,4 @@
-\documentclass[a4paper, 11pt]{article}
+\documentclass[a4paper, 10pt]{article}
 \setlength{\topmargin}{-0.8in}
 \setlength{\textheight}{9.5in}
 \setlength{\oddsidemargin}{-.13in}
@@ -14,7 +14,7 @@
 
 \begin{document}
 
-\begin{titlepage}
+
 
 \title{User Modeling and Personalisation in Search for People with Autism}
 \author{Author: Esha Massand\\Supervisor: Keith Mannock\\
@@ -24,11 +24,11 @@ MSc Computer Science Project Proposal\footnote{This proposal is substantially th
 
 
 \begin{abstract}
-The current proposal presents my objective to research and build a user model and web application for individuals on the Autism Spectrum within Search. The model will be built around the core features of Autism. The model will be applied to results returned from a synthesis of three leading existing search engines. The web application will be integrated with motion-controlled user interfaces (UI). The project will provide novel insights into the needs and wants of individuals with Autism within search, and enable future development and interventions within these information streams and communication channels.
+The current proposal presents my objective to research and build a user model and web application, for individuals on the Autism Spectrum, within Search. The model will be built around the core features of Autism, and applied to search results returned from a synthesis of three leading existing search engines. The web application will be integrated with motion-controlled user interfaces (UI). The project will provide novel insights into the needs and wants of individuals with Autism within search, and enable future development and interventions within these information streams and communication channels.
 \end{abstract}
-\end{titlepage}
-\clearpage
 
+
+\tableofcontents
 
 \section{Abbreviations}
 \begin{tabular}{l l }
@@ -44,10 +44,10 @@ UI & User Interface\\
 UX & User Experience\\
 VR & Virtual Reality\\
 \end{tabular}
-\clearpage
 
 
-\tableofcontents
+
+
 \clearpage
 
 \section{Introduction \& Background}
@@ -59,7 +59,7 @@ As it is well established that individuals with Autism are more engaged when usi
 Autism is amongst the most common neurodevelopmental condition and it is currently estimated that 1/68 children meet criteria for Autism Spectrum (CDC, 2014). Autism is five times more common amongst boys than girls (1/42 boys, and 1/189 girls). According to the DSM-V (2013) diagnostic manual, Autism is characterized by persistent and early deficits in reciprocal social interaction and repetitive behaviours. Individuals vary from high functioning to low functioning (along a spectrum), with behaviours emerging around 2 to 3 years of age. 
 
 \begin{center}
-\includegraphics[scale=0.5]{asd}\\
+\includegraphics[scale=0.3]{asd}\\
 The Autism Triad \cite{triad}
 \end{center}
 
@@ -67,7 +67,7 @@ The Autism Triad \cite{triad}
 It is unlikely that any given page on the web will contain a word or phrase that means exactly (or nearly) the same as another word or phrase in that language (e.g., shut and close). How is it then that your search engine picks these phrases to mean the same thing, and returns them synonymously in the results of your query? Well, quite simply put, it is by virtue of the fact that each of their neighbouring words and associations are similar. These are indirect, higher-order associations, and provide the context in which the search engine can index keywords. This context plays a crucial role in search; first, in the interpretation of the user query, and second, it is reflected in the results returned to the user.\\
 Search-engine algorithms assume that the user is context-driven, and attempt to model the user's intent using higher-order contextual information gathered from available web pages. This process also models the brain's ability to extract context and semantic associations from information.\\
 
- People with Autism are less context-sensitive and prefer a more detail-focused processing style \cite{mottron}, and form search queries very differently. Individuals with Autism are also less likely to engage in a relational (hierarchically organized) style of processing \cite{bowler} suggesting that relating information in a hierarchically organised framework is less likely. Hierarchical organisation implies a great deal of flexibility and mental-shifting, as a simple example, in a search for 'apple', it would imply awareness that the word is related to 'pear' but also to 'fruit'. Awareness of this latter relation also suggests awareness that 'apple' is related to 'pomegranate'. This is of course, a simple example, but these associations can get very complex very quickly. Generally speaking, individuals with Autism prefer, and are more likely to engage in an item-specific processing style, and, whilst intelligent cognition is definitely possible, search queries are more likely formed of first-order associations\footnote{Of course there is a great deal of individual variability in the Autism Spectrum.}. \\
+ People with Autism are less context-sensitive and prefer a more detail-focused processing style \cite{mottron}, and form search queries very differently. Individuals with Autism are also less likely to engage in a relational (hierarchically organized) style of processing \cite{bowler} suggesting that relating information in a hierarchically organised framework is less likely. Hierarchical organisation implies a great deal of flexibility and mental-shifting, as a simple example, in a search for 'apple', it would imply awareness that the word is related to 'pear' but also to 'fruit'. Awareness of this latter relation also suggests awareness that 'apple' is related to 'pomegranate'. This is of course, a simple example, but these associations can get very complex very quickly. Generally speaking, individuals with Autism prefer, and are more likely to engage in an item-specific processing style, and, whilst intelligent cognition is definitely possible, search queries are more likely formed of first-order associations\footnote{Of course there is a great deal of individual variability in the Autism Spectrum.}. 
 
 \subsection{What should Search offer people with Autism?}\label{What should Search offer people with Autism}
 \subsubsection{Search and Learning}
@@ -107,7 +107,7 @@ I propose to build a user model within Search for people with Autism. The model 
 
 \subsection{Proposed Search and Controller Web Application}\label{proposed}
 \begin{center}
-\includegraphics[scale=0.7]{searchEngArchi}
+\includegraphics[scale=0.6]{searchEngArchi}\\
 Proposed application: The User Model will be applied to existing Search Engine Architecture\cite{seimage}, and be integrated with a Motion Controlled interface.
 \end{center}
 
@@ -138,7 +138,7 @@ Proposed application: The User Model will be applied to existing Search Engine A
 
 \subsection {Creating a User Model of Autism}\label{usermodel}
 \subsubsection{What is a user model?}
-A user model is a collection of information associated with a particular user (usually a data structure), with which a system can adapt/customise its behaviour in line with user needs. The information can be gathered when the user 'sign's up' for the service (e.g., Google+, Facebook), and starts the formation of a data model. User modeling has strong implications for human-computer interaction (HCI); by creating a representation of the user, the system can be better informed about how to behave in various circumstances, e.g., the user’s demographics, needs, preferences, likes, dislikes, goals, plans, knowledge, and skill.\\
+A user model is a collection of information associated with a particular user (usually a data structure), with which a system can adapt/customise its behaviour in line with user needs. The information can be gathered when the user 'sign's up' for the service (e.g., Google+, Facebook), and starts the formation of a data model. User modeling has strong implications for human-computer interaction (HCI); by creating a representation of the user, the system can be better informed about how to behave in various circumstances, e.g., the user’s demographics, needs, preferences, likes, dislikes, goals, plans, knowledge, and skill.
 
 \subsubsection{Types of user models}
 User models can be static/unchanging (i.e., no algorithms update the model about the changing preferences of the user/ no new information is fed into the model), or dynamic (representation of the user with their up-to-date changes in interests, and interactions with the system). User models may also be stereotyped, where the system infers or assumes characteristics about a user from data gathered from other users within that distinct subset. Lastly a user model can be highly adaptive and model the user on their own, without stereotyping, however this requires a large amount of data before implementation.\\
@@ -210,7 +210,7 @@ The two main reasons to persue the LEAP before the Oculus VR were, (1) it's non-
 The LEAP can recognize and track hands, fingers, finger-like tools, positions, motions and gestures using infrared light and optical sensors along the x, y and z axes (cartesian coordinate system). The controller has a 150-degree field of view, and can operate in a range of 1 inch to 2 feet. The API works with distance in millimetre resolution. Time is measured in microseconds, speed in mm/s and angles in radians.
 
 \begin{center}
-\includegraphics[scale=0.5]{leap}\\
+\includegraphics[scale=0.4]{leap}\\
 The LEAP controller, with 150 degree view \cite{leap}.
 \end{center}
 
@@ -220,8 +220,8 @@ The LEAP uses frames to represent tracked entities such as hands, fingers, tools
 The Hand class, returns information about the position of fingers, and arm (left/right).
 
 \begin{center}
-\includegraphics[scale=0.6]{palm}\\
-The Hand palmNormal() method and direction vectors define the orientation of the hand \cite{leap}\\.
+\includegraphics[scale=0.4]{palm}\\
+The Hand palmNormal() method and direction vectors define the orientation of the hand \cite{leap}.
 \end{center}
 
 The software uses parts of visible hands, internal models and previous observations to form a model of the hand. There is a Hand.confidence() method that provides a rating of how well the observed data fit the internal model \cite{leap}.
@@ -233,7 +233,7 @@ The Arms class can return information about orientation, length, width and end p
 These characteristics are based on the anatomy of the hand, and recent observations. 
 
 \begin{center}
-\includegraphics[scale=0.7]{fingers}\\
+\includegraphics[scale=0.4]{fingers}\\
 Finger tip position and direction are given as vectors. \cite{leap}.
 \end{center}
 
@@ -284,7 +284,7 @@ Aug 22 - Aug 29 & Write up project report & MUST\\
 \hline 
 Early Sep (tbc) & Present findings to supervisor & MUST\\
 \hline 
-Sep 13 & Submit report & MUST\\[1ex]
+Sep 13 & Submit report & MUST\\[0.5ex]
 \hline
 \end{tabular}
 \label{stages} 
@@ -344,7 +344,6 @@ MEDIUM & HIGH & Not enough turn around time to implement the feedback & Develop 
 \subsection{Summary \& Concluding Statement}\label{future}
 I have proposed to research and build a User Model within Search for people with Autism. I describe a model (based on well-understood aspects of cognition in Autism) to apply to search results, using text and content based libraries which will refine search results for these individuals. I hope these insights will assist with the forthcoming information-overload problem by exploiting these user models to turn the masses of information available into a specific set of “information goods”. 
 
-\clearpage
 \begin{thebibliography}{100}
 
 \bibitem {gameshealth} Games for Health (2012) \textit{Screen-based technologies and Autism. 1}: 248-53
@@ -368,7 +367,6 @@ I have proposed to research and build a User Model within Search for people with
 
 
 \bibitem {Shane and Albert}Shane, H. C. and Albert, P. D. (2008) Electronic screen media for persons with autism spectrum disorders: results of a survey. \textit{Journal of Autism Developmental Disorders, 38},8 :1499-508. doi: 10.1007/s10803-007-0527-5.
-
 
 \bibitem{jsontest}jsontest \textit{JSON Test}, http://www.jsontest.com/, Retrieved 8 April 2015.
 
