@@ -11,24 +11,23 @@
 \contentsline {subsection}{\numberline {3.1}Building the Combination Search Engine: Core Feature 1.}{6}
 \contentsline {subsection}{\numberline {3.2}Building a User Model of Autism: Core Feature 2}{6}
 \contentsline {subsection}{\numberline {3.3}Key Word In Context Search: Core Feature 3}{6}
-\contentsline {subsubsection}{\numberline {3.3.1}Key Word In Context}{7}
-\contentsline {subsubsection}{\numberline {3.3.2}Google+ API}{7}
-\contentsline {subsubsection}{\numberline {3.3.3}API for 'LEAP' Motion Controller}{7}
-\contentsline {subsubsection}{\numberline {3.3.4}ThreeJs Library (Non-Core)}{7}
-\contentsline {subsection}{\numberline {3.4}Integrating the Application with Motion Controller Hardware }{7}
-\contentsline {subsubsection}{\numberline {3.4.1}Hardware Selection Process}{7}
-\contentsline {subsubsection}{\numberline {3.4.2}LEAP Controller}{8}
-\contentsline {subsubsection}{\numberline {3.4.3}Hands}{8}
-\contentsline {subsubsection}{\numberline {3.4.4}Arms}{8}
-\contentsline {subsubsection}{\numberline {3.4.5}Fingers}{8}
-\contentsline {subsubsection}{\numberline {3.4.6}Tools \& Pointables}{9}
-\contentsline {subsubsection}{\numberline {3.4.7}Gestures}{9}
-\contentsline {subsection}{\numberline {3.5}Project Plan}{9}
-\contentsline {subsubsection}{\numberline {3.5.1}Project Timeline}{9}
-\contentsline {subsubsection}{\numberline {3.5.2}Methodology}{9}
-\contentsline {subsubsection}{\numberline {3.5.3}Development Languages}{9}
-\contentsline {subsubsection}{\numberline {3.5.4}Testing}{10}
-\contentsline {subsubsection}{\numberline {3.5.5}User Testing}{10}
-\contentsline {subsubsection}{\numberline {3.5.6}Unit Testing}{10}
-\contentsline {subsubsection}{\numberline {3.5.7}Challenges/issues, probabilities and mitigation of impact}{10}
-\contentsline {subsection}{\numberline {3.6}Concluding Statement}{11}
+\contentsline {subsection}{\numberline {3.4}First-Order Semantic Relations: Core Feature 4}{7}
+\contentsline {subsubsection}{\numberline {3.4.1}API for 'LEAP' Motion Controller}{7}
+\contentsline {subsubsection}{\numberline {3.4.2}ThreeJs Library (Non-Core)}{7}
+\contentsline {subsection}{\numberline {3.5}Motion-Controlled UI: Core Feature 5}{7}
+\contentsline {subsubsection}{\numberline {3.5.1}Hardware Selection Process}{7}
+\contentsline {subsubsection}{\numberline {3.5.2}LEAP Controller}{7}
+\contentsline {subsubsection}{\numberline {3.5.3}Hands}{8}
+\contentsline {subsubsection}{\numberline {3.5.4}Arms}{8}
+\contentsline {subsubsection}{\numberline {3.5.5}Fingers}{8}
+\contentsline {subsubsection}{\numberline {3.5.6}Tools \& Pointables}{8}
+\contentsline {subsubsection}{\numberline {3.5.7}Gestures}{9}
+\contentsline {subsection}{\numberline {3.6}Project Plan}{9}
+\contentsline {subsubsection}{\numberline {3.6.1}Project Timeline}{9}
+\contentsline {subsubsection}{\numberline {3.6.2}Methodology}{9}
+\contentsline {subsubsection}{\numberline {3.6.3}Development Languages}{9}
+\contentsline {subsubsection}{\numberline {3.6.4}Testing}{10}
+\contentsline {subsubsection}{\numberline {3.6.5}User Testing}{10}
+\contentsline {subsubsection}{\numberline {3.6.6}Unit Testing}{10}
+\contentsline {subsubsection}{\numberline {3.6.7}Challenges/issues, probabilities and mitigation of impact}{10}
+\contentsline {subsection}{\numberline {3.7}Concluding Statement}{11}

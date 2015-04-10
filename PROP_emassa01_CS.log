@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.3.23)  9 APR 2015 23:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.3.23)  10 APR 2015 01:49
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -75,7 +75,11 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen106
 \Gin@req@width=\dimen107
 )
-(./PROP_emassa01_CS.aux)
+(./PROP_emassa01_CS.aux
+
+LaTeX Warning: Label `apache' multiply defined.
+
+)
 \openout1 = `PROP_emassa01_CS.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
@@ -90,8 +94,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
 LaTeX Font Info:    ... okay on input line 15.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
 LaTeX Font Info:    ... okay on input line 15.
-
-(/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
+ (/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count89
 \scratchdimen=\dimen108
@@ -240,48 +243,47 @@ Missing character: There is no ™ in font cmr10!
  <images/leap.jpg, id=105, 712.6625pt x 263.98625pt>
 File: images/leap.jpg Graphic file (type jpg)
  <use images/leap.jpg>
-Package pdftex.def Info: images/leap.jpg used on input line 157.
+Package pdftex.def Info: images/leap.jpg used on input line 154.
 (pdftex.def)             Requested size: 285.05995pt x 105.59262pt.
 
 [7] <palm.jpg, id=110, 286.06876pt x 204.765pt>
 File: palm.jpg Graphic file (type jpg)
  <use palm.jpg>
-Package pdftex.def Info: palm.jpg used on input line 167.
+Package pdftex.def Info: palm.jpg used on input line 164.
 (pdftex.def)             Requested size: 114.42546pt x 81.90454pt.
 
 <images/fingers.jpg, id=111, 333.245pt x 208.78pt>
 File: images/fingers.jpg Graphic file (type jpg)
  <use images/fingers.jpg>
-Package pdftex.def Info: images/fingers.jpg used on input line 180.
+Package pdftex.def Info: images/fingers.jpg used on input line 177.
 (pdftex.def)             Requested size: 133.29562pt x 83.5105pt.
 
-[8 <./images/leap.jpg> <./palm.jpg> <./images/fingers.jpg>]
-Overfull \hbox (3.92867pt too wide) in paragraph at lines 199--235
+Overfull \hbox (3.92867pt too wide) in paragraph at lines 196--232
  [][] 
  []
 
-[9]
-Underfull \hbox (badness 1953) in paragraph at lines 273--273
+[8 <./images/leap.jpg> <./palm.jpg> <./images/fingers.jpg>] [9]
+Underfull \hbox (badness 1953) in paragraph at lines 270--270
 []|\OT1/cmr/m/n/10 KWIC li-brary does not of-fer
  []
 
 
-Underfull \hbox (badness 3386) in paragraph at lines 273--274
+Underfull \hbox (badness 3386) in paragraph at lines 270--271
 []|\OT1/cmr/m/n/10 See if I can im-ple-ment the
  []
 
 
-Underfull \hbox (badness 1052) in paragraph at lines 279--279
+Underfull \hbox (badness 1052) in paragraph at lines 276--276
 []|\OT1/cmr/m/n/10 User Model lacks im-pact and
  []
 
-[10]
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no œ in font cmr10!
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no  in font cmr10!
+[10]
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ” in font cmr10!
@@ -292,7 +294,7 @@ Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no “ in font cmr10!
 
-Underfull \hbox (badness 1946) in paragraph at lines 307--308
+Underfull \hbox (badness 1946) in paragraph at lines 304--305
 []\OT1/cmr/m/n/10 Briggs, J. \OT1/cmr/m/it/10 A Bet-ter Un-der-stand-ing of Per
 -son-al-ized Search\OT1/cmr/m/n/10 . https://www.briggsby.com/better-
  []
@@ -300,7 +302,6 @@ Underfull \hbox (badness 1946) in paragraph at lines 307--308
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no “ in font cmr10!
-[11]
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no ¨ in font cmr10!
 Missing character: There is no Ã in font cmr10!
@@ -309,19 +310,19 @@ Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no “ in font cmr10!
 
-Underfull \hbox (badness 6625) in paragraph at lines 334--335
+Underfull \hbox (badness 6625) in paragraph at lines 331--332
 []\OT1/cmr/m/n/10 Pray, S. \OT1/cmr/m/it/10 In-verted In-dex : The ba-sic in-gr
 e-di-ent be-hind the recipe called Search En-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 334--335
+Underfull \hbox (badness 10000) in paragraph at lines 331--332
 \OT1/cmr/m/it/10 gine\OT1/cmr/m/n/10 https://insightsdelight.wordpress.com/2012
 /01/24/inverted-index-the-basic-ingredient-behind-
  []
 
-
-Underfull \hbox (badness 3954) in paragraph at lines 340--341
+[11]
+Underfull \hbox (badness 3954) in paragraph at lines 337--338
 []\OT1/cmr/m/n/10 Kunder, M. D. \OT1/cmr/m/it/10 The size of the World Wide Web
 : Es-ti-mated size of Google's in-dex\OT1/cmr/m/n/10 ,
  []
@@ -330,7 +331,7 @@ Missing character: There is no â in font cmti10!
 Missing character: There is no € in font cmti10!
 Missing character: There is no ™ in font cmti10!
 
-Underfull \hbox (badness 2150) in paragraph at lines 350--351
+Underfull \hbox (badness 2150) in paragraph at lines 347--348
 \OT1/cmr/m/it/10 Dips Slightly\OT1/cmr/m/n/10 , http://searchengineland.com/goo
 gle-worlds-most-popular-search-engine-148089, Re-
  []
@@ -338,23 +339,22 @@ gle-worlds-most-popular-search-engine-148089, Re-
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no “ in font cmr10!
-[12]
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no “ in font cmr10!
- [13] (./PROP_emassa01_CS.aux)
+[12] (./PROP_emassa01_CS.aux)
 
 LaTeX Warning: There were undefined references.
 
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 1684 strings out of 493117
- 24166 string characters out of 6135433
- 88509 words of memory out of 5000000
- 5134 multiletter control sequences out of 15000+600000
+ 1683 strings out of 493117
+ 24160 string characters out of 6135433
+ 88536 words of memory out of 5000000
+ 5133 multiletter control sequences out of 15000+600000
  8848 words of font info for 31 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  37i,11n,24p,1793b,276s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -371,10 +371,10 @@ ve/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/
 2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/20
 14/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2014
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on PROP_emassa01_CS.pdf (13 pages, 1711376 bytes).
+Output written on PROP_emassa01_CS.pdf (12 pages, 1710295 bytes).
 PDF statistics:
- 175 PDF objects out of 1000 (max. 8388607)
- 115 compressed objects within 2 object streams
+ 171 PDF objects out of 1000 (max. 8388607)
+ 112 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
