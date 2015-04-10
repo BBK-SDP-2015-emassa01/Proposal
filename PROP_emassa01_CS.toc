@@ -14,8 +14,8 @@
 \contentsline {subsection}{\numberline {3.4}Identifying First-Order Semantic Relations: Core Feature 4}{6}
 \contentsline {subsection}{\numberline {3.5}Motion-Controlled UI: Core Feature 5}{6}
 \contentsline {subsection}{\numberline {3.6}ThreeJs Library: Non-Core Feature}{7}
-\contentsline {subsection}{\numberline {3.7}Implementation}{8}
-\contentsline {subsubsection}{\numberline {3.7.1}Project Timeline}{8}
+\contentsline {subsection}{\numberline {3.7}Implementation}{7}
+\contentsline {subsubsection}{\numberline {3.7.1}Project Timeline}{7}
 \contentsline {subsubsection}{\numberline {3.7.2}Methodology}{8}
 \contentsline {subsubsection}{\numberline {3.7.3}Development Languages}{8}
 \contentsline {subsubsection}{\numberline {3.7.4}User Testing}{8}

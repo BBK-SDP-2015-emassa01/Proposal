@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.3.23)  10 APR 2015 15:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.3.23)  10 APR 2015 21:22
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -219,40 +219,45 @@ Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
  [5]
-<images/leap.jpg, id=102, 712.6625pt x 263.98625pt>
+Missing character: There is no â in font cmr8!
+Missing character: There is no € in font cmr8!
+Missing character: There is no “ in font cmr8!
+
+<images/leap.jpg, id=103, 712.6625pt x 263.98625pt>
 File: images/leap.jpg Graphic file (type jpg)
  <use images/leap.jpg>
-Package pdftex.def Info: images/leap.jpg used on input line 134.
+Package pdftex.def Info: images/leap.jpg used on input line 132.
 (pdftex.def)             Requested size: 285.05995pt x 105.59262pt.
 
-[6] <palm.jpg, id=107, 286.06876pt x 204.765pt>
+[6 <./images/leap.jpg>] <palm.jpg, id=108, 286.06876pt x 204.765pt>
 File: palm.jpg Graphic file (type jpg)
- <use palm.jpg>
-Package pdftex.def Info: palm.jpg used on input line 143.
-(pdftex.def)             Requested size: 114.42546pt x 81.90454pt.
 
-<images/fingers.jpg, id=108, 333.245pt x 208.78pt>
+<use palm.jpg>
+Package pdftex.def Info: palm.jpg used on input line 141.
+(pdftex.def)             Requested size: 114.42546pt x 81.90454pt.
+ <images/fingers.jpg, id=109, 333.245pt x 208.78pt>
 File: images/fingers.jpg Graphic file (type jpg)
- <use images/fingers.jpg>
-Package pdftex.def Info: images/fingers.jpg used on input line 150.
+
+<use images/fingers.jpg>
+Package pdftex.def Info: images/fingers.jpg used on input line 148.
 (pdftex.def)             Requested size: 133.29562pt x 83.5105pt.
 
-Overfull \hbox (4.72865pt too wide) in paragraph at lines 168--204
+Overfull \hbox (4.72865pt too wide) in paragraph at lines 166--202
  [][] 
  []
 
-[7 <./images/leap.jpg> <./palm.jpg> <./images/fingers.jpg>] [8]
-Underfull \hbox (badness 1953) in paragraph at lines 234--234
+[7 <./palm.jpg> <./images/fingers.jpg>] [8]
+Underfull \hbox (badness 1953) in paragraph at lines 232--232
 []|\OT1/cmr/m/n/10 KWIC li-brary does not of-fer
  []
 
 
-Underfull \hbox (badness 3386) in paragraph at lines 234--235
+Underfull \hbox (badness 3386) in paragraph at lines 232--233
 []|\OT1/cmr/m/n/10 See if I can im-ple-ment the
  []
 
 
-Underfull \hbox (badness 1052) in paragraph at lines 240--240
+Underfull \hbox (badness 1052) in paragraph at lines 238--238
 []|\OT1/cmr/m/n/10 User Model lacks im-pact and
  []
 
@@ -268,10 +273,10 @@ Missing character: There is no “ in font cmr10!
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no “ in font cmr10!
-[9]
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no “ in font cmr10!
+[9]
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ” in font cmr10!
@@ -282,7 +287,7 @@ Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no “ in font cmr10!
 
-Underfull \hbox (badness 1946) in paragraph at lines 279--280
+Underfull \hbox (badness 1946) in paragraph at lines 277--278
 []\OT1/cmr/m/n/10 Briggs, J. \OT1/cmr/m/it/10 A Bet-ter Un-der-stand-ing of Per
 -son-al-ized Search\OT1/cmr/m/n/10 . https://www.briggsby.com/better-
  []
@@ -309,10 +314,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 1673 strings out of 493117
- 24064 string characters out of 6135433
- 89494 words of memory out of 5000000
- 5122 multiletter control sequences out of 15000+600000
+ 1675 strings out of 493117
+ 24094 string characters out of 6135433
+ 89498 words of memory out of 5000000
+ 5124 multiletter control sequences out of 15000+600000
  9200 words of font info for 32 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  37i,11n,24p,1793b,276s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -330,7 +335,7 @@ ve/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/
 14/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2014
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2014/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb>
-Output written on PROP_emassa01_CS.pdf (10 pages, 1716635 bytes).
+Output written on PROP_emassa01_CS.pdf (10 pages, 1717328 bytes).
 PDF statistics:
  169 PDF objects out of 1000 (max. 8388607)
  111 compressed objects within 2 object streams
