@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.3.23)  10 APR 2015 21:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.3.23)  11 APR 2015 21:22
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -43,13 +43,80 @@ Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
 \extratabsurround=\skip43
 \backup@length=\skip44
 )
-(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 2014/04/25 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/datetime/datetime.sty
+Package: datetime 2013/09/10 v2.59 Date Time Package
 
+(/usr/local/texlive/2014/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2011/01/03 v2.1 e-TeX tools for LaTeX
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/etex-pkg/etex.sty
+Package: etex 1998/03/26 v2.0 eTeX basic definition package (PEB)
+\et@xins=\count88
+)
+\etb@tempcnta=\count89
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/fmtcount/fmtcount.sty
+Package: fmtcount 2013/08/17 v2.03
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
 (/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/05/08 v1.15 key=value parser (DPC)
 \KV@toks@=\toks17
 )
+(/usr/local/texlive/2014/texmf-dist/tex/latex/fmtcount/fcprefix.sty
+Package: fcprefix 2012/09/28
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/fmtcount/fcnumparser.sty
+Package: fcnumparser 2012/09/28
+\fc@digit@counter=\count90
+))
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks18
+\ex@=\dimen106
+)
+\c@padzeroesN=\count91
+\fc@tmpcatcode=\count92
+\@DT@modctr=\count93
+\@ordinalctr=\count94
+\@orgargctr=\count95
+\@strctr=\count96
+\@tmpstrctr=\count97
+\@DT@loopN=\count98
+\@DT@X=\count99
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/fmtcount/fc-english.def
+File: fc-english.def 2013/08/17
+))
+(/usr/local/texlive/2014/texmf-dist/tex/latex/datetime/datetime-defaults.sty
+Package: datetime-defaults 2013/09/10
+)
+\@day=\count100
+\@month=\count101
+\@year=\count102
+\c@HOUR=\count103
+\c@HOURXII=\count104
+\c@MINUTE=\count105
+\c@TOHOUR=\count106
+\c@TOMINUTE=\count107
+\c@SECOND=\count108
+\currenthour=\count109
+\currentminute=\count110
+\currentsecond=\count111
+Package datetime Info: No datetime.cfg file found, using default settings on in
+put line 308.
+\@dtctr=\count112
+\dayofyear=\count113
+\dayofweek=\count114
+LaTeX Info: Redefining \today on input line 736.
+\dt@a=\toks19
+\dt@b=\toks20
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2014/04/25 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
 (/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
 
@@ -70,10 +137,10 @@ Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 (/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
-\Gread@gobject=\count88
+\Gread@gobject=\count115
 ))
-\Gin@req@height=\dimen106
-\Gin@req@width=\dimen107
+\Gin@req@height=\dimen107
+\Gin@req@width=\dimen108
 )
 (./PROP_emassa01_CS.aux
 
@@ -82,31 +149,31 @@ LaTeX Warning: Label `apache' multiply defined.
 )
 \openout1 = `PROP_emassa01_CS.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
  (/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count89
-\scratchdimen=\dimen108
+\scratchcounter=\count116
+\scratchdimen=\dimen109
 \scratchbox=\box28
-\nofMPsegments=\count90
-\nofMParguments=\count91
-\everyMPshowfont=\toks18
-\MPscratchCnt=\count92
-\MPscratchDim=\dimen109
-\MPnumerator=\count93
-\makeMPintoPDFobject=\count94
-\everyMPtoPDFconversion=\toks19
+\nofMPsegments=\count117
+\nofMParguments=\count118
+\everyMPshowfont=\toks21
+\MPscratchCnt=\count119
+\MPscratchDim=\dimen110
+\MPnumerator=\count120
+\makeMPintoPDFobject=\count121
+\everyMPtoPDFconversion=\toks22
 ) (/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
@@ -156,24 +223,38 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 23.
+(Font)              <12> on input line 29.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 23.
+(Font)              <8> on input line 29.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 23.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 23.
+(Font)              <6> on input line 29.
 
+Underfull \hbox (badness 10000) in paragraph at lines 31--32
+
+ []
+
+[1
+
+{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 (./PROP_emassa01_CS.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 2.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 2.
 )
 \tf@toc=\write3
 \openout3 = `PROP_emassa01_CS.toc'.
 
- [1
 
-{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2]
+Overfull \hbox (13.03644pt too wide) in paragraph at lines 58--61
+[] 
+ []
+
+[2
+
+] [3
+
+]
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ˜ in font cmr10!
@@ -207,60 +288,58 @@ Missing character: There is no ˜ in font cmr10!
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
- [3]
-<images/searchEngArchi.pdf, id=24, 722.7pt x 542.025pt>
+ <images/searchEngArchi.pdf, id=23, 722.7pt x 542.025pt>
 File: images/searchEngArchi.pdf Graphic file (type pdf)
 
 <use images/searchEngArchi.pdf>
-Package pdftex.def Info: images/searchEngArchi.pdf used on input line 79.
+Package pdftex.def Info: images/searchEngArchi.pdf used on input line 94.
 (pdftex.def)             Requested size: 433.62334pt x 325.2175pt.
- [4 <./images/searchEngArchi.pdf>]
+ [4] [5 <./images/searchEngArchi.pdf>]
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
- [5]
 Missing character: There is no â in font cmr8!
 Missing character: There is no € in font cmr8!
 Missing character: There is no “ in font cmr8!
-
-<images/leap.jpg, id=103, 712.6625pt x 263.98625pt>
+ [6]
+<images/leap.jpg, id=106, 712.6625pt x 263.98625pt>
 File: images/leap.jpg Graphic file (type jpg)
  <use images/leap.jpg>
-Package pdftex.def Info: images/leap.jpg used on input line 132.
+Package pdftex.def Info: images/leap.jpg used on input line 149.
 (pdftex.def)             Requested size: 285.05995pt x 105.59262pt.
 
-[6 <./images/leap.jpg>] <palm.jpg, id=108, 286.06876pt x 204.765pt>
+<palm.jpg, id=107, 286.06876pt x 204.765pt>
 File: palm.jpg Graphic file (type jpg)
-
-<use palm.jpg>
-Package pdftex.def Info: palm.jpg used on input line 141.
+ <use palm.jpg>
+Package pdftex.def Info: palm.jpg used on input line 158.
 (pdftex.def)             Requested size: 114.42546pt x 81.90454pt.
- <images/fingers.jpg, id=109, 333.245pt x 208.78pt>
+ [7 <./images/leap.jpg>] <images/fingers.jpg, id=112, 333.245pt x 208.78pt>
 File: images/fingers.jpg Graphic file (type jpg)
 
 <use images/fingers.jpg>
-Package pdftex.def Info: images/fingers.jpg used on input line 148.
+Package pdftex.def Info: images/fingers.jpg used on input line 165.
 (pdftex.def)             Requested size: 133.29562pt x 83.5105pt.
-
-Overfull \hbox (4.72865pt too wide) in paragraph at lines 166--202
- [][] 
- []
-
-[7 <./palm.jpg> <./images/fingers.jpg>] [8]
-Underfull \hbox (badness 1953) in paragraph at lines 232--232
+ [8 <./palm.jpg> <./images/fingers.jpg>]
+Underfull \hbox (badness 1953) in paragraph at lines 204--204
 []|\OT1/cmr/m/n/10 KWIC li-brary does not of-fer
  []
 
 
-Underfull \hbox (badness 3386) in paragraph at lines 232--233
+Underfull \hbox (badness 3386) in paragraph at lines 204--205
 []|\OT1/cmr/m/n/10 See if I can im-ple-ment the
  []
 
 
-Underfull \hbox (badness 1052) in paragraph at lines 238--238
+Underfull \hbox (badness 1052) in paragraph at lines 210--210
 []|\OT1/cmr/m/n/10 User Model lacks im-pact and
  []
 
+
+Overfull \hbox (4.72865pt too wide) in paragraph at lines 226--262
+ [][] 
+ []
+
+[9]
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no œ in font cmr10!
@@ -273,10 +352,28 @@ Missing character: There is no “ in font cmr10!
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no “ in font cmr10!
+
+Underfull \hbox (badness 10000) in paragraph at lines 275--276
+[]\OT1/cmr/m/n/10 Schwartz, B. \OT1/cmr/m/it/10 Google Now Sup-ports Crawl-ing 
+& In-dex-ing Locale-Adaptive Web Pages\OT1/cmr/m/n/10 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 275--276
+\OT1/cmr/m/n/10 http://searchengineland.com/google-now-supports-crawling-indexi
+ng-locale-adaptive-web-pages-
+ []
+
+
+Underfull \hbox (badness 2846) in paragraph at lines 277--278
+[]\OT1/cmr/m/n/10 Arrington, M. \OT1/cmr/m/it/10 Ya-hoo launches per-son-al-ize
+d search\OT1/cmr/m/n/10 , http://techcrunch.com/2006/08/07/yahoo-
+ []
+
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no “ in font cmr10!
-[9]
+[10]
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ” in font cmr10!
@@ -287,9 +384,9 @@ Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no “ in font cmr10!
 
-Underfull \hbox (badness 1946) in paragraph at lines 277--278
+Underfull \hbox (badness 2205) in paragraph at lines 298--299
 []\OT1/cmr/m/n/10 Briggs, J. \OT1/cmr/m/it/10 A Bet-ter Un-der-stand-ing of Per
--son-al-ized Search\OT1/cmr/m/n/10 . https://www.briggsby.com/better-
+-son-al-ized search\OT1/cmr/m/n/10 . https://www.briggsby.com/better-
  []
 
 Missing character: There is no Ã in font cmr10!
@@ -297,30 +394,30 @@ Missing character: There is no ¨ in font cmr10!
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no ¼ in font cmr10!
 
-Underfull \hbox (badness 6625) in paragraph at lines 291--292
+Underfull \hbox (badness 6978) in paragraph at lines 312--313
 []\OT1/cmr/m/n/10 Pray, S. \OT1/cmr/m/it/10 In-verted In-dex : The ba-sic in-gr
-e-di-ent be-hind the recipe called Search En-
+e-di-ent be-hind the recipe called search En-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 291--292
+Underfull \hbox (badness 10000) in paragraph at lines 312--313
 \OT1/cmr/m/it/10 gine\OT1/cmr/m/n/10 https://insightsdelight.wordpress.com/2012
 /01/24/inverted-index-the-basic-ingredient-behind-
  []
 
-[10] (./PROP_emassa01_CS.aux)
+[11] (./PROP_emassa01_CS.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 1675 strings out of 493117
- 24094 string characters out of 6135433
- 89498 words of memory out of 5000000
- 5124 multiletter control sequences out of 15000+600000
- 9200 words of font info for 32 fonts, out of 8000000 for 9000
+ 2731 strings out of 493117
+ 38111 string characters out of 6135433
+ 117265 words of memory out of 5000000
+ 6128 multiletter control sequences out of 15000+600000
+ 9545 words of font info for 33 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 37i,11n,24p,1793b,276s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 37i,11n,24p,1914b,218s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></
@@ -331,14 +428,13 @@ cal/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local
 /texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/te
 xlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texli
 ve/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/
-2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/20
-14/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2014
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2014/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb>
-Output written on PROP_emassa01_CS.pdf (10 pages, 1717328 bytes).
+2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2
+014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/201
+4/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb>
+Output written on PROP_emassa01_CS.pdf (11 pages, 1718211 bytes).
 PDF statistics:
- 169 PDF objects out of 1000 (max. 8388607)
- 111 compressed objects within 2 object streams
+ 168 PDF objects out of 1000 (max. 8388607)
+ 110 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
