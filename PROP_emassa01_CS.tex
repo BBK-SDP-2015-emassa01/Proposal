@@ -1,12 +1,13 @@
-\documentclass[a4paper, 10pt]{article}
+\documentclass[a4paper, 11pt]{article}
 \setlength{\topmargin}{-0.8in}
 \setlength{\textheight}{9.5in}
-\setlength{\oddsidemargin}{-.13in}
+\setlength{\oddsidemargin}{-.25in}
 \setlength{\textwidth}{6.5in}
 
 \usepackage{multirow}
 \usepackage{float}
 \usepackage{array}
+\usepackage[document]{ragged2e}
 
 \usepackage{datetime}
 
@@ -33,12 +34,11 @@ Birkbeck, University of London\\Department of Computer Science and Information S
 
 \maketitle
 
-\begin{center}
 
 \section*{Abstract}
+\begin{justify}
 This project proposal describes my preliminary research in developing and building a prototype system to aid/assist users with searching the web. The user group under consideration are those diagnosed with Autism. The proposed system will focus on modelling user interactions with the search process and developing a user profile for this category of users, integrating insights from the core features of Autism into the model. The prototype will be developed as a web application, utilising a novel user interface component, and applied to search results returned from a synthesis of three leading existing search engines. The project will provide insights into the needs and wants of individuals with Autism within search, and enable future development and intervention within these information streams.\\
-
-\end{center}
+\end{justify}
 
 \begin{verbatim}
 
@@ -55,15 +55,8 @@ This project proposal describes my preliminary research in developing and buildi
 
 
 
-
-
-
-
-
-
-
 \end{verbatim}
-
+\begin{justify}
 This proposal is substantially the result of my own work, expressed in my own words, except where explicitly indicated in the text. I give my permission for it to be submitted to a Plagiarism Detection Service. This proposal may be freely copied and distributed provided the source is explicitly acknowledged.
 
 \begin{center}
@@ -72,6 +65,7 @@ word count, not including references: 3294 words.
 
 \clearpage
 \tableofcontents
+\clearpage
 
 \section*{Abbreviations}
 \begin{tabular}{l l }
@@ -81,6 +75,7 @@ DSM & Diagnostic and Statistical Manual\\
 GCS & Google Custom Search\\
 HCI & Human Computer Interaction\\
 JSON & JavaScript Object Notation\\
+IDE & Integrated Development Environment\\
 KWIC & Key Word In Context\\
 LEAP & LEAP Motion Controller\\
 RIFT & Oculus Rift Virtual Reality Head Mounted Display\\
@@ -97,11 +92,11 @@ Autism & Autism is amongst the most common neurodevelopmental condition and it i
 \clearpage
 
 \section{Introduction \& Background}\label{prob}
-People with Autism are less context-sensitive and prefer a more detail-focused processing style \cite{mottron}, and they form web-search queries differently to the typical population. Individuals with Autism are also less likely to engage in a relational (hierarchically organized) style of processing \cite{bowler} suggesting that relating information in a hierarchically organised framework is less likely. Hierarchical organisation implies flexibility and mental-shifting, as a simple example, in a search for 'apple', it would imply awareness that the word is related to 'pear' but also to 'fruit'. Awareness of this latter relation also suggests awareness that 'apple' is related to 'pomegranate'. This is a simple example, but these associations can get very complex, very quickly. Generally speaking, individuals with Autism prefer, and are more likely to engage in an item-specific processing style, and, whilst intelligent cognition is definitely possible, web-search queries are more likely formed of first-order associations\footnote{There is a great deal of individual variability in the Autism Spectrum.}.To address this issue, the current project aims to build a user model within search for individuals with Autism. 
+People with Autism are less context-sensitive and prefer a more detail-focused processing style \cite{mottron}, and they form web-search queries differently to the typical population. Individuals with Autism are also less likely to engage in a relational (hierarchically organized) style of processing \cite{bowler} suggesting that relating information in a hierarchically organised framework is less likely. Hierarchical organisation implies flexibility and mental-shifting, as a simple example, in a search for ``apple", it would imply awareness that the word is related to ``pear" but also to ``fruit". Awareness of this latter relation also suggests awareness that ``apple" is related to ``pomegranate". This is a simple example, but these associations can get very complex, very quickly. Generally speaking, individuals with Autism prefer, and are more likely to engage in an item-specific processing style, and, whilst intelligent cognition is definitely possible, web-search queries are more likely formed of first-order associations\footnote{There is a substantial degree of individual variability in the expression of Autism Spectrum Disorder \cite{CDC}.}.To address this issue, the current project aims to build a user model within search for individuals with Autism. 
 
 \begin{figure}[H]
 \begin{center}
-\includegraphics[scale=0.2]{person}\\
+\includegraphics[scale=0.4]{person}\\
 \caption{Current web navigation and information retrieval \cite{person}}
 \end{center}
 \end{figure}
@@ -115,23 +110,23 @@ According to the Diagnostic and Statistical Manual \cite{CDC}, Autism is charact
 
 \subsection{The Problems with Current search Tools for People with Autism}\label{What should search offer people with Autism}
 
-The Internet is one of the largest resources of information. Search engines allow users to collate hundreds of links on a single topic, using only a few words or phrases. The typical user sorts the returned results into 'relevant' or 'irrelevant' categories, flexibly shifting (mentally) between one result and the next, to determine the relevance of each page returned by the search engine. Search allows the user to assimilate the information on the page into their knowledge and is an important learning tool. For people with Autism, the requirement is no different; search is an important tool for learning. However, current search is not adequate because the requirement to 'mentally shift' between results is harder for people with Autism \cite{disengagement}. The information is therefore harder to assimilate and learn for them. 
+The Internet is one of the largest resources of information. Search engines allow users to collate hundreds of links on a single topic, using only a few words or phrases. The typical user sorts the returned results into `relevant' or `irrelevant' categories, flexibly shifting (mentally) between one result and the next, to determine the relevance of each page returned by the search engine. Search allows the user to assimilate the information on the page into their knowledge and is an important learning tool. For people with Autism, the requirement is no different; search is an important tool for learning. However, current search is not adequate because the requirement to `mentally shift' between results is harder for people with Autism \cite{disengagement}. The information is therefore harder to assimilate and learn for them. 
 
 Individuals with Autism have poor attention \cite{attention}. The static 2-dimensional interface of many current search engines are unlikely to maintain adequate (sustained) interest levels. Individuals (and especially teenagers) with Autism spend a substantial amount of their time using computers, web, portable or console devices \cite{Shane and Albert}, as they find these more stimulating and attention-grabbing. For these individuals, computer-based technologies provide a stable, consistent learning environment that can be customized \cite{moore}. Furthermore, motion recognition devices can be programmed to make consistent responses to environmental triggers. These controlled and interactive environments have shown promise for improving social communication skills and reducing repetitive behaviours \cite{gameshealth}. For the current project a motion-controlled learning environment will be bolstered to improve attention within search for people with autism. 
 
-Current search is text-ridden and extremely verbal. This is a problem for people with Autism because they have a stronger visual memory \cite{fabienne} than verbal memory. A more visually-oriented approach to search (reducing the 'verbal working memory' load \cite{workingmem}) is a more appropriate way to bolster the strength of visual memory in people with Autism.
+Current search is text-ridden and extremely verbal. This is a problem for people with Autism because they have a stronger visual memory \cite{fabienne} than verbal memory. A more visually-oriented approach to search (reducing the `verbal working memory' load \cite{workingmem}) is a more appropriate way to bolster the strength of visual memory in people with Autism.
 
-The three top search engines are Adaptive (Google) or Personalised (Yahoo, Bing). They associate each user with a HTTP-cookie containing information such as login (gender, age), preferences (languages, interests) and previous search history (e.g., Google, Bing, Yahoo) \cite{googlepersonalised, yahooadaptive, bingadaptive}. This allows the website to ‘remember’ what buttons the user clicked on, or sites visited, and allows the search engine to return results that are highly related to pages that the user visited through previous searches. Although adaptive search seems to have significant user benefit in terms of relevance of returned pages to the user, it decreases the likelihood that the user encounters new information, biasing the results towards the users location and previous site traffic.  This has the unwanted effect of creating a filter bubble \cite{Pariser}, which is argued to close us off from important and relevant information. It creates a personal ecosystem of information for one user, giving the impression that their self interests are all that exist \footnote{The filter bubble also has potential privacy problems, as the user may be unaware that the search has been specifically tailored towards their interests and they wonder why things that they have previously searched for have become more and more relevant. There are search engines that have attempted to address this unwanted effect, by not tracking or saving user information (e.g., DuckDuckGo.com). As users are not linked to their search queries, it limits them being targeted by adverts related to their previous searches.}. Unfortunately the filter bubble may positively reinforce restricted interests in Autism as the user constantly receives feedback about their previous (idiosyncratic and personalized) searches without being able to break out of that repetitive loop. 
+There are two broad categories of search engine: (1) \textbf{Adaptive} (e.g., Google), and (2) \textbf{Personalised} (e.g., Yahoo, Bing). The search engines associate each user with a HTTP-cookie containing information such as login (gender, age), preferences (languages, interests) and previous search history \cite{googlepersonalised, yahooadaptive, bingadaptive}. This allows the website to ‘remember’ what buttons the user clicked on, or sites visited, and allows the search engine to return results that are highly related to pages that the user visited through previous searches. Although adaptive search seems to have significant user benefit in terms of relevance of returned pages to the user, it decreases the likelihood that the user encounters new information, biasing the results towards the users location and previous site traffic.  This has the unwanted effect of creating a filter bubble \cite{Pariser}, which is argued to close us off from important and relevant information. It creates a personal ecosystem of information for one user, giving the impression that their self interests are all that exist \footnote{The filter bubble also has potential privacy problems, as the user may be unaware that the search has been specifically tailored towards their interests and they wonder why things that they have previously searched for have become more and more relevant. There are search engines that have attempted to address this unwanted effect, by not tracking or saving user information (e.g., \texttt{DuckDuckGo.com}). As users are not linked to their search queries, it limits them being targeted by adverts related to their previous searches.}. Unfortunately the filter bubble may positively reinforce restricted interests in Autism as the user constantly receives feedback about their previous (idiosyncratic and personalized) searches without being able to break out of that repetitive loop. 
 
 Research suggests personalization also increases ‘background noise’ relative to the search results \cite{briggs}, with a carry-over effect in personalized search, where prior search influences the results from subsequent searches \footnote{It should be noted that personalization of search results generally takes a lower priority for the ranking algorithms than the URLs ranked top in terms of their relevance for the search query.}. This carry-over may be particularly disadvantageous for people with Autism (some of whom already have restricted and repetitive interests) as it muddies their search space. To produce a search tool specifically tailored to reduce the filter bubble effect in Autism, widen the information gateway and reduce the possibility for restricted and repetitive searches, the weighting on previous search results will need to be reduced. This is something I will investigate in the project, particularly for individuals who identify restricted or repetitive interests. For these users, it would limit the possibility that they get trapped in a spiraling loop of ever-narrowing user-relevant information and over-personalization of self-reinforced information ecosystems.
 
 \section{Aims and Objectives} 
-As part of my project I propose to build a user model of Autism, for a motion-controlled, web search. See Figure ~Figure\ref{vision} for the envisioned UI interface of the project, and Figure ~\ref{architec} for the proposed architecture. The core and non-core features of the application are given below. I elaborate on each of the key features in the following sections. 
+As part of my project I propose to build a user model of Autism, for a motion-controlled, web search. See Figure~\ref{vision} for the envisioned UI interface of the project, and Figure~\ref{architec} for the proposed architecture. The core and non-core features of the application are given below. I elaborate on each of the key features in the following sections. 
 
 \begin{figure}[H]
 \begin{center}
-\includegraphics[scale=0.35]{vision}\\
-\caption{Envisioned UI interface component for the project \cite{leap}.}
+\includegraphics[scale=0.6]{vision}\\
+\caption{Envisioned UI component for the project \cite{leap}.}
 \label{vision}
 \end{center}
 \end{figure}
@@ -169,7 +164,7 @@ As part of my project I propose to build a user model of Autism, for a motion-co
 \end{enumerate}
 
 \section{Plan for Developing the Solution}\label{sol}
-The first part of the project involves building a synthesis of search engines. In my research I considered several existing solutions, these included: (1) \textbf{'Bing vs. Google'}\cite{bingvsgoogle}, which presents search query results from Bing and Google side-by-side, allowing the user to make a comparison, and providing the experience of navigating both search pages simultaneously; (2) \textbf{'Qrobe'}\cite{qrobe}, which combines three search engines’ results (Google, Bing and Ask) on one page, but the user can also search ‘web’, ‘images’ or ‘popular’; (3) \textbf{'AskBoth'}\cite{askboth} combines both Google and Bing results, integrating a section in the middle, dedicated to a twitter feed; and (4) \textbf{'Specra'}\cite{specra}, which attempts to include user preferences by combining results from Google, Bing and Yahoo and allowing users to assign 'weights' to each engine. These existing solutions are limited, however, as the number of personal preference options is very limited. In addition, there is often double (or triple) the amount of verbal information on the results page, resulting in verbal (and cognitive) overload for users with Autism, as well as redundancy (near-duplicates). Furthermore, where an RSS-feed such as twitter (or other social media) may add to the aesthetics and user experience (UX) for a typical user \cite{social}, for individuals with Autism who prefer rigid routines, continuous updates are distracting and sub-optimal \cite{disengagement}. I therefore plan to synthesise the results from search engines using their individual Application Programming Interfaces (API) (which I discuss in the proceeding sections). The rest of this planning section outlines how each of the core features listed above in Section~\ref{core} will be developed.
+The first part of the project involves building a synthesis of search engines. In my research I considered several existing solutions, these included: (1) \textbf{'Bing vs. Google'}\cite{bingvsgoogle}, which presents search query results from Bing and Google side-by-side, allowing the user to make a comparison, and providing the experience of navigating both search pages simultaneously; (2) \textbf{'Qrobe'}\cite{qrobe}, which combines three search engines’ results (Google, Bing and Ask) on one page, but the user can also search ‘web’, ‘images’ or ‘popular’; (3) \textbf{'AskBoth'}\cite{askboth} combines both Google and Bing results, integrating a section in the middle, dedicated to a twitter feed; and (4) \textbf{'Specra'}\cite{specra}, which attempts to include user preferences by combining results from Google, Bing and Yahoo and allowing users to assign `weights' to each engine. These existing solutions are limited, however, as the number of personal preference options is very limited. In addition, there is often double (or triple) the amount of verbal information on the results page, resulting in verbal (and cognitive) overload for users with Autism, as well as redundancy (near-duplicates). Furthermore, where an RSS-feed such as twitter (or other social media) may add to the aesthetics and user experience (UX) for a typical user \cite{social}, for individuals with Autism who prefer rigid routines, continuous updates are distracting and sub-optimal \cite{disengagement}. I therefore plan to synthesise the results from search engines using their individual Application Programming Interfaces (API) (which I discuss in the proceeding sections). The rest of this planning section outlines how each of the core features listed above in Section~\ref{core} will be developed.
 
 \subsection{Building the Combination search Engine: Core Feature 1.} 
 The three most popular search engines, Google (unique monthly visitors = 1,100,000,000, query volume = 64.5\% ), Bing (350.000.000, 12.8\%) and Yahoo! (300,000,000, 64.5\%) were selected \cite{ebiz, adam}. Other search engines were not included, to limit redundancy of the search results returned.
@@ -185,14 +180,14 @@ To combine search results, I will use API’s provided by Google, Yahoo and Bing
 \end{figure}
 
 \subsection {Building a User Model of Autism: Core Feature 2}\label{usermodel}
-A user model (or a collection of information associated with a particular user, usually a data structure), will be developed so the current system can adapt/customise its behaviour in line with user needs, and be better informed about how to behave in various circumstances, improving the human-computer interaction experience. In the current case, the user will be required to set up a Google+ account, where their basic information (demographics, needs, preferences, likes, dislikes, goals, plans, knowledge, and skill), will be gathered. They will authenticate their Google+ account with the web application to start the formation of their data model. I will access these data via the \textbf{Google+ API}, which includes methods to access 4 resource  types; People, their Activities, Comments and Moments. A person is represented with many fields in Google+, including name, gender, title, occupation and so forth. I will ask users to enter their Autism diagnostic information in the 'about me' section on their profile. This information will be parsed at a later stage and feed into the user model. Information about web-search history for any individual user can be obtained from the browser history. 
+A user model (or a collection of information associated with a particular user, usually a data structure), will be developed so the current system can adapt/customise its behaviour in line with user needs, and be better informed about how to behave in various circumstances, improving the human-computer interaction experience. For example, Google+ is a networking and social `layer' for Google, which assists with communication across different google services (e.g., email, video, calendar) \cite{gplus}. One of the reasons Google first implemented the ``+" layer was to increase personalisation across services, and so a lot of user information can be extracted from this interface. In the current case, the user will be required to set up a Google+ account, where their basic information (demographics, needs, preferences, likes, dislikes, goals, plans, knowledge, and skill), will be gathered.  The users of this system will authenticate their Google+ account with the web application to start the formation of their data model. I will access the user data via the \textbf{Google+ API}, which includes methods to access 4 resource  types; \texttt{People}, their \texttt{Activities}, \texttt{Comments} and \texttt{Moments}. A \texttt{Person} is represented with many fields in Google+, including \texttt{name, gender, title, occupation} and so forth. I will ask users to enter their Autism diagnostic information in the `about me' section on their profile. This information will be parsed at a later stage and feed into the user model. Information about web-search history for any individual user can be obtained from the browser history. 
 
 User models fall into 4 main categories. They can be \textit{static/unchanging} (i.e., no algorithms update the model about the user's changing preferences), or \textit{dynamic} (representation of the user with their up-to-date changes in interests, and interactions with the system). User models can be highly \textit{adaptive} and model the user on their own, however, this requires a large amount of data before implementation. \textit{Stereotyped} user models overcome this problem by inferring characteristics about a user from data gathered from other users within that distinct subset. These are the most advantageous in the current case as they can be built quickly using clusters of characteristics of groups of individuals. I will have limited data to work with at the start of the project (only basic information gathered via a registration process, and diagnostic information). So, to address core feature 2, I will build a stereotyped user model (see Figure ~\ref{usermodelconstruct} for an example of what constructs may feed into the user model) , around a cluster of characteristics of well-researched cognitive aspects of Autism (see Section~\ref{What should search offer people with Autism} for a list).
 
 
 \begin{figure}[H]
 \begin{center}
-    \includegraphics[scale=0.5]{usermodelconstruct}
+    \includegraphics[scale=0.7]{usermodelconstruct}
     \caption{Hypothetical example of features that may feed into the user model. White spaces represent unknowns/inferred/assumptions in a stereotyped user model.}
     \label{usermodelconstruct}
 \end{center}
@@ -200,17 +195,17 @@ User models fall into 4 main categories. They can be \textit{static/unchanging} 
 
 
 \subsection{Key Word In Context Search: Core Feature 3}\label{apache}
-To identify results which contain the Key Word In Context (KWIC)\cite{kwic} (core feature 3), the \textbf{Apache Lucene Library} (hereafter referred to as 'Lucene') will be used. Lucene is a text-search library (written in Java), providing powerful, scalable, accurate and efficient algorithms to search textual data. The API offers the possibility to carry out phrase, wildcard, proximity and range (distance-of-words) queries. Using the library it will be feasible to ascertain whether the key word appears in a context matched to the user's search query. One possibility is to use the \textbf{lucene.search.highlight} package, and the \textbf{WeightedSpanTermExtractor} class, to extract \textbf{WeightedSpanTerms} from a query, based on whether the query terms appear in a \textbf{TokenStream} (the snippet in this case). This will essentially parse the text to extract the key words in a small surrounding snippet. Each word in the TokenStream is assigned a weight, and if their combined weights sum to above a threshold, this snippet will be returned to the users results page. Snippets whose terms do not exceed the threshold will not be returned. The threshold will be higher than what is currently used in search, and the snippets in the TokenStream will be shorter, to reduce the number of results returned to the user and lessen the cognitive and verbal load of the results page. This is somewhat equivalent to a reduction in the \textit{recall} and increase in \textit{precision} of the search engine. For example, if the user queried 'fluffy cats', instead of the search results returning hundreds of results (containing 'fluffy' and 'cats'), only those where the words appear in proximity to each other (i.e., in the small snippet), and in the top ranking positions of the page (e.g., the title), would be returned. 
+To identify results which contain the Key Word In Context (KWIC)\cite{kwic} (core feature 3), the \textbf{Apache Lucene Library} (hereafter referred to as `Lucene') will be used. Lucene is a text-search library (written in Java), providing powerful, scalable, accurate and efficient algorithms to search textual data. The API offers the possibility to carry out phrase, wildcard, proximity and range (distance-of-words) queries. Using the library it will be feasible to ascertain whether the key word appears in a context matched to the user's search query. One possibility is to use the \texttt{lucene.search.highlight} package, and the \texttt{WeightedSpanTermExtractor} class, to extract \texttt{WeightedSpanTerms} from a query, based on whether the query terms appear in a \texttt{TokenStream} (the snippet in this case). This will essentially parse the text to extract the key words in a small surrounding snippet. Each word in the TokenStream is assigned a weight, and if their combined weights sum to above a threshold, this snippet will be returned to the users results page. Snippets whose terms do not exceed the threshold will not be returned. The threshold will be higher than what is currently used in search, and the snippets in the \texttt{TokenStream} will be shorter, to reduce the number of results returned to the user and lessen the cognitive and verbal load of the results page. This is somewhat equivalent to a reduction in the \textit{recall} and increase in \textit{precision} of the search engine. For example, if the user queried ``fluffy cats", instead of the search results returning hundreds of results (containing ``fluffy" and ``cats"), only those where the words appear in proximity to each other (i.e., in the small snippet), and in the top ranking positions of the page (e.g., the title), would be returned. 
 
 \subsection{Identifying First-Order Semantic Relations: Core Feature 4}\label{apache}
-The Lucene library will be used to identify and filter search results which contain first-order semantic relations to the query. I will acheive this by overriding the computations of the components in the Lucene \textbf{Similarity} class, and working with the output from the \textit{Practical Scoring Function} (see the Lucene Similarity Class documentation \cite{similarity}), which is at the root of, and directly connected to, the classes and methods in the library. Simply put, the scoring function builds a Vector Space Model (a model to represent the text documents), and calculates the cosine similarity between two documents based on the term frequency - inverse document frequencies\footnote{Term frequency–inverse document frequency is a numerical statistic that is intended to reflect how important a word is to a document in a collection or corpus}. For a full explaination, and derivation of the function, see \cite{similarity}. I will alter these computations to modify the Lucene scoring system in line with the aims of core feature 4. 
+The Lucene library will be used to identify and filter search results which contain first-order semantic relations to the query. I will acheive this by overriding the computations of the components in the Lucene \texttt{Similarity} class, and working with the output from the \textit{Practical Scoring Function} (see the Lucene \texttt{Similarity} Class documentation \cite{similarity}), which is at the root of, and directly connected to, the classes and methods in the library. Simply put, the scoring function builds a Vector Space Model (a model to represent the text documents), and calculates the cosine similarity between two documents based on the term frequency - inverse document frequencies\footnote{Term frequency–inverse document frequency is a numerical statistic that is intended to reflect how important a word is to a document in a collection or corpus}. For a full explaination, and derivation of the function, see \cite{similarity}. I will alter these computations to modify the Lucene scoring system in line with the aims of core feature 4. 
 
-To support the alterations in the Lucene scoring system, I will also define fields for sections of a document (e.g., title, heading or subheading number, paragraph number), and apply a 'ranked search' algorithm. For example, if a user queried 'Pythagoras Theorum', a document could be given a higher rank if 'Pythagoras' appeared in the first subheading compared to the last paragraph of the document. One way to acheive this would be by using the Lucene \textbf{Field} class and the \textbf{setBoost} method within the scoring function. 
+To support the alterations in the Lucene scoring system, I will also define fields for sections of a document (e.g., title, heading or subheading number, paragraph number), and apply a `ranked search' algorithm. For example, if a user queried ``Pythagoras Theorum", a document could be given a higher rank if ``Pythagoras" appeared in the first subheading compared to the last paragraph of the document. One way to acheive this would be by using the Lucene \texttt{Field} class and the \texttt{setBoost} method within the scoring function. 
 
 \subsection{Motion-Controlled UI: Core Feature 5}\label{hardware}
-Two options were available for use with the current project, the \textbf{Oculus Rift Virtual Reality head mounted display} (the 'Rift') and, the \textbf{LEAP Motion Controller} (the 'LEAP'). Both have accurate timing, and work well with the combinatorial configuration of senses (sight, hearing and touch). As this is a tool to be used with individuals with Autism, who have increased sensitivity to touch, the sensation and imposition of the Rift was considered to be too overwhelming, and the LEAP was favoured. The LEAP is also more affordable for users to integrate with search at home. 
+Two options were available for use with the current project, the \textbf{Oculus Rift Virtual Reality head mounted display} (the `Rift') and, the \textbf{LEAP Motion Controller} (the `LEAP'). Both have accurate timing, and work well with the combinatorial configuration of senses (sight, hearing and touch). As this is a tool to be used with individuals with Autism, who have increased sensitivity to touch, the sensation and imposition of the Rift was considered to be too overwhelming, and the LEAP was favoured. The LEAP is also more affordable for users to integrate with search at home. 
 
-The LEAP will recognize and track hands, fingers, finger-like tools, positions, motions and gestures using infrared light and optical sensors along the x, y and z cartesian coordinate system. The controller has a 150-degree field of view, and can operate in a range of 1 inch to 2 feet. The API works with distance in millimetre resolution. Time is measured in microseconds, speed in mm/s and angles in radians. The LEAP will use the \textbf{Frames} class, to represent tracked entities, and the motion data will be recorded as a set of frames (stored, read-only) containing the detected motion. I will create frames by calling the Controller.frame(), up to 60 frames can be held in the history buffer. If there are resource contrainsts, frames can be 'dropped'.
+The LEAP will recognize and track hands, fingers, finger-like tools, positions, motions and gestures using infrared light and optical sensors along the x, y and z cartesian coordinate system. The controller has a 150-degree field of view, and can operate in a range of 1 inch to 2 feet. The API works with distance in millimetre resolution. Time is measured in microseconds, speed in mm/s and angles in radians. The LEAP will use the \texttt{Frames} class, to represent tracked entities, and the motion data will be recorded as a set of frames (stored, read-only) containing the detected motion. I will create frames by calling the \texttt{Controller.frame()}, up to 60 frames can be held in the history buffer. If there are resource contrainsts, frames can be `dropped'.
 
 \begin{figure}[H]
 \begin{center}
@@ -219,18 +214,18 @@ The LEAP will recognize and track hands, fingers, finger-like tools, positions, 
 \end{center}
 \end{figure}
 
-The \textbf{LEAP Motion SDK} will get tracking data from the LEAP Motion Service. A WebSocket interface, allows LEAP Web Based applications, and a WebSocket server listening in on http://127.0.0.1:6437\footnote{The user will be able to enable or disable the WebSocket server.}. The server will send tracking data in JSON messages and the application will send configuration messages back. This is the process I will use to establish connection to the server and consume the JSON messages \cite{leap}. 
+The \textbf{LEAP Motion SDK} will get tracking data from the LEAP Motion Service. A WebSocket interface, allows LEAP Web Based applications, and a WebSocket server listening in on http://127.0.0.1:6437\footnote{The user will be able to enable or disable the \texttt{WebSocket} server.}. The server will send tracking data in JSON messages and the application will send configuration messages back. This is the process I will use to establish connection to the server and consume the JSON messages \cite{leap}. 
 
-For hand movements the \textbf{Hand} class, will return information about the position of fingers, and arm (left/right). The Hand palmNormal() method and direction vectors define the orientation of the hand \cite{leap}. The software will use parts of visible hands, internal models and previous observations to form a model of the hand. I will use the Hand.confidence() method for a rating of how well the observed data fit the internal model \cite{leap}.
+For hand movements the \textbf{Hand} class, will return information about the position of fingers, and arm (left/right). The \texttt{Hand.palmNormal()} method and direction vectors define the orientation of the hand \cite{leap}. The software will use parts of visible hands, internal models and previous observations to form a model of the hand. I will use the \texttt{Hand.confidence()} method for a rating of how well the observed data fit the internal model \cite{leap}.
 
 \begin{figure}[H]
 \begin{center}
 \includegraphics[scale=0.4]{palm}\\
-\caption{Hand palmNormal() method \cite{leap}}
+\caption{\texttt{Hand.palmNormal()} method \cite{leap}}
 \end{center}
 \end{figure}
 
-The \textbf{Arms} class will return information about orientation, length, width and end points of movements. The LEAP controller software bases these return measurements on previous observations of the user, and using typical human proportions. Similarly, \textbf{Finger} characteristics are based on the anatomy of the hand, and recent observations. 
+The \texttt{Arms} class will return information about \texttt{orientation, length, width} and \texttt{end} points of movements. The LEAP controller software bases these return measurements on previous observations of the user, and using typical human proportions. Similarly, \texttt{Finger} characteristics are based on the anatomy of the hand, and recent observations. 
 
 \begin{figure}[H]
 \begin{center}
@@ -239,23 +234,23 @@ The \textbf{Arms} class will return information about orientation, length, width
 \end{center}
 \end{figure}
 
-\textbf{Tools} can represent any real object (noun), but are longer, straighter and thinner than fingers, and must be cylindrical. The LEAP can also recognise certain movement patterns, i.e., \textbf{Gestures} (CircleGesture, KeyTapGesture, ScreenTapGesture and SwipeGestures) allowing the user of the system to indicate an intent.
+\textbf{Tools} can represent any real object (noun), but are longer, straighter and thinner than fingers, and must be cylindrical. The LEAP can also recognise certain movement patterns, i.e., \texttt{Gestures} (\texttt{CircleGesture, KeyTapGesture, ScreenTapGesture and SwipeGestures}) allowing the user of the system to indicate an intent.
 
 The user will be able to navigate the application with a range of movements involving Hands, Fingers, Gestures and Tools, fulfilling the aims of core feature 5.
 
-\subsection{ThreeJs Library: Non-Core Feature}
-ThreeJs is a Javascript library enabling WebGL-3D in the web browser, for hardware-accelerated 3D graphics without installing software. Time permitting, ThreeJs will be used to integrate 3D interfaces with the application and motion controller. This will improve the experience of embodiment, UX, and UI for the user.
+\subsection{\texttt{ThreeJs} Library: Non-Core Feature}
+\texttt{ThreeJs} is a javascript library enabling WebGL-3D in the web browser, for hardware-accelerated 3D graphics without installing software. Time permitting, \texttt{ThreeJs} will be used to integrate 3D interfaces with the application and motion controller. This will improve the experience of embodiment, UX, and UI for the user.
 
 \subsection{Methodology}
 There is a relatively short deadline in which a single developer will research and deliver a system prototype and report. The APIs, technology and areas of development are unfamiliar. As the final product depends on user feedback testing, there is an element of uncertainty about what the final product will be/should look like. These characteristics suggest that the most suitable methodology to deliver the application is an Agile-like Methodology \cite{agile}. I will focus on early development and rapid feedback to make adjustments to the project's direction. This methodology offers the most flexibility and adaptability.
 
 
 \subsection{Development Languages}
-The Google, Yahoo, Bing and Lucene APIs are available in Java. The LEAP SDK sends Frame information in JSON format to Web Browsers. I will use HTML5 for front-end development.
+The Google, Yahoo, Bing and Lucene APIs are available in Java. The LEAP SDK sends frame information in JSON format to Web Browsers. I will use HTML5 for front-end development.
 
 JSON is light weight, language-independent data format, and a good tool for sharing data. Importantly JSON offers faster execution and server-side parsing by storing the data in arrays. Faster parsing is particularly important for sharing the LEAP motion controller data. A drawback of JSON is that it only has limited support tools available, and little error handling capabilities. Java is a platform and operating-system independent language. It offers a simple, dynamic, robust object oriented, and functional language. There is excellent documentation available for the language, with many third party, open source libraries.
 
-I will use Eclipse text editor and attempt to make the application compatible with Google Chrome browser (as it is WebGL-compatible). I will use Git for Version Control. For testing I will use JUnit, JSON Test and Mockito (for user/external dependencies).
+I will use the Eclipse Integrated Development Environment and attempt to make the application compatible with Google Chrome browser (as it is WebGL-compatible). I will use Git for Version Control. For testing I will use JUnit \cite{junit}, JSON Test \cite{jsontest} and Mockito (for user/external dependencies) \cite{mockito}.
 
 \subsection{User Testing}
 I aspire to test the application with a group of individuals with Autism. However, it requires time to acquire ethical approval, it is not clear whether I will be able to acheive this before the deadline. If time allows, user testing would include inviting people Autism to use the web application and obtaining their feedback (relevance/explicit feedback, and, implicit feedback, e.g., mouse clicks), as well as qualitative data. We are currently in contact with the National Autistic Society \cite{nas}, and in the process of seeking assistance with locating participants. I could use the Tobii Eye-tracker (from the Department of Psychology, Birkbeck) to gather high resolution eye-tracking data, as users navigate the application. I would then further revise the user model and UI given their feedback, to improve the final application.
@@ -263,7 +258,7 @@ I aspire to test the application with a group of individuals with Autism. Howeve
 \subsection{Unit Testing}
 I will be implementing Test Driven Development (TDD)\footnote{The TDD process involves iterating through the write-test-then-write-code process. First writing a test for some functionality, and second, writing just enough production code to make the test pass.} with JUnit (version 4.12), and where there are external dependencies, these will be mock tested using Mockito \cite{mockito}. JSON Test will be used to test JavaScript Object Notation \cite{jsontest}. I will run both unit and regression tests.
 
-\subsection{Challenges/issues, probabilities and mitigation of impact}
+\section{Challenges/issues, probabilities and mitigation of impact}
 The challenges associated with the project, their impact and how I will mitigate them, is outlined in~Table \ref{risks}. 
 \begin{table}[H]
 \caption{Challenges \& Impact Mitigation} 
@@ -291,7 +286,7 @@ HIGH & LOW & Cannot get research participants with Autism to take part in a usab
 \label{risks} 
 \end{table}
 
-\subsection{Project Timeline}\label{plan}
+\section{Project Timeline}\label{plan}
 The start date of the project is June 5th 2015, and end date is September 13th 2015. Non-core features will only be completed, time permitting.
 \begin{table}[H]
 \caption{Project Stages} 
@@ -334,12 +329,13 @@ Sep 13 & Submit report & MUST\\[0.5ex]
 \label{stages} 
 \end{table}
 
-\subsection{Concluding Statement}\label{future}
+\section{Concluding Statement}\label{future}
 I have proposed to build a system that enhances the experience of searching the web, for people with Autism. This proposal explains how I will first set about constructing a user model of Autism, from user interactions with search, and, from well-understood aspects of cognition in Autism. Second, I will use text/content based libraries to refine search results for this subgroup. Third, I will integrate the final web application with a novel user interface, the LEAP motion controller. I hope these insights will assist with the forthcoming information-overload problem by exploiting user models to turn the masses of information available into a specific set of “information goods”.
+
+\end{justify}
 
 \clearpage
 \begin{thebibliography}{100}
-
 \bibitem{person} Child Development Institute, http://childdevelopmentinfo.com/family-living/kids-media-safety/children-teens-web-internet-safety/, Retrieved 11 April 2015
 
 \bibitem{mottron} Laurent Mottron, Jacob A. Burack, Johannes E. A. Stauder, Philippe Robaey (1999) Perceptual Processing among High-functioning Persons with Autism. \textit{Journal of Child Psychology and Psychiatry 40}, (2), 203–211. doi:10.1111/1469-7610.00433
@@ -379,6 +375,8 @@ Elsabbagh, M., Volein, A., Holmboe, K., Tucker, L., Csibra, G., Baron-Cohen, S.,
 
 \bibitem {Shane and Albert}Shane, H. C. and Albert, P. D. (2008) Electronic screen media for persons with autism spectrum disorders: results of a survey. \textit{Journal of Autism Developmental Disorders, 38},8 :1499-508. doi: 10.1007/s10803-007-0527-5.
 
+\bibitem{gplus} Google+ API, https://developers.google.com/+/api/?hl=en\_US, Retrieved 12 April 2015
+
 \bibitem{similarity} Apache, \textit{Similarity, Lucene 3.6.0 API},  \\http://lucene.apache.org/core/3\_6\_0/api/core/org/apache/lucene/search/Similarity.html, \\Retrieved 10 April 2015.
 
 \bibitem{jsontest}jsontest \textit{JSON Test}, http://www.jsontest.com/, Retrieved 8 April 2015.
@@ -410,6 +408,11 @@ Elsabbagh, M., Volein, A., Holmboe, K., Tucker, L., Csibra, G., Baron-Cohen, S.,
 \bibitem{social} Lowery, T., \textit{Why Social Media is So Addictive (and why marketers should care)}, http://www.cmswire.com/cms/customer-experience/why-social-media-is-so-addictive-and-why-marketers-should-care-022276.php\#null, Retrieved 10 April 2015.
 
 \bibitem{nas} National Autistic Society, http://www.autism.org.uk/, Retrieved 21 Feb 2015
+
+\bibitem{junit} JUnit, http://junit.org/, Retrieved 12 April 2015
+
+\bibitem{jsontest} JSON Test, http://www.jsontest.com/, Retrieved 12 April 2015
+
 
 \bibitem{mockito} Mockito, simpler and better, Mockito.org, Retrieved 21 Feb 2015
 

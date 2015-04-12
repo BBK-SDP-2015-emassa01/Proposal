@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.3.23)  12 APR 2015 04:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.3.23)  12 APR 2015 15:42
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -9,8 +9,8 @@ LaTeX2e <2014/05/01>
 Babel <3.9k> and hyphenation patterns for 78 languages loaded.
 (/usr/local/texlive/2014/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
-(/usr/local/texlive/2014/texmf-dist/tex/latex/base/size10.clo
-File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/base/size11.clo
+File: size11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
 \c@section=\count80
@@ -43,6 +43,41 @@ Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
 \extratabsurround=\skip43
 \backup@length=\skip44
 )
+(/usr/local/texlive/2014/texmf-dist/tex/latex/ms/ragged2e.sty
+Package: ragged2e 2009/05/21 v2.1 ragged2e Package (MS)
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/ms/everysel.sty
+Package: everysel 2011/10/28 v1.2 EverySelectfont Package (MS)
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/footmisc/footmisc.sty
+Package: footmisc 2011/06/06 v5.5b a miscellany of footnote facilities
+\FN@temptoken=\toks17
+\footnotemargin=\dimen106
+\c@pp@next@reset=\count88
+Package footmisc Info: Declaring symbol style bringhurst on input line 855.
+Package footmisc Info: Declaring symbol style chicago on input line 863.
+Package footmisc Info: Declaring symbol style wiley on input line 872.
+Package footmisc Info: Declaring symbol style lamport-robust on input line 883.
+
+Package footmisc Info: Declaring symbol style lamport* on input line 903.
+Package footmisc Info: Declaring symbol style lamport*-robust on input line 924
+.
+)
+\CenteringLeftskip=\skip45
+\RaggedLeftLeftskip=\skip46
+\RaggedRightLeftskip=\skip47
+\CenteringRightskip=\skip48
+\RaggedLeftRightskip=\skip49
+\RaggedRightRightskip=\skip50
+\CenteringParfillskip=\skip51
+\RaggedLeftParfillskip=\skip52
+\RaggedRightParfillskip=\skip53
+\JustifyingParfillskip=\skip54
+\CenteringParindent=\skip55
+\RaggedLeftParindent=\skip56
+\RaggedRightParindent=\skip57
+\JustifyingParindent=\skip58
+)
 (/usr/local/texlive/2014/texmf-dist/tex/latex/datetime/datetime.sty
 Package: datetime 2013/09/10 v2.59 Date Time Package
 
@@ -51,9 +86,9 @@ Package: etoolbox 2011/01/03 v2.1 e-TeX tools for LaTeX
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/etex-pkg/etex.sty
 Package: etex 1998/03/26 v2.0 eTeX basic definition package (PEB)
-\et@xins=\count88
+\et@xins=\count89
 )
-\etb@tempcnta=\count89
+\etb@tempcnta=\count90
 )
 (/usr/local/texlive/2014/texmf-dist/tex/latex/fmtcount/fmtcount.sty
 Package: fmtcount 2013/08/17 v2.03
@@ -63,29 +98,29 @@ Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 )
 (/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/05/08 v1.15 key=value parser (DPC)
-\KV@toks@=\toks17
+\KV@toks@=\toks18
 )
 (/usr/local/texlive/2014/texmf-dist/tex/latex/fmtcount/fcprefix.sty
 Package: fcprefix 2012/09/28
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/fmtcount/fcnumparser.sty
 Package: fcnumparser 2012/09/28
-\fc@digit@counter=\count90
+\fc@digit@counter=\count91
 ))
 (/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0
-\@emptytoks=\toks18
-\ex@=\dimen106
+\@emptytoks=\toks19
+\ex@=\dimen107
 )
-\c@padzeroesN=\count91
-\fc@tmpcatcode=\count92
-\@DT@modctr=\count93
-\@ordinalctr=\count94
-\@orgargctr=\count95
-\@strctr=\count96
-\@tmpstrctr=\count97
-\@DT@loopN=\count98
-\@DT@X=\count99
+\c@padzeroesN=\count92
+\fc@tmpcatcode=\count93
+\@DT@modctr=\count94
+\@ordinalctr=\count95
+\@orgargctr=\count96
+\@strctr=\count97
+\@tmpstrctr=\count98
+\@DT@loopN=\count99
+\@DT@X=\count100
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/fmtcount/fc-english.def
 File: fc-english.def 2013/08/17
@@ -93,26 +128,26 @@ File: fc-english.def 2013/08/17
 (/usr/local/texlive/2014/texmf-dist/tex/latex/datetime/datetime-defaults.sty
 Package: datetime-defaults 2013/09/10
 )
-\@day=\count100
-\@month=\count101
-\@year=\count102
-\c@HOUR=\count103
-\c@HOURXII=\count104
-\c@MINUTE=\count105
-\c@TOHOUR=\count106
-\c@TOMINUTE=\count107
-\c@SECOND=\count108
-\currenthour=\count109
-\currentminute=\count110
-\currentsecond=\count111
+\@day=\count101
+\@month=\count102
+\@year=\count103
+\c@HOUR=\count104
+\c@HOURXII=\count105
+\c@MINUTE=\count106
+\c@TOHOUR=\count107
+\c@TOMINUTE=\count108
+\c@SECOND=\count109
+\currenthour=\count110
+\currentminute=\count111
+\currentsecond=\count112
 Package datetime Info: No datetime.cfg file found, using default settings on in
 put line 308.
-\@dtctr=\count112
-\dayofyear=\count113
-\dayofweek=\count114
+\@dtctr=\count113
+\dayofyear=\count114
+\dayofweek=\count115
 LaTeX Info: Redefining \today on input line 736.
-\dt@a=\toks19
-\dt@b=\toks20
+\dt@a=\toks20
+\dt@b=\toks21
 )
 (/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2014/04/25 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
@@ -137,43 +172,50 @@ Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 (/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
-\Gread@gobject=\count115
+\Gread@gobject=\count116
 ))
-\Gin@req@height=\dimen107
-\Gin@req@width=\dimen108
+\Gin@req@height=\dimen108
+\Gin@req@width=\dimen109
 )
 (./PROP_emassa01_CS.aux
 
 LaTeX Warning: Label `apache' multiply defined.
 
+
+LaTeX Warning: Label `jsontest' multiply defined.
+
 )
 \openout1 = `PROP_emassa01_CS.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
- (/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+Package ragged2e Info: ABD: executing \RaggedRight on input line 21.
+ ABD: EverySelectfont initializing macros
+LaTeX Info: Redefining \selectfont on input line 21.
+
+(/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count116
-\scratchdimen=\dimen109
+\scratchcounter=\count117
+\scratchdimen=\dimen110
 \scratchbox=\box28
-\nofMPsegments=\count117
-\nofMParguments=\count118
-\everyMPshowfont=\toks21
-\MPscratchCnt=\count119
-\MPscratchDim=\dimen110
-\MPnumerator=\count120
-\makeMPintoPDFobject=\count121
-\everyMPtoPDFconversion=\toks22
+\nofMPsegments=\count118
+\nofMParguments=\count119
+\everyMPshowfont=\toks22
+\MPscratchCnt=\count120
+\MPscratchDim=\dimen111
+\MPnumerator=\count121
+\makeMPintoPDFobject=\count122
+\everyMPtoPDFconversion=\toks23
 ) (/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
@@ -223,14 +265,19 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 34.
+(Font)              <12> on input line 35.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 34.
+(Font)              <8> on input line 35.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 34.
+(Font)              <6> on input line 35.
 
-Overfull \hbox (24.27751pt too wide) in paragraph at lines 34--34
+Overfull \hbox (24.27751pt too wide) in paragraph at lines 35--35
  [][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 40--41
+
  []
 
 [1
@@ -238,27 +285,32 @@ Overfull \hbox (24.27751pt too wide) in paragraph at lines 34--34
 {/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 (./PROP_emassa01_CS.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 2.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 2.
+(Font)              <10.95> on input line 2.
 )
 \tf@toc=\write3
 \openout3 = `PROP_emassa01_CS.toc'.
 
+ [2
 
-Overfull \hbox (13.03644pt too wide) in paragraph at lines 94--97
+]
+Overfull \hbox (16.07642pt too wide) in paragraph at lines 89--92
 [] 
  []
 
-[2
+[3
 
-] <images/person.png, id=14, 686.565pt x 401.5pt>
+]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <9> on input line 95.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 95.
+ <images/person.png, id=18, 686.565pt x 401.5pt>
 File: images/person.png Graphic file (type png)
  <use images/person.png>
-Package pdftex.def Info: images/person.png used on input line 104.
-(pdftex.def)             Requested size: 137.31056pt x 80.29857pt.
+Package pdftex.def Info: images/person.png used on input line 99.
+(pdftex.def)             Requested size: 274.62112pt x 160.59715pt.
 
-[3
+[4
 
  <./images/person.png>]
 Missing character: There is no ‚ in font cmr10!
@@ -273,20 +325,20 @@ Missing character: There is no ò in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
- <images/vision.png, id=23, 722.7pt x 236.885pt>
+ [5] <images/vision.png, id=31, 722.7pt x 236.885pt>
 File: images/vision.png Graphic file (type png)
 
 <use images/vision.png>
-Package pdftex.def Info: images/vision.png used on input line 133.
-(pdftex.def)             Requested size: 252.94878pt x 82.91098pt.
- [4]
-<images/searchEngArchi.pdf, id=27, 1065.9825pt x 772.8875pt>
+Package pdftex.def Info: images/vision.png used on input line 128.
+(pdftex.def)             Requested size: 433.62334pt x 142.13208pt.
+
+<images/searchEngArchi.pdf, id=32, 1065.9825pt x 772.8875pt>
 File: images/searchEngArchi.pdf Graphic file (type pdf)
 
 <use images/searchEngArchi.pdf>
-Package pdftex.def Info: images/searchEngArchi.pdf used on input line 142.
+Package pdftex.def Info: images/searchEngArchi.pdf used on input line 137.
 (pdftex.def)             Requested size: 319.79721pt x 231.86803pt.
- [5 <./images/vision.png> <./images/searchEngArchi.pdf>]
+ [6 <./images/vision.png>]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
@@ -308,57 +360,60 @@ Missing character: There is no ò in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
+ [7 <./images/searchEngArchi.pdf>]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
- <images/apistream.png, id=43, 722.7pt x 542.025pt>
+ <images/apistream.png, id=52, 722.7pt x 542.025pt>
 File: images/apistream.png Graphic file (type png)
 
 <use images/apistream.png>
-Package pdftex.def Info: images/apistream.png used on input line 181.
+Package pdftex.def Info: images/apistream.png used on input line 176.
 (pdftex.def)             Requested size: 216.81166pt x 162.60875pt.
- [6 <./images/apistream.png>]
-<images/usermodelconstruct.pdf, id=48, 721.69624pt x 439.6425pt>
+ [8]
+<images/usermodelconstruct.pdf, id=56, 721.69624pt x 439.6425pt>
 File: images/usermodelconstruct.pdf Graphic file (type pdf)
 
 <use images/usermodelconstruct.pdf>
-Package pdftex.def Info: images/usermodelconstruct.pdf used on input line 195.
-(pdftex.def)             Requested size: 360.84724pt x 219.82071pt.
- [7 <./images/usermodelconstruct.pdf>]
-Missing character: There is no ‚ in font cmr8!
-Missing character: There is no Ä in font cmr8!
-Missing character: There is no ì in font cmr8!
+Package pdftex.def Info: images/usermodelconstruct.pdf used on input line 190.
+(pdftex.def)             Requested size: 505.18393pt x 307.74765pt.
 
-<images/leap.jpg, id=64, 712.6625pt x 263.98625pt>
-File: images/leap.jpg Graphic file (type jpg)
- <use images/leap.jpg>
-Package pdftex.def Info: images/leap.jpg used on input line 217.
-(pdftex.def)             Requested size: 285.05995pt x 105.59262pt.
-
-[8] <palm.jpg, id=68, 286.06876pt x 204.765pt>
-File: palm.jpg Graphic file (type jpg)
- <use palm.jpg>
-Package pdftex.def Info: palm.jpg used on input line 228.
-(pdftex.def)             Requested size: 114.42546pt x 81.90454pt.
-
-<images/fingers.jpg, id=69, 333.245pt x 208.78pt>
-File: images/fingers.jpg Graphic file (type jpg)
- <use images/fingers.jpg>
-Package pdftex.def Info: images/fingers.jpg used on input line 237.
-(pdftex.def)             Requested size: 133.29562pt x 83.5105pt.
-
-[9 <./images/leap.jpg> <./palm.jpg> <./images/fingers.jpg>]
-Underfull \hbox (badness 1490) in paragraph at lines 283--284
-[]|\OT1/cmr/m/n/10 Plan fur-ther de-vel-op-ment. Mod-ify
+Overfull \hbox (35.42894pt too wide) in paragraph at lines 190--191
+ [] 
  []
 
+[9 <./images/apistream.png>]
+Missing character: There is no ‚ in font cmr9!
+Missing character: There is no Ä in font cmr9!
+Missing character: There is no ì in font cmr9!
+ [10 <./images/usermodelconstruct.pdf>]
+<images/leap.jpg, id=75, 712.6625pt x 263.98625pt>
+File: images/leap.jpg Graphic file (type jpg)
+ <use images/leap.jpg>
+Package pdftex.def Info: images/leap.jpg used on input line 212.
+(pdftex.def)             Requested size: 285.05995pt x 105.59262pt.
 
-Overfull \hbox (9.45598pt too wide) in paragraph at lines 271--292
+[11 <./images/leap.jpg>] <palm.jpg, id=79, 286.06876pt x 204.765pt>
+File: palm.jpg Graphic file (type jpg)
+
+<use palm.jpg>
+Package pdftex.def Info: palm.jpg used on input line 223.
+(pdftex.def)             Requested size: 114.42546pt x 81.90454pt.
+ <images/fingers.jpg, id=80, 333.245pt x 208.78pt>
+File: images/fingers.jpg Graphic file (type jpg)
+
+<use images/fingers.jpg>
+Package pdftex.def Info: images/fingers.jpg used on input line 232.
+(pdftex.def)             Requested size: 133.29562pt x 83.5105pt.
+LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <12> not available
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 241.
+ [12 <./palm.jpg> <./images/fingers.jpg>]
+Overfull \hbox (17.79482pt too wide) in paragraph at lines 266--287
  [][] 
  []
 
-[10]
-Overfull \hbox (4.72865pt too wide) in paragraph at lines 299--335
+[13]
+Overfull \hbox (30.01431pt too wide) in paragraph at lines 294--330
  [][] 
  []
 
@@ -368,12 +423,7 @@ Missing character: There is no ú in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
-[11]
-Underfull \hbox (badness 10000) in paragraph at lines 343--344
-[]\OT1/cmr/m/n/10 Child De-vel-op-ment In-sti-tute, http://childdevelopmentinfo
-.com/family-living/kids-media-
- []
-
+[14] [15]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ì in font cmr10!
@@ -381,21 +431,9 @@ Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ì in font cmr10!
 
-Underfull \hbox (badness 10000) in paragraph at lines 355--356
-[]\OT1/cmr/m/n/10 Schwartz, B. \OT1/cmr/m/it/10 Google Now Sup-ports Crawl-ing 
-& In-dex-ing Locale-Adaptive Web Pages\OT1/cmr/m/n/10 ,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 355--356
-\OT1/cmr/m/n/10 http://searchengineland.com/google-now-supports-crawling-indexi
-ng-locale-adaptive-web-pages-
- []
-
-
-Underfull \hbox (badness 2846) in paragraph at lines 357--358
-[]\OT1/cmr/m/n/10 Arrington, M. \OT1/cmr/m/it/10 Ya-hoo launches per-son-al-ize
-d search\OT1/cmr/m/n/10 , http://techcrunch.com/2006/08/07/yahoo-
+Underfull \hbox (badness 10000) in paragraph at lines 353--354
+[]\OT1/cmr/m/n/10.95 Arrington, M. \OT1/cmr/m/it/10.95 Ya-hoo launches per-son-
+al-ized search\OT1/cmr/m/n/10.95 , 
  []
 
 Missing character: There is no ‚ in font cmr10!
@@ -407,53 +445,47 @@ Missing character: There is no î in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ì in font cmr10!
+[16
+
+]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ì in font cmr10!
 
-Underfull \hbox (badness 2205) in paragraph at lines 378--379
-[]\OT1/cmr/m/n/10 Briggs, J. \OT1/cmr/m/it/10 A Bet-ter Un-der-stand-ing of Per
--son-al-ized search\OT1/cmr/m/n/10 . https://www.briggsby.com/better-
+Underfull \hbox (badness 10000) in paragraph at lines 374--375
+[]\OT1/cmr/m/n/10.95 Briggs, J. \OT1/cmr/m/it/10.95 A Bet-ter Un-der-stand-ing 
+of Per-son-al-ized search\OT1/cmr/m/n/10.95 . 
  []
 
-[12
-
-]
 Missing character: There is no √ in font cmr10!
 Missing character: There is no ® in font cmr10!
 Missing character: There is no √ in font cmr10!
 Missing character: There is no º in font cmr10!
 
-Underfull \hbox (badness 1168) in paragraph at lines 408--409
-[]\OT1/cmr/m/n/10 Specra, http://www.makeuseof.com/tag/4-search-engines-that-co
-mbine-google-bing/, Re-trieved 21
+Underfull \hbox (badness 1910) in paragraph at lines 398--399
+[]\OT1/cmr/m/n/10.95 Oculus Rift (ref: http://www.gamerhub.tv/articles/oculus-r
+ift-virtual-reality-is- 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 410--411
-[]\OT1/cmr/m/n/10 Lowery, T., \OT1/cmr/m/it/10 Why So-cial Me-dia is So Ad-dic-
-tive (and why mar-keters should care)\OT1/cmr/m/n/10 ,
+Underfull \hbox (badness 1895) in paragraph at lines 408--409
+[]\OT1/cmr/m/n/10.95 Lowery, T., \OT1/cmr/m/it/10.95 Why So-cial Me-dia is So A
+d-dic-tive (and why mar-keters should care)\OT1/cmr/m/n/10.95 , 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 410--411
-\OT1/cmr/m/n/10 http://www.cmswire.com/cms/customer-experience/why-social-media
--is-so-addictive-and-why-
- []
-
-[13] (./PROP_emassa01_CS.aux)
+[17] [18] (./PROP_emassa01_CS.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 2766 strings out of 493117
- 38685 string characters out of 6135433
- 116341 words of memory out of 5000000
- 6161 multiletter control sequences out of 15000+600000
- 8768 words of font info for 31 fonts, out of 8000000 for 9000
+ 2963 strings out of 493117
+ 42173 string characters out of 6135433
+ 118441 words of memory out of 5000000
+ 6342 multiletter control sequences out of 15000+600000
+ 10932 words of font info for 39 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 37i,11n,24p,1914b,258s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 37i,11n,24p,1937b,339s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb
@@ -461,13 +493,16 @@ Here is how much of TeX's memory you used:
 /usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></u
 sr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr
 /local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/lo
-cal/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local
-/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/te
-xlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on PROP_emassa01_CS.pdf (13 pages, 1984140 bytes).
+cal/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local
+/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/te
+xlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/tex
+live/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texl
+ive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texli
+ve/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
+Output written on PROP_emassa01_CS.pdf (18 pages, 2014933 bytes).
 PDF statistics:
- 119 PDF objects out of 1000 (max. 8388607)
- 76 compressed objects within 1 object stream
+ 146 PDF objects out of 1000 (max. 8388607)
+ 95 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  41 words of extra memory for PDF output out of 10000 (max. 10000000)
 
