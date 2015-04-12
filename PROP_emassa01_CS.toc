@@ -2,20 +2,20 @@
 \contentsline {subsection}{\numberline {1.1}The Role of Context Within Search}{4}
 \contentsline {subsection}{\numberline {1.2}The Problems with Current search Tools for People with Autism}{5}
 \contentsline {section}{\numberline {2}Aims and Objectives}{6}
-\contentsline {subsection}{\numberline {2.1}Proposed Architecture}{7}
+\contentsline {subsection}{\numberline {2.1}Proposed Architecture}{6}
 \contentsline {subsubsection}{\numberline {2.1.1}Core Features}{7}
 \contentsline {subsubsection}{\numberline {2.1.2}Non-core Features}{7}
-\contentsline {section}{\numberline {3}Plan for Developing the Solution}{8}
-\contentsline {subsection}{\numberline {3.1}Building the Combination search Engine: Core Feature 1.}{8}
-\contentsline {subsection}{\numberline {3.2}Building a User Model of Autism: Core Feature 2}{9}
-\contentsline {subsection}{\numberline {3.3}Key Word In Context Search: Core Feature 3}{10}
-\contentsline {subsection}{\numberline {3.4}Identifying First-Order Semantic Relations: Core Feature 4}{11}
-\contentsline {subsection}{\numberline {3.5}Motion-Controlled UI: Core Feature 5}{11}
-\contentsline {subsection}{\numberline {3.6}\texttt {ThreeJs} Library: Non-Core Feature}{12}
-\contentsline {subsection}{\numberline {3.7}Methodology}{13}
-\contentsline {subsection}{\numberline {3.8}Development Languages}{13}
-\contentsline {subsection}{\numberline {3.9}User Testing}{13}
-\contentsline {subsection}{\numberline {3.10}Unit Testing}{13}
-\contentsline {section}{\numberline {4}Challenges/issues, probabilities and mitigation of impact}{13}
-\contentsline {section}{\numberline {5}Project Timeline}{14}
-\contentsline {section}{\numberline {6}Concluding Statement}{15}
+\contentsline {section}{\numberline {3}Plan for Developing the Solution}{7}
+\contentsline {subsection}{\numberline {3.1}Building the Combination search Engine: Core Feature 1.}{7}
+\contentsline {subsection}{\numberline {3.2}Building a User Model of Autism: Core Feature 2}{8}
+\contentsline {subsection}{\numberline {3.3}Key Word In Context Search: Core Feature 3}{9}
+\contentsline {subsection}{\numberline {3.4}Identifying First-Order Semantic Relations: Core Feature 4}{10}
+\contentsline {subsection}{\numberline {3.5}Motion-Controlled UI: Core Feature 5}{10}
+\contentsline {subsection}{\numberline {3.6}Non-Core Features}{11}
+\contentsline {subsection}{\numberline {3.7}Methodology}{12}
+\contentsline {subsection}{\numberline {3.8}Development Languages}{12}
+\contentsline {subsection}{\numberline {3.9}User Testing}{12}
+\contentsline {subsection}{\numberline {3.10}Unit Testing}{12}
+\contentsline {section}{\numberline {4}Challenges/issues, probabilities and mitigation of impact}{12}
+\contentsline {section}{\numberline {5}Project Timeline}{13}
+\contentsline {section}{\numberline {6}Concluding Statement}{14}
