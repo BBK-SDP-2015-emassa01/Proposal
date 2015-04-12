@@ -12,8 +12,8 @@
 \contentsline {subsection}{\numberline {3.4}Identifying First-Order Semantic Relations: Core Feature 4}{10}
 \contentsline {subsection}{\numberline {3.5}Motion-Controlled UI: Core Feature 5}{10}
 \contentsline {subsection}{\numberline {3.6}Non-Core Features}{11}
-\contentsline {subsection}{\numberline {3.7}Methodology}{12}
-\contentsline {subsection}{\numberline {3.8}Development Languages}{12}
+\contentsline {subsection}{\numberline {3.7}Methodology}{11}
+\contentsline {subsection}{\numberline {3.8}Development Languages}{11}
 \contentsline {subsection}{\numberline {3.9}User Testing}{12}
 \contentsline {subsection}{\numberline {3.10}Unit Testing}{12}
 \contentsline {section}{\numberline {4}Challenges/issues, probabilities and mitigation of impact}{12}

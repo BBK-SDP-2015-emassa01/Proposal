@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.3.23)  12 APR 2015 21:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.3.23)  12 APR 2015 22:24
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -381,35 +381,32 @@ File: images/leap.jpg Graphic file (type jpg)
 Package pdftex.def Info: images/leap.jpg used on input line 211.
 (pdftex.def)             Requested size: 285.05995pt x 105.59262pt.
 
-
-LaTeX Warning: Citation `json' on page 10 undefined on input line 216.
-
 [10 <./images/leap.jpg>] <palm.jpg, id=76, 286.06876pt x 204.765pt>
 File: palm.jpg Graphic file (type jpg)
 
 <use palm.jpg>
 Package pdftex.def Info: palm.jpg used on input line 222.
 (pdftex.def)             Requested size: 114.42546pt x 81.90454pt.
- <images/fingers.jpg, id=77, 333.245pt x 208.78pt>
-File: images/fingers.jpg Graphic file (type jpg)
 
-<use images/fingers.jpg>
+Overfull \hbox (18.82472pt too wide) in paragraph at lines 227--228
+\OT1/cmr/m/n/10.95 LEAP can also recog-nise cer-tain move-ment pat-terns, i.e.,
+ \OT1/cmtt/m/n/10.95 Gestures \OT1/cmr/m/n/10.95 (\OT1/cmtt/m/n/10.95 CircleGes
+ture, KeyTapGesture,
+ []
+
+<images/fingers.jpg, id=77, 333.245pt x 208.78pt>
+File: images/fingers.jpg Graphic file (type jpg)
+ <use images/fingers.jpg>
 Package pdftex.def Info: images/fingers.jpg used on input line 231.
 (pdftex.def)             Requested size: 133.29562pt x 83.5105pt.
 
-
-LaTeX Warning: Citation `threejs' on page 11 undefined on input line 241.
-
-
-LaTeX Warning: Citation `javascript' on page 11 undefined on input line 241.
-
 [11 <./palm.jpg> <./images/fingers.jpg>]
-Overfull \hbox (17.79482pt too wide) in paragraph at lines 266--287
+Overfull \hbox (17.79482pt too wide) in paragraph at lines 263--284
  [][] 
  []
 
 [12]
-Overfull \hbox (30.01431pt too wide) in paragraph at lines 294--330
+Overfull \hbox (30.01431pt too wide) in paragraph at lines 291--327
  [][] 
  []
 
@@ -419,7 +416,7 @@ Missing character: There is no œ in font cmr10!
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no  in font cmr10!
-[13] [14]
+[13]
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no “ in font cmr10!
@@ -427,7 +424,7 @@ Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no “ in font cmr10!
 
-Underfull \hbox (badness 10000) in paragraph at lines 353--354
+Underfull \hbox (badness 10000) in paragraph at lines 350--351
 []\OT1/cmr/m/n/10.95 Arrington, M. \OT1/cmr/m/it/10.95 Ya-hoo launches per-son-
 al-ized search\OT1/cmr/m/n/10.95 , 
  []
@@ -435,20 +432,18 @@ al-ized search\OT1/cmr/m/n/10.95 ,
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no “ in font cmr10!
+[14]
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ” in font cmr10!
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no “ in font cmr10!
-[15
-
-]
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no “ in font cmr10!
 
-Underfull \hbox (badness 10000) in paragraph at lines 374--375
+Underfull \hbox (badness 10000) in paragraph at lines 371--372
 []\OT1/cmr/m/n/10.95 Briggs, J. \OT1/cmr/m/it/10.95 A Bet-ter Un-der-stand-ing 
 of Per-son-al-ized search\OT1/cmr/m/n/10.95 . 
  []
@@ -457,22 +452,19 @@ Missing character: There is no Ã in font cmr10!
 Missing character: There is no ¨ in font cmr10!
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no ¼ in font cmr10!
-
-Underfull \hbox (badness 1910) in paragraph at lines 404--405
+[15]
+Underfull \hbox (badness 1910) in paragraph at lines 401--402
 []\OT1/cmr/m/n/10.95 Oculus Rift (ref: http://www.gamerhub.tv/articles/oculus-r
 ift-virtual-reality-is- 
  []
 
-[16]
-Underfull \hbox (badness 1895) in paragraph at lines 414--415
+
+Underfull \hbox (badness 1895) in paragraph at lines 411--412
 []\OT1/cmr/m/n/10.95 Lowery, T., \OT1/cmr/m/it/10.95 Why So-cial Me-dia is So A
 d-dic-tive (and why mar-keters should care)\OT1/cmr/m/n/10.95 , 
  []
 
-[17] (./PROP_emassa01_CS.aux)
-
-LaTeX Warning: There were undefined references.
-
+[16] (./PROP_emassa01_CS.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
@@ -480,7 +472,7 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  2968 strings out of 493117
  42198 string characters out of 6135433
- 119460 words of memory out of 5000000
+ 118472 words of memory out of 5000000
  6348 multiletter control sequences out of 15000+600000
  10763 words of font info for 38 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -497,10 +489,10 @@ cal/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local
 xlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/tex
 live/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texl
 ive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on PROP_emassa01_CS.pdf (17 pages, 2011504 bytes).
+Output written on PROP_emassa01_CS.pdf (16 pages, 2009919 bytes).
 PDF statistics:
- 139 PDF objects out of 1000 (max. 8388607)
- 90 compressed objects within 1 object stream
+ 136 PDF objects out of 1000 (max. 8388607)
+ 88 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  41 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -204,7 +204,7 @@ I will also define fields for sections of a document (e.g., title, heading or su
 \subsection{Motion-Controlled UI: Core Feature 5}\label{hardware}
 Two options were available for use with the current project, the \textbf{Oculus Rift Virtual Reality head mounted display} (the `Rift') and, the \textbf{LEAP Motion Controller} (the `LEAP'). Both have accurate timing, and work well with the combinatorial configuration of senses (sight, hearing and touch). As this is a tool to be used with individuals with Autism, who have increased sensitivity to touch, the sensation of the Rift was considered more overwhelming, and the LEAP was favoured. The LEAP is also more affordable for users to integrate with search at home. 
 
-The LEAP will recognize and track hands, fingers, finger-like tools, positions, motions and gestures using infrared light and optical sensors along the x, y and z cartesian coordinate system. The controller has a 150-degree field of view, and can operate in a range of 1 inch to 2 feet. The API works with distance in millimetre resolution. Time is measured in microseconds, speed in mm/s and angles in radians. The LEAP will use the \texttt{Frames} class, to track detected motion. I will create frames by calling \texttt{Controller.frame()}.
+The LEAP will recognize and track hands, fingers, finger-like tools, positions, motions and gestures using infrared light and optical sensors along the cartesian coordinate system. The controller has a 150-degree field of view, and operates in a range of 1 inch to 2 feet. The LEAP will use the \texttt{Frames} class, to track detected motion. I will create frames by calling \texttt{Controller.frame()}.
 
 \begin{figure}[H]
 \begin{center}
@@ -224,7 +224,7 @@ For hand movements the \textbf{Hand} class, will return information about the po
 \end{center}
 \end{figure}
 
-The \texttt{Arms} class will return information about \texttt{orientation, length, width} and \texttt{end} points of movements. The LEAP controller software bases these return measurements on previous observations of the user, and using typical human proportions. Similarly, \texttt{Finger} characteristics are based on the anatomy of the hand, and recent observations. 
+\texttt{Finger} characteristics are based on the anatomy of the hand, and recent observations. The LEAP can also recognise certain movement patterns, i.e., \texttt{Gestures} (\texttt{CircleGesture, KeyTapGesture, ScreenTapGesture and SwipeGestures}) allowing the user of the system to indicate an intent.
 
 \begin{figure}[H]
 \begin{center}
@@ -233,16 +233,13 @@ The \texttt{Arms} class will return information about \texttt{orientation, lengt
 \end{center}
 \end{figure}
 
-\textbf{Tools} can represent any real object (noun), but are longer, straighter and thinner than fingers, and must be cylindrical. The LEAP can also recognise certain movement patterns, i.e., \texttt{Gestures} (\texttt{CircleGesture, KeyTapGesture, ScreenTapGesture and SwipeGestures}) allowing the user of the system to indicate an intent.
-
-The user will be able to navigate the application with a range of movements involving Hands, Fingers, Gestures and Tools, fulfilling the aims of core feature 5.
 
 \subsection{Non-Core Features}
-Non-core features will only be implemented time-permitting. This includes using the \texttt{ThreeJs} javascript library \cite{threejs, javascript}, which enables hardware-accelerated 3D graphics, namely \textbf{WebGL-3D} in the web browser, without installing software. \texttt{ThreeJs} will be used to integrate the 3D interface with the application and motion controller. I endeavour to explore the use of this library with other motion controllers such as the Xbox Kinect \cite{kinect}, to explore other interfaces for Autistic users. I would also investigate new ranking algorithms (i.e., increased rank) for search results containing pages with greater numbers of images by parsing HTML code and counting the number of image tags.
+Non-core features will be implemented time-permitting. This includes using the \texttt{ThreeJs} javascript library \cite{threejs, javascript}, which enables hardware-accelerated 3D graphics, namely \textbf{WebGL-3D} in the web browser, without installing software. I endeavour to explore the use of this library with other motion controllers such as the Xbox Kinect \cite{kinect}, to explore other interfaces for Autistic users. I aspire to create ranking algorithms (i.e., increased rank) for search results containing pages with greater numbers of images, by parsing HTML code and counting the number of image tags.
 
 
 \subsection{Methodology}
-There is a relatively short deadline in which a single developer will research and deliver a system prototype and report. The APIs, technology and areas of development are unfamiliar. There is an element of uncertainty about what the final product will be/should look like, suggesting that the most suitable methodology to deliver the application is an Agile-like Methodology \cite{agile}. I will focus on early development and rapid (1-week) sprints to make adjustments to the project's direction. This methodology offers the most flexibility and adaptability.
+A short deadline in which a single developer will research and deliver a system prototype and report. The APIs, technology and areas of development are unfamiliar and uncertain, suggesting that the most suitable methodology is an agile-like Methodology \cite{agile}. I will focus on early and rapid (1-week) sprints to make adjustments to the project's direction. This methodology offers the most flexibility and adaptability.
 
 
 \subsection{Development Languages}
@@ -250,7 +247,7 @@ The Google, Yahoo, Bing and Lucene APIs are available in Java. The LEAP SDK send
 
 JSON is a light weight, language-independent data format, and a good tool for sharing data. Importantly JSON offers faster execution and server-side parsing by storing the data in arrays, this is important for sharing the LEAP motion controller data. A drawback of JSON is that it only has limited support tools available, and little error handling capabilities. Java is a platform and operating-system independent language, offering a simple, dynamic, robust, object-oriented, and functional language. There is excellent documentation available for the language, with many third party, open source libraries.
 
-I will use the Eclipse Integrated Development Environment and attempt to make the application compatible with Google Chrome browser (as it is WebGL-compatible). I will use Git for Version Control. For testing I will use JUnit \cite{junit}, JSON Test \cite{jsontest} and Mockito (for user/external dependencies) \cite{mockito}.
+I will use the Eclipse IDE and Google Chrome browser (as it is WebGL-compatible). I will use Git for Version Control. For testing I will use JUnit \cite{junit}, JSON Test \cite{jsontest} and Mockito (for user/external dependencies) \cite{mockito}.
 
 \subsection{User Testing}
 I aspire to test the application with a group of individuals with Autism, however, as time is required for ethical approval, it is not clear whether I will be able to acheive this before the deadline. User testing would include inviting people with Autism to use the web application and obtaining their feedback (relevance/explicit feedback, and, implicit feedback, e.g., mouse clicks), as well as qualitative data. We are currently in contact with the National Autistic Society \cite{nas}, to recruit participants. I have access to a Tobii Eye-tracker (from the Department of Psychology, Birkbeck) to gather high resolution eye-tracking data, as users navigate the application. I would then further revise the user model and UI.
@@ -334,7 +331,7 @@ I have proposed to build a system that enhances the experience of searching the 
 
 \end{justify}
 
-\clearpage
+
 \begin{thebibliography}{100}
 \bibitem{person} Child Development Institute, http://childdevelopmentinfo.com/family-living/kids-media-safety/children-teens-web-internet-safety/, Retrieved 11 April 2015
 
