@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.3.23)  12 APR 2015 03:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.3.23)  12 APR 2015 04:45
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -252,9 +252,15 @@ Overfull \hbox (13.03644pt too wide) in paragraph at lines 94--97
 
 [2
 
-] [3
+] <images/person.png, id=14, 686.565pt x 401.5pt>
+File: images/person.png Graphic file (type png)
+ <use images/person.png>
+Package pdftex.def Info: images/person.png used on input line 104.
+(pdftex.def)             Requested size: 137.31056pt x 80.29857pt.
 
-]
+[3
+
+ <./images/person.png>]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ò in font cmr10!
@@ -267,13 +273,20 @@ Missing character: There is no ò in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
- <images/searchEngArchi.pdf, id=20, 722.7pt x 542.025pt>
+ <images/vision.png, id=23, 722.7pt x 236.885pt>
+File: images/vision.png Graphic file (type png)
+
+<use images/vision.png>
+Package pdftex.def Info: images/vision.png used on input line 133.
+(pdftex.def)             Requested size: 252.94878pt x 82.91098pt.
+ [4]
+<images/searchEngArchi.pdf, id=27, 1065.9825pt x 772.8875pt>
 File: images/searchEngArchi.pdf Graphic file (type pdf)
 
 <use images/searchEngArchi.pdf>
-Package pdftex.def Info: images/searchEngArchi.pdf used on input line 127.
-(pdftex.def)             Requested size: 433.62334pt x 325.2175pt.
- [4]
+Package pdftex.def Info: images/searchEngArchi.pdf used on input line 142.
+(pdftex.def)             Requested size: 319.79721pt x 231.86803pt.
+ [5 <./images/vision.png> <./images/searchEngArchi.pdf>]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
@@ -295,61 +308,72 @@ Missing character: There is no ò in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
- [5 <./images/searchEngArchi.pdf>]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
- [6]
-<images/usermodelconstruct.pdf, id=103, 721.69624pt x 439.6425pt>
+ <images/apistream.png, id=43, 722.7pt x 542.025pt>
+File: images/apistream.png Graphic file (type png)
+
+<use images/apistream.png>
+Package pdftex.def Info: images/apistream.png used on input line 181.
+(pdftex.def)             Requested size: 216.81166pt x 162.60875pt.
+ [6 <./images/apistream.png>]
+<images/usermodelconstruct.pdf, id=48, 721.69624pt x 439.6425pt>
 File: images/usermodelconstruct.pdf Graphic file (type pdf)
 
 <use images/usermodelconstruct.pdf>
-Package pdftex.def Info: images/usermodelconstruct.pdf used on input line 172.
-(pdftex.def)             Requested size: 433.02109pt x 263.78752pt.
+Package pdftex.def Info: images/usermodelconstruct.pdf used on input line 195.
+(pdftex.def)             Requested size: 360.84724pt x 219.82071pt.
+ [7 <./images/usermodelconstruct.pdf>]
 Missing character: There is no ‚ in font cmr8!
 Missing character: There is no Ä in font cmr8!
 Missing character: There is no ì in font cmr8!
- [7 <./images/usermodelconstruct.pdf>]
-<images/leap.jpg, id=118, 712.6625pt x 263.98625pt>
+
+<images/leap.jpg, id=64, 712.6625pt x 263.98625pt>
 File: images/leap.jpg Graphic file (type jpg)
  <use images/leap.jpg>
-Package pdftex.def Info: images/leap.jpg used on input line 194.
+Package pdftex.def Info: images/leap.jpg used on input line 217.
 (pdftex.def)             Requested size: 285.05995pt x 105.59262pt.
 
-<palm.jpg, id=119, 286.06876pt x 204.765pt>
+[8] <palm.jpg, id=68, 286.06876pt x 204.765pt>
 File: palm.jpg Graphic file (type jpg)
  <use palm.jpg>
-Package pdftex.def Info: palm.jpg used on input line 205.
+Package pdftex.def Info: palm.jpg used on input line 228.
 (pdftex.def)             Requested size: 114.42546pt x 81.90454pt.
- [8 <./images/leap.jpg>] <images/fingers.jpg, id=123, 333.245pt x 208.78pt>
-File: images/fingers.jpg Graphic file (type jpg)
 
-<use images/fingers.jpg>
-Package pdftex.def Info: images/fingers.jpg used on input line 214.
+<images/fingers.jpg, id=69, 333.245pt x 208.78pt>
+File: images/fingers.jpg Graphic file (type jpg)
+ <use images/fingers.jpg>
+Package pdftex.def Info: images/fingers.jpg used on input line 237.
 (pdftex.def)             Requested size: 133.29562pt x 83.5105pt.
- [9 <./palm.jpg> <./images/fingers.jpg>]
-Underfull \hbox (badness 1490) in paragraph at lines 260--261
+
+[9 <./images/leap.jpg> <./palm.jpg> <./images/fingers.jpg>]
+Underfull \hbox (badness 1490) in paragraph at lines 283--284
 []|\OT1/cmr/m/n/10 Plan fur-ther de-vel-op-ment. Mod-ify
  []
 
 
-Overfull \hbox (9.45598pt too wide) in paragraph at lines 248--269
- [][] 
- []
-
-
-Overfull \hbox (4.72865pt too wide) in paragraph at lines 276--312
+Overfull \hbox (9.45598pt too wide) in paragraph at lines 271--292
  [][] 
  []
 
 [10]
+Overfull \hbox (4.72865pt too wide) in paragraph at lines 299--335
+ [][] 
+ []
+
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ú in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
- [11]
+[11]
+Underfull \hbox (badness 10000) in paragraph at lines 343--344
+[]\OT1/cmr/m/n/10 Child De-vel-op-ment In-sti-tute, http://childdevelopmentinfo
+.com/family-living/kids-media-
+ []
+
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ì in font cmr10!
@@ -357,19 +381,19 @@ Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ì in font cmr10!
 
-Underfull \hbox (badness 10000) in paragraph at lines 330--331
+Underfull \hbox (badness 10000) in paragraph at lines 355--356
 []\OT1/cmr/m/n/10 Schwartz, B. \OT1/cmr/m/it/10 Google Now Sup-ports Crawl-ing 
 & In-dex-ing Locale-Adaptive Web Pages\OT1/cmr/m/n/10 ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 330--331
+Underfull \hbox (badness 10000) in paragraph at lines 355--356
 \OT1/cmr/m/n/10 http://searchengineland.com/google-now-supports-crawling-indexi
 ng-locale-adaptive-web-pages-
  []
 
 
-Underfull \hbox (badness 2846) in paragraph at lines 332--333
+Underfull \hbox (badness 2846) in paragraph at lines 357--358
 []\OT1/cmr/m/n/10 Arrington, M. \OT1/cmr/m/it/10 Ya-hoo launches per-son-al-ize
 d search\OT1/cmr/m/n/10 , http://techcrunch.com/2006/08/07/yahoo-
  []
@@ -387,7 +411,7 @@ Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ì in font cmr10!
 
-Underfull \hbox (badness 2205) in paragraph at lines 353--354
+Underfull \hbox (badness 2205) in paragraph at lines 378--379
 []\OT1/cmr/m/n/10 Briggs, J. \OT1/cmr/m/it/10 A Bet-ter Un-der-stand-ing of Per
 -son-al-ized search\OT1/cmr/m/n/10 . https://www.briggsby.com/better-
  []
@@ -400,31 +424,19 @@ Missing character: There is no ® in font cmr10!
 Missing character: There is no √ in font cmr10!
 Missing character: There is no º in font cmr10!
 
-Underfull \hbox (badness 6978) in paragraph at lines 367--368
-[]\OT1/cmr/m/n/10 Pray, S. \OT1/cmr/m/it/10 In-verted In-dex : The ba-sic in-gr
-e-di-ent be-hind the recipe called search En-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 367--368
-\OT1/cmr/m/it/10 gine\OT1/cmr/m/n/10 https://insightsdelight.wordpress.com/2012
-/01/24/inverted-index-the-basic-ingredient-behind-
- []
-
-
-Underfull \hbox (badness 1168) in paragraph at lines 379--380
+Underfull \hbox (badness 1168) in paragraph at lines 408--409
 []\OT1/cmr/m/n/10 Specra, http://www.makeuseof.com/tag/4-search-engines-that-co
 mbine-google-bing/, Re-trieved 21
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 381--382
+Underfull \hbox (badness 10000) in paragraph at lines 410--411
 []\OT1/cmr/m/n/10 Lowery, T., \OT1/cmr/m/it/10 Why So-cial Me-dia is So Ad-dic-
 tive (and why mar-keters should care)\OT1/cmr/m/n/10 ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 381--382
+Underfull \hbox (badness 10000) in paragraph at lines 410--411
 \OT1/cmr/m/n/10 http://www.cmswire.com/cms/customer-experience/why-social-media
 -is-so-addictive-and-why-
  []
@@ -435,13 +447,13 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 2746 strings out of 493117
- 38338 string characters out of 6135433
- 118313 words of memory out of 5000000
- 6144 multiletter control sequences out of 15000+600000
+ 2766 strings out of 493117
+ 38685 string characters out of 6135433
+ 116341 words of memory out of 5000000
+ 6161 multiletter control sequences out of 15000+600000
  8768 words of font info for 31 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 37i,11n,24p,1914b,272s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 37i,11n,24p,1914b,258s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb
@@ -452,10 +464,10 @@ sr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr
 cal/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local
 /texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/te
 xlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on PROP_emassa01_CS.pdf (13 pages, 1732924 bytes).
+Output written on PROP_emassa01_CS.pdf (13 pages, 1984140 bytes).
 PDF statistics:
- 174 PDF objects out of 1000 (max. 8388607)
- 113 compressed objects within 2 object streams
+ 119 PDF objects out of 1000 (max. 8388607)
+ 76 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 26 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 41 words of extra memory for PDF output out of 10000 (max. 10000000)
 

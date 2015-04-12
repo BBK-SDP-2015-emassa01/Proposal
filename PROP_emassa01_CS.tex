@@ -99,6 +99,13 @@ Autism & Autism is amongst the most common neurodevelopmental condition and it i
 \section{Introduction \& Background}\label{prob}
 People with Autism are less context-sensitive and prefer a more detail-focused processing style \cite{mottron}, and they form web-search queries differently to the typical population. Individuals with Autism are also less likely to engage in a relational (hierarchically organized) style of processing \cite{bowler} suggesting that relating information in a hierarchically organised framework is less likely. Hierarchical organisation implies flexibility and mental-shifting, as a simple example, in a search for 'apple', it would imply awareness that the word is related to 'pear' but also to 'fruit'. Awareness of this latter relation also suggests awareness that 'apple' is related to 'pomegranate'. This is a simple example, but these associations can get very complex, very quickly. Generally speaking, individuals with Autism prefer, and are more likely to engage in an item-specific processing style, and, whilst intelligent cognition is definitely possible, web-search queries are more likely formed of first-order associations\footnote{There is a great deal of individual variability in the Autism Spectrum.}.To address this issue, the current project aims to build a user model within search for individuals with Autism. 
 
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.2]{person}\\
+\caption{Current web navigation and information retrieval \cite{person}}
+\end{center}
+\end{figure}
+
 \subsection{The Role of Context Within Search} \label{the problem}
 It is unlikely that any given page on the web will contain a word or phrase that means exactly (or nearly) the same as another word or phrase in that language (e.g., shut and close). How is it then that your search engine picks these phrases to mean the same thing, and returns them synonymously in the results of your query? Well, quite simply put, with the use of a thesaurus, synonyms and by virtue of the fact that each of their neighbouring words and associations are similar. These are indirect, higher-order associations, and provide the context in which the search engine index keywords.
 
@@ -119,16 +126,24 @@ The three top search engines are Adaptive (Google) or Personalised (Yahoo, Bing)
 Research suggests personalization also increases ‘background noise’ relative to the search results \cite{briggs}, with a carry-over effect in personalized search, where prior search influences the results from subsequent searches \footnote{It should be noted that personalization of search results generally takes a lower priority for the ranking algorithms than the URLs ranked top in terms of their relevance for the search query.}. This carry-over may be particularly disadvantageous for people with Autism (some of whom already have restricted and repetitive interests) as it muddies their search space. To produce a search tool specifically tailored to reduce the filter bubble effect in Autism, widen the information gateway and reduce the possibility for restricted and repetitive searches, the weighting on previous search results will need to be reduced. This is something I will investigate in the project, particularly for individuals who identify restricted or repetitive interests. For these users, it would limit the possibility that they get trapped in a spiraling loop of ever-narrowing user-relevant information and over-personalization of self-reinforced information ecosystems.
 
 \section{Aims and Objectives} 
-As part of my project I propose to build a user model of Autism, for a motion-controlled, web search (see Figure ~\ref{architec}. The core and non-core features of the application are given below. I elaborate on each of the key features in the following sections. 
+As part of my project I propose to build a user model of Autism, for a motion-controlled, web search. See Figure ~Figure\ref{vision} for the envisioned UI interface of the project, and Figure ~\ref{architec} for the proposed architecture. The core and non-core features of the application are given below. I elaborate on each of the key features in the following sections. 
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.35]{vision}\\
+\caption{Envisioned UI interface component for the project \cite{leap}.}
+\label{vision}
+\end{center}
+\end{figure}
 
 \subsection{Proposed Architecture}\label{proposed}
-\begin{center}
 \begin{figure}[H]
-    \includegraphics[scale=0.6]{searchEngArchi}
-    \caption{The User Model will be applied to existing search Engine Architecture\cite{seimage}, and be integrated with a Motion Controlled interface.}
+\begin{center}
+    \includegraphics[scale=0.3]{searchEngArchi}
+    \caption{The User Model will be applied to existing search Engine Architecture\cite{seimage}, and be integrated with Motion Controlled interfaces such as the Rift, LEAP and Kinect \cite{rift, leap, kinect}.}
     \label{architec}
-\end{figure}
 \end{center}
+\end{figure}
 
 
 \subsubsection{Core Features}\label{core}
@@ -159,7 +174,15 @@ The first part of the project involves building a synthesis of search engines. I
 \subsection{Building the Combination search Engine: Core Feature 1.} 
 The three most popular search engines, Google (unique monthly visitors = 1,100,000,000, query volume = 64.5\% ), Bing (350.000.000, 12.8\%) and Yahoo! (300,000,000, 64.5\%) were selected \cite{ebiz, adam}. Other search engines were not included, to limit redundancy of the search results returned.
 
-To combine search results, I will use API’s provided by Google, Yahoo and Bing, as this is more efficient than inspecting the source code for every query result-page. For Google search results, the \textbf{Google Custom Search API} (GCS), (available in Java) will be used to create a personalised search engine. GCS requires a domain name and server at configuration, and provides a consumer key and secret, which are hardcoded in the application. Using the API I will extract image search results, page dates, formatting dates, custom snippets, and sort and filter the results. For Yahoo search, the \textbf{Yahoo BOSS Java API} will be used, for Bing, the \textbf{Bing search API}. These APIs offer similar functionality as the GSC\footnote{The APIs alone may not be comprehensive for textual-search (KWIC), and an addional library may be required (see Section~\ref{apache}).}. Each costs \$0.01/search (max 5000 searches/month).
+To combine search results, I will use API’s provided by Google, Yahoo and Bing, as this is more efficient than inspecting the source code for every query result-page. For Google search results, the \textbf{Google Custom Search API} (GCS), (available in Java) will be used to create a personalised search engine. GCS requires a domain name and server at configuration, and provides a consumer key and secret, which are hardcoded in the application. Using the API I will extract image search results, page dates, formatting dates, custom snippets, and sort and filter the results. For Yahoo search, the \textbf{Yahoo BOSS Java API} will be used, for Bing, the \textbf{Bing search API}. These APIs offer similar functionality as the GSC\footnote{The APIs alone may not be comprehensive for textual-search (KWIC), and an addional library may be required (see Section~\ref{apache}).}. Each costs \$0.01/search (max 5000 searches/month). Figure ~\ref{apistream} shows the input of these API into a synthesised stream.
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.3]{apistream}\\
+\caption{Usage of APIs proposed for the project.}
+\label{apistream}
+\end{center}
+\end{figure}
 
 \subsection {Building a User Model of Autism: Core Feature 2}\label{usermodel}
 A user model (or a collection of information associated with a particular user, usually a data structure), will be developed so the current system can adapt/customise its behaviour in line with user needs, and be better informed about how to behave in various circumstances, improving the human-computer interaction experience. In the current case, the user will be required to set up a Google+ account, where their basic information (demographics, needs, preferences, likes, dislikes, goals, plans, knowledge, and skill), will be gathered. They will authenticate their Google+ account with the web application to start the formation of their data model. I will access these data via the \textbf{Google+ API}, which includes methods to access 4 resource  types; People, their Activities, Comments and Moments. A person is represented with many fields in Google+, including name, gender, title, occupation and so forth. I will ask users to enter their Autism diagnostic information in the 'about me' section on their profile. This information will be parsed at a later stage and feed into the user model. Information about web-search history for any individual user can be obtained from the browser history. 
@@ -169,7 +192,7 @@ User models fall into 4 main categories. They can be \textit{static/unchanging} 
 
 \begin{figure}[H]
 \begin{center}
-    \includegraphics[scale=0.6]{usermodelconstruct}
+    \includegraphics[scale=0.5]{usermodelconstruct}
     \caption{Hypothetical example of features that may feed into the user model. White spaces represent unknowns/inferred/assumptions in a stereotyped user model.}
     \label{usermodelconstruct}
 \end{center}
@@ -192,7 +215,7 @@ The LEAP will recognize and track hands, fingers, finger-like tools, positions, 
 \begin{figure}[H]
 \begin{center}
 \includegraphics[scale=0.4]{leap}\\
-The LEAP controller, with 150 degree view \cite{leap}.
+\caption{The LEAP controller, with 150 degree view \cite{leap}}.
 \end{center}
 \end{figure}
 
@@ -203,7 +226,7 @@ For hand movements the \textbf{Hand} class, will return information about the po
 \begin{figure}[H]
 \begin{center}
 \includegraphics[scale=0.4]{palm}\\
-Hand palmNormal() method \cite{leap}
+\caption{Hand palmNormal() method \cite{leap}}
 \end{center}
 \end{figure}
 
@@ -212,7 +235,7 @@ The \textbf{Arms} class will return information about orientation, length, width
 \begin{figure}[H]
 \begin{center}
 \includegraphics[scale=0.4]{fingers}\\
-Finger tip position and direction are given as vectors \cite{leap}
+\caption{Finger tip position and direction are given as vectors \cite{leap}}
 \end{center}
 \end{figure}
 
@@ -317,6 +340,8 @@ I have proposed to build a system that enhances the experience of searching the 
 \clearpage
 \begin{thebibliography}{100}
 
+\bibitem{person} Child Development Institute, http://childdevelopmentinfo.com/family-living/kids-media-safety/children-teens-web-internet-safety/, Retrieved 11 April 2015
+
 \bibitem{mottron} Laurent Mottron, Jacob A. Burack, Johannes E. A. Stauder, Philippe Robaey (1999) Perceptual Processing among High-functioning Persons with Autism. \textit{Journal of Child Psychology and Psychiatry 40}, (2), 203–211. doi:10.1111/1469-7610.00433
 
 \bibitem{bowler}Dermot M. Bowler, Sebastian B. Gaigg, John M. Gardiner (2014) Binding of Multiple Features in Memory by High-Functioning Adults with Autism Spectrum Disorder, \textit{Journal of Autism and Developmental Disorders September 2014, 44}, Issue 9, pp 2355-2362
@@ -364,13 +389,17 @@ Elsabbagh, M., Volein, A., Holmboe, K., Tucker, L., Csibra, G., Baron-Cohen, S.,
 
 \bibitem{kwic}Manning, C. D., Schütze, H. (1999) \textit{Foundations of Statistical Natural Language Processing}, p.35. The MIT Press.
 
-\bibitem{seimage} Pray, S. \textit{Inverted Index : The basic ingredient behind the recipe called search Engine}https://insightsdelight.wordpress.com/2012/01/24/inverted-index-the-basic-ingredient-behind-the-recipe-called-search-engine/, Retrieved 8 April 2015
+\bibitem{seimage} Pixabay \textit{How do search engines work?} http://theconversionengine.com/organic/search-engines-work/, Retrieved 8 April 2015
 
 \bibitem{ebiz}eBizMBA inc, \textit{The eBusiness Guide}, www.eBizMBA.com; Retrieved 20 March 2015
 
 \bibitem {adam}Lella, A., (2014). \textit{comScore Releases March 2014 U.S. search Engine Rankings.} ComScore.com. Retrieved 21 Feb 2015
 
 \bibitem{bingvsgoogle} Bing versus Google, http://www.bingiton.com/, Retrieved 21 Feb 2015 
+
+\bibitem{rift} Oculus Rift (ref: http://www.gamerhub.tv/articles/oculus-rift-virtual-reality-is-unreal/2013/03/31/), Retrieved 21 Feb 2015 
+
+\bibitem{kinect} Xbox Kinect (ref: http://www.kinect-hire.co.uk/xbox-kinect-hire/), Retrieved 21 Feb 2015
 
 \bibitem{qrobe} Qrobe, http://qrobe.it/, Retrieved 21 Feb 2015 
 
